@@ -11,6 +11,17 @@ public class Palindrome_Linked_List_234 {
         ListNode(int x) { val = x; }
     }
 
+    /**
+     * 1 2 3
+     *   S F
+     *
+     * 1 2
+     *   S F
+     *
+     * 1 2 3 4 5 6
+     *       S     F
+     */
+
     public boolean isPalindrome(ListNode head) {
 
         if (head == null) {
@@ -25,7 +36,9 @@ public class Palindrome_Linked_List_234 {
             fast = fast.next.next;
         }
 
-        fast = revertList(slow.next);
+        fast = slow;
+
+        fast = revertList(fast);
         slow = head;
 
         while (fast != null) {
@@ -50,7 +63,7 @@ public class Palindrome_Linked_List_234 {
             head = next;
         }
 
-        return head;
+        return prev;
     }
 
     public static void main(String[] args) {
@@ -65,6 +78,6 @@ public class Palindrome_Linked_List_234 {
         node3.next = node4;
         node4.next = node5;
 
-        System.out.println(new Palindrome_Linked_List_234().isPalindrome(node4));
+        System.out.println(new Palindrome_Linked_List_234().isPalindrome(node1));
     }
 }
