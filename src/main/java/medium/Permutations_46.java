@@ -10,27 +10,46 @@ import java.util.List;
 public class Permutations_46 {
 
     public List<List<Integer>> permute(int[] nums) {
-        List<List<Integer>> list = new ArrayList<List<Integer>>();
-        // Arrays.sort(nums); // not necessary
-        backtrack(list, new ArrayList<Integer>(), nums);
-        return list;
+        List<List<Integer>> all = new ArrayList<>();
+        backTrack(nums, all, new ArrayList<>());
+        return all;
     }
 
-    private void backtrack(List<List<Integer>> list, List<Integer> tempList, int [] nums){
-        if(tempList.size() == nums.length){
-            list.add(new ArrayList<Integer>(tempList));
-        } else{
-            for(int i = 0; i < nums.length; i++){
-                if(tempList.contains(nums[i])) continue; // element already exists, skip
-                tempList.add(nums[i]);
-                backtrack(list, tempList, nums);
-                tempList.remove(tempList.size() - 1);
+    private void backTrack(int[] nums, List<List<Integer>> all, List<Integer> list) {
+        if (list.size() == nums.length) {
+            all.add(new ArrayList<>(list));
+        }
+
+        for (int i = 0; i < nums.length; i++) {
+            if (list.contains(nums[i])) {
+                continue;
             }
+            list.add(nums[i]);
+            backTrack(nums, all, list);
+            list.remove(list.size()-1);
         }
     }
 
+    public List<List<Integer>> permute2(int[] num) {
+        LinkedList<List<Integer>> res = new LinkedList<>();
+        res.add(new ArrayList<>());
+        for (int n : num) {
+            int size = res.size();
+            for (; size > 0; size--) {
+                List<Integer> r = res.pollFirst();
+                for (int i = 0; i <= r.size(); i++) {
+                    List<Integer> t = new ArrayList<>(r);
+                    t.add(i, n);
+                    res.add(t);
+                }
+            }
+        }
+        return res;
+    }
+
+
     public static void main(String[] args) {
-        for(List<Integer> list : new Permutations_46().permute(new int[]{1,2,3})) {
+        for(List<Integer> list : new Permutations_46().permute2(new int[]{1,2,3})) {
             System.out.println(list);
         }
     }

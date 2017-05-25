@@ -9,26 +9,30 @@ import java.util.List;
 public class Generate_Parentheses_22 {
 
     public static List<String> generateParenthesis(int n) {
-        List<String> list = new ArrayList<String>();
-        backtrack(list, "", 0, 0, n);
+        List<String> list = new ArrayList<>();
+        backTrack(list, 0, 0, n, "");
         return list;
     }
 
-    public  static void backtrack(List<String> list, String str, int open, int close, int max){
-
-        if(str.length() == max*2){
-            list.add(str);
+    private static void backTrack(List<String> list, int left, int right, int n, String s) {
+        if (s.length() == 2*n) {
+            list.add(s);
             return;
         }
 
-        if(open < max)
-            backtrack(list, str+"(", open+1, close, max);
-        if(close < open)
-            backtrack(list, str+")", open, close+1, max);
+        if (left < n) {
+            backTrack(list, left+1, right, n, s+"(");
+        }
+
+        if (right < left) {
+            backTrack(list, left, right+1, n, s+")");
+        }
+
     }
 
+
     public static void main(String [] args) {
-        List<String> list = generateParenthesis(2);
+        List<String> list = generateParenthesis(3);
         for (int i = 0; i < list.size(); i++) {
             System.out.println(list.get(i));
         }
