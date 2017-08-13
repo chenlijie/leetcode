@@ -2,29 +2,49 @@ package medium;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
 
 public class Binary_Tree_Inorder_Traversal_94 {
 
-    static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-        TreeNode(int x) { val = x; }
-    }
 
-    public List<Integer> inorderTraversal(TreeNode root) {
+    public static List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> list = new ArrayList<>();
-        inorderTraversal(list, root);
+
+        Stack<TreeNode> stack = new Stack<>();
+
+        while (root != null) {
+
+            if (!stack.isEmpty() && stack.peek() == root) {
+                stack.pop();
+            } else {
+                if (root.left != null) {
+                    stack.push(root);
+                    root = root.left;
+                    continue;
+                }
+            }
+
+
+            list.add(root.val);
+
+            root = root.right;
+            if (root == null && !stack.isEmpty()) {
+                root = stack.peek();
+            }
+
+        }
+
         return list;
     }
 
-    private void inorderTraversal(List<Integer> list, TreeNode node) {
-        if (node == null) {
-            return;
-        }
-        inorderTraversal(list, node.left);
-        list.add(node.val);
-        inorderTraversal(list, node.right);
+    public static void main(String[] args) {
+        TreeNode root = new TreeNode(1);
+        TreeNode left = new TreeNode(2);
+        TreeNode right = new TreeNode(3);
+        root.left = left;
+        root.right = right;
+
+        System.out.println(inorderTraversal(root));
     }
-    
+
 }
