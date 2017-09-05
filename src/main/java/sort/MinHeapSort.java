@@ -1,49 +1,60 @@
 package sort;
 
-public class HeapSort {
+public class MinHeapSort {
 
-    /*static void sort(int [] array) {
-        int index = array.length-1;
-
-        for (int i = 0; i < index; i++) {
-            sortHeap(array, (index-1-i)/2, index-i);
+    public void heapSort(int[] nums) {
+        for (int i = (nums.length/2 - 1); i >= 0 ; i--) {
+            heapify(i, nums.length, nums);
         }
 
-        for (int i = 0; i < array.length; i++) {
-            System.out.println(array[i]);
+        printArray(nums);
+
+        for (int i = (nums.length-1); i >= 0; i--) {
+            int temp = nums[i];
+            nums[i] = nums[0];
+            nums[0] = temp;
+
+            heapify(0, i, nums);
         }
+
     }
 
-    static void sortHeap(int [] array, int parentIndex, int lastIndex) {
-        int temp;
-        for (int i = parentIndex; i >= 0; i--) {
-            //compare left and parent
-            if (array[2*i+1] > array[i]) {
-                temp = array[2*i+1];
-                array[2*i+1] = array[i];
-                array[i] = temp;
-            }
-            if ((2*i+2 <= lastIndex) && array[2*i+2] > array[i]) {
-                temp = array[2*i+2];
-                array[2*i+2] = array[i];
-                array[i] = temp;
-            }
+    private void heapify(int i, int len, int[] nums) {
+        int largest = i;
+        int left = 2*i+1;
+        int right = 2*i+2;
+
+        if (left < len && nums[left] > nums[largest]) {
+            largest = left;
         }
-        temp = array[lastIndex];
-        array[lastIndex] = array[0];
-        array[0] = temp;
-    }*/
+
+        if (right < len && nums[right] > nums[largest]) {
+            largest = right;
+        }
+
+        if (i != largest) {
+            int temp = nums[largest];
+            nums[largest] = nums[i];
+            nums[i] = temp;
+
+            heapify(largest, len, nums);
+        }
+    }
 
     public static void main(String[] args) {
 //        sort(new int[]{14,15,7,6,16,9,5,4,10,17,3,12,2,18,19,1,8,12});
         int arr[] = {7,6,5,4,8,3,2,1};
         int n = arr.length;
 
-        HeapSort ob = new HeapSort();
-        ob.sort(arr);
+        MinHeapSort ob = new MinHeapSort();
+//        ob.sort(arr);
+        ob.heapSort(arr);
 
         System.out.println("Sorted array is");
         printArray(arr);
+
+//        ob.heapSort(arr);
+//        printArray(arr);
     }
 
 
@@ -55,17 +66,18 @@ public class HeapSort {
         for (int i = n / 2 - 1; i >= 0; i--)
             heapify(arr, n, i);
 
+        printArray(arr);
         // One by one extract an element from heap
-//        for (int i=n-1; i>=0; i--)
-//        {
-//            // Move current root to end
-//            int temp = arr[0];
-//            arr[0] = arr[i];
-//            arr[i] = temp;
-//
-//            // call max heapify on the reduced heap
-//            heapify(arr, i, 0);
-//        }
+        for (int i=n-1; i>=0; i--)
+        {
+            // Move current root to end
+            int temp = arr[0];
+            arr[0] = arr[i];
+            arr[i] = temp;
+
+            // call max heapify on the reduced heap
+            heapify(arr, i, 0);
+        }
     }
 
     // To heapify a subtree rooted with node i which is
@@ -104,5 +116,7 @@ public class HeapSort {
             System.out.print(arr[i]+" ");
         System.out.println();
     }
+
+
 
 }

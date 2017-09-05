@@ -13,30 +13,51 @@ public class Count_Complete_Tree_Nodes_222 {
             return 0;
         }
 
-        Queue<TreeNode> queue = new LinkedList<>();
-        queue.offer(root);
-        int count = 1;
+        int l = height(root.left);
+        int r = height(root.right);
 
-        while (!queue.isEmpty()) {
-
-            TreeNode node = queue.poll();
-
-            if (node.left != null) {
-                queue.offer(node.left);
-                count++;
-            }
-
-            if (node.right != null) {
-                queue.offer(node.right);
-                count++;
-            }
+        if (l == r) {
+            //if height of left subtree and right subtree is same, then left subtree is full complete tree.
+            return l == -1 ? 1 : (1 << (l+1)) + countNodes(root.right);
+        } else {
+            //if height of left subtree is larger than right subtree, then right subtree is full complete tree.
+            return countNodes(root.left) + (1 << (r+1));
         }
+    }
 
-        return count;
+    private static int height(TreeNode node) {
+        if (node == null) {
+            return -1;
+        } else {
+            return 1 + height(node.left);
+        }
     }
 
     public static void main(String[] args) {
         TreeNode root = new TreeNode(1);
-        System.out.println(countNodes(root));
+
+        TreeNode left1 = new TreeNode(2);
+
+        TreeNode left11 = new TreeNode(4);
+        TreeNode left12 = new TreeNode(5);
+
+        TreeNode right1 = new TreeNode(3);
+
+        TreeNode right11 = new TreeNode(6);
+        TreeNode right12 = new TreeNode(7);
+
+        root.left = left1;
+        root.right = right1;
+
+        left1.left = left11;
+        left1.right = left12;
+
+        right1.left = right11;
+        right1.right = right12;
+
+
+        System.out.println(countNodes(null));
+
     }
+
 }
