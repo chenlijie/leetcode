@@ -1,5 +1,7 @@
 package sort;
 
+import utility.Utils;
+
 public class MinHeapSort {
 
     public void heapSort(int[] nums) {
@@ -7,7 +9,23 @@ public class MinHeapSort {
             heapify(i, nums.length, nums);
         }
 
-        printArray(nums);
+        Utils.printArray(nums);
+
+        for (int i = (nums.length-1); i >= 0; i--) {
+            int temp = nums[i];
+            nums[i] = nums[0];
+            nums[0] = temp;
+
+            heapify(0, i, nums);
+        }
+    }
+
+    public void heapSortDes(int[] nums) {
+        for (int i = (nums.length/2 - 1); i >= 0 ; i--) {
+            heapify(i, nums.length, nums);
+        }
+
+        Utils.printArray(nums);
 
         for (int i = (nums.length-1); i >= 0; i--) {
             int temp = nums[i];
@@ -42,81 +60,14 @@ public class MinHeapSort {
     }
 
     public static void main(String[] args) {
-//        sort(new int[]{14,15,7,6,16,9,5,4,10,17,3,12,2,18,19,1,8,12});
-        int arr[] = {7,6,5,4,8,3,2,1};
-        int n = arr.length;
+        int arr[] = {14,15,7,6,16,9,5,4,10,17,3,12,2,18,19,1,8,12};
 
         MinHeapSort ob = new MinHeapSort();
-//        ob.sort(arr);
         ob.heapSort(arr);
 
         System.out.println("Sorted array is");
-        printArray(arr);
-
-//        ob.heapSort(arr);
-//        printArray(arr);
+        Utils.printArray(arr);
     }
-
-
-    public static void sort(int arr[])
-    {
-        int n = arr.length;
-
-        // Build heap (rearrange array)
-        for (int i = n / 2 - 1; i >= 0; i--)
-            heapify(arr, n, i);
-
-        printArray(arr);
-        // One by one extract an element from heap
-        for (int i=n-1; i>=0; i--)
-        {
-            // Move current root to end
-            int temp = arr[0];
-            arr[0] = arr[i];
-            arr[i] = temp;
-
-            // call max heapify on the reduced heap
-            heapify(arr, i, 0);
-        }
-    }
-
-    // To heapify a subtree rooted with node i which is
-    // an index in arr[]. n is size of heap
-    static void heapify(int arr[], int n, int i)
-    {
-        int largest = i;  // Initialize largest as root
-        int l = 2*i + 1;  // left = 2*i + 1
-        int r = 2*i + 2;  // right = 2*i + 2
-
-        // If left child is larger than root
-        if (l < n && arr[l] > arr[largest])
-            largest = l;
-
-        // If right child is larger than largest so far
-        if (r < n && arr[r] > arr[largest])
-            largest = r;
-
-        // If largest is not root
-        if (largest != i)
-        {
-            int swap = arr[i];
-            arr[i] = arr[largest];
-            arr[largest] = swap;
-
-            // Recursively heapify the affected sub-tree
-            heapify(arr, n, largest);
-        }
-    }
-
-    /* A utility function to print array of size n */
-    static void printArray(int arr[])
-    {
-        int n = arr.length;
-        for (int i=0; i<n; ++i)
-            System.out.print(arr[i]+" ");
-        System.out.println();
-    }
-
 
 
 }

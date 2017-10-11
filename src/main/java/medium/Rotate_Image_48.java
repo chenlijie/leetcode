@@ -10,40 +10,54 @@ public class Rotate_Image_48 {
             return;
         }
 
-        int loop = matrix.length/2;
-        int x = -1;
-        int y = -1;
+        int len = matrix.length;
+        int top = 0;
+        int bottom = len-1;
 
-        for (int i = 0; i < loop; i++) {
-            x++;
-            y++;
-            int turns = matrix.length - 1 - 2*i;
-
-            for (int j = 0; j < turns; j++) {
-                int offset = turns - j;
-
-                int temp = matrix[x][y];
-
-                matrix[x][y] = matrix[x-offset][y+j];
-                matrix[x-offset][y+j] = matrix[x-j][y-offset];
-                matrix[x-j][y-offset] = matrix[x+offset][y+j];
-                matrix[x+offset][y+j] = temp;
-
+        while (top < bottom) {
+            for (int i = 0; i < len; i++) {
+                int t = matrix[top][i];
+                matrix[top][i] = matrix[bottom][i];
+                matrix[bottom][i] = t;
             }
+
+            top++;
+            bottom--;
         }
 
-        System.out.println();
+        for (int i = 0; i < len; i++) {
+            for (int j = i; j < len; j++) {
+                int t = matrix[i][j];
+                matrix[i][j] = matrix[j][i];
+                matrix[j][i] = t;
+            }
+        }
     }
 
     public static void main(String[] args) {
-        int k = 2;
+        int k = 3;
         int[][] matrix = new int[k][k];
+
+        int s = 1;
+        for (int i = 0; i < k; i++) {
+            for (int j = 0; j < k; j++) {
+                matrix[i][j] = s++;
+            }
+        }
+        for (int i = 0; i < k; i++) {
+            for (int j = 0; j < k; j++) {
+                System.out.print(matrix[i][j] + "  ");
+            }
+            System.out.println();
+        }
+        System.out.println();
+        rotate(matrix);
 
         for (int i = 0; i < k; i++) {
             for (int j = 0; j < k; j++) {
-                matrix[i][j] = i+j;
+                System.out.print(matrix[i][j] + "  ");
             }
+            System.out.println();
         }
-        rotate(matrix);
     }
 }

@@ -10,35 +10,35 @@ import java.util.List;
 public class Coin_Change_322 {
 
     public int coinChange(int[] coins, int amount) {
-        Arrays.sort(coins);
-        List<Integer> list = new ArrayList<>();
-        int sum = coinChange(coins, amount, coins.length-1, list);
-        return sum;
-    }
 
-    private int coinChange(int[] coins, int amount, int next, List<Integer> list) {
-        if (next >= 0) {
+        int[] dp = new int[amount + 1];
+        dp[0] = 0;
 
-            if (amount%coins[next] == 0) {
-                return amount/coins[next];
-            }
-
-            int n = amount/coins[next];
-            int sum;
-            int min = Integer.MAX_VALUE;
-            for (int i = n; i >= 0; i--) {
-                sum = coinChange(coins, amount-i*coins[next], next-1, list);
-                if (sum >= 0) {
-                    min = Math.min(sum+i, min);
+        for (int i = 1; i <= amount; i++) {
+            dp[i] = -1;
+            for (int j = 0; j < coins.length; j++) {
+                if (i >= coins[j]) {
+                    if (dp[i] != -1 && dp[i - coins[j]] != -1) {
+                        dp[i] = Math.min(dp[i], dp[i-coins[j]]+1);
+                    } else if (dp[i] == -1 && dp[i - coins[j]] != -1) {
+                        dp[i] = dp[i-coins[j]]+1;
+                    }
                 }
             }
-            return min == Integer.MAX_VALUE ? -1 : min;
         }
-        return -1;
+
+        return dp[amount];
     }
 
+
     public static void main(String[] args) {
-        System.out.println(new Coin_Change_322().coinChange(new int[]{336,288,378,16,319,146}, 9212));
-//        System.out.println(new Coin_Change_322().coinChange(new int[]{13, 7, 5, 1}, 23));
+        System.out.println(new Coin_Change_322().coinChange(new int[]{249,459,494,426,32,372,225}, 4));
+//        System.out.println(new Coin_Change_322().coinChange(new int[]{1, 2, 5}, 11));
+
+        TreeNode a = new TreeNode(1);
+        TreeNode b = new TreeNode(1);
+        a.left = b;
+        b = null;
+
     }
 }

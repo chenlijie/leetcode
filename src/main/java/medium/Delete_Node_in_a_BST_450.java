@@ -6,71 +6,39 @@ package medium;
 public class Delete_Node_in_a_BST_450 {
 
 
-    public static TreeNode deleteNode(TreeNode root, int key) {
+    public TreeNode deleteNode(TreeNode root, int key) {
 
-        TreeNode node = root;
-        TreeNode parent = root;
-        int flag = 0;
+        if (root == null) {
+            return null;
+        }
 
-        while (node != null) {
-
-            if (key == node.val) {
-
-                if (node.left == null && node.right == null) {
-                    if (flag == -1) {
-                        parent.left = null;
-                    } else if (flag == 1) {
-                        parent.right = null;
-                    } else {
-                        root = null;
-                    }
-                } else if (node.left != null && node.right != null) {
-
-                    TreeNode temp = node.right;
-                    TreeNode pre = node.right;
-                    while (temp.left != null) {
-                        pre = temp;
-                        temp = temp.left;
-                    }
-
-                    node.val = temp.val;
-                    if (pre == temp) {
-                        node.right = pre.right;
-                    } else {
-                        pre.left = null;
-                    }
-                } else if (node.left != null) {
-                    if (flag == 0) {
-                        root = node.left;
-                    } else if (flag == -1) {
-                        parent.left = node.left;
-                    } else {
-                        parent.right = node.right;
-                    }
-
-                } else {
-                    if (flag == 0 ) {
-                        root = node.right;
-                    } else if(flag == -1) {
-                        parent.left = node.right;
-                    } else {
-                        parent.right = node.right;
-                    }
-                }
-                break;
-
-            } else if (key > node.val) {
-                parent = node;
-                node = node.right;
-                flag = 1;
+        if (key < root.val) {
+            root.left = deleteNode(root.left, key);
+        } else if (key > root.val) {
+            root.right = deleteNode(root.right, key);
+        } else {
+            if (root.left == null) {
+                root = root.right;
+            } else if (root.right == null) {
+                root = root.left;
             } else {
-                parent = node;
-                node = node.left;
-                flag = -1;
+                int min = minVal(root.right);
+                root.val = min;
+                root.right = deleteNode(root.right, min);
             }
         }
 
         return root;
+    }
+
+    public int minVal(TreeNode node) {
+        int min = node.val;
+
+        while (node.left != null) {
+            node = node.left;
+            min = Math.min(node.val, min);
+        }
+        return min;
     }
 
     public static void main(String[] args) {
@@ -98,6 +66,6 @@ public class Delete_Node_in_a_BST_450 {
 //        right2.right = right3;
 
 
-        deleteNode(root, 5);
+        new Delete_Node_in_a_BST_450().deleteNode(root, 5);
     }
 }

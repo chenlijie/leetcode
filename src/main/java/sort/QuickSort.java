@@ -10,7 +10,7 @@ public class QuickSort {
         int lo = 0;
         int hi = nums.length;
 
-        sortUtil2(nums, lo, hi-1);
+        sortUtil(nums, lo, hi-1);
     }
 
     //select last element as pivot
@@ -63,7 +63,7 @@ public class QuickSort {
     }
 
     public static void main(String[] args) {
-        int[] nums = new int[]{4, 1, 5, 2, 3};
+        int[] nums = new int[]{1,2,3,4,5,6};
         new QuickSort().sort(nums);
         for (int i : nums) {
             System.out.print(i + " ");

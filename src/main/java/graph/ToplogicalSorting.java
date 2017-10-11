@@ -57,5 +57,13 @@ public class ToplogicalSorting {
                 {5, 1},
                 {2, 1}
         }, 6);
+
+        int x = (int) (Math.ceil(Math.log(15) / Math.log(2)));
+
+        //Maximum size of segment tree
+        int max_size = 2 * (int) Math.pow(2, x) - 1;
+
+        System.out.println(x);
+        System.out.println(max_size);
     }
 }

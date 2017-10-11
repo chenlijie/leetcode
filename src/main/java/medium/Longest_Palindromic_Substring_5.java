@@ -1,8 +1,5 @@
 package medium;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
 
 public class Longest_Palindromic_Substring_5 {
 
@@ -12,42 +9,49 @@ public class Longest_Palindromic_Substring_5 {
             return null;
         }
 
-        String max = s.substring(0, 1);
+        int len = s.length();
         int start = 0;
+        int end = 0;
+        int max = 0;
 
-        for (int i = 1; i < s.length(); i++) {
-            if ((start-1) >= 0 && s.charAt(i) == s.charAt(start-1)) {
-                max = (i - start + 1) >= max.length() ? s.substring(start-1, i+1) : max;
-                start--;
-            } else if (containsSame(start, i, s.charAt(i), s)) {
-                max = (i - start + 1) >= max.length() ? s.substring(start, i+1) : max;
-            } else if ((i-2) >= 0 && s.charAt(i) == s.charAt(i-2)) {
-                max = 3 > max.length() ? s.substring(i-2, i+1) : max;
-                start = i-2;
-            } else if ((i-1) >= 0 && s.charAt(i) == s.charAt(i-1)) {
-                max = 2 > max.length() ? s.substring(i-1, i+1) : max;
-                start = i-1;
-            } else {
-                start = i;
+        for (int i = 0; i < len; i++) {
+
+            int[] res = longest(i, i, s, len-1);
+
+            if (res[1] - res[0] + 1 > max) {
+                max = res[1] - res[0] + 1;
+                start = res[0];
+                end = res[1];
+            }
+
+            if (i < len-1 && s.charAt(i) == s.charAt(i + 1)) {
+                res = longest(i, i + 1, s, len-1);
+
+                if (res[1] - res[0] + 1 > max) {
+                    max = res[1] - res[0] + 1;
+                    start = res[0];
+                    end = res[1];
+                }
             }
         }
 
-        return max;
+        return s.substring(start, end+1);
     }
 
-    private static boolean containsSame(int from, int to, char c, String s) {
-        for (int i = from; i < to; i++) {
-            if (s.charAt(i) != c) {
-                return false;
-            }
+    private static int[] longest(int i, int j, String s, int end) {
+
+        while (i > 0 && j < end && s.charAt(i-1) == s.charAt(j+1)) {
+            i--;
+            j++;
         }
-        return true;
+
+        return new int[] {i, j};
     }
 
     public static void main(String[] args) {
         //ababa b -> babab
         //cbabc b -> bcb
-        System.out.println(longestPalindrome("ababab"));
+        System.out.println(longestPalindrome("abccb"));
         System.out.println(longestPalindrome("ababababababab"));
 //        System.out.println(longestPalindrome("abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababa"));
 //        System.out.println(longestPalindrome("aabaaa"));
