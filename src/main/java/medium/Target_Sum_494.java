@@ -1,47 +1,33 @@
 package medium;
 
-import java.util.LinkedList;
-import java.util.Queue;
-
 /**
  * Created by chenlijie on 8/19/17.
  */
 public class Target_Sum_494 {
 
-    public static int findTargetSumWays(int[] nums, int S) {
 
-        int count = 0;
 
+    public static int findTargetSumWays(int[] nums, int s) {
         int sum = 0;
-        Queue<Integer> queue = new LinkedList<>();
-        queue.offer(sum);
-
-        for (int i = 0; i < nums.length; i++) {
-
-            int size = queue.size();
-
-            for (int j = 0; j < size; j++) {
-                int pre = queue.poll();
-
-                queue.offer(pre + nums[i]);
-                queue.offer(pre - nums[i]);
-            }
-
-        }
-
-        while (queue.size() != 0) {
-
-            if (queue.poll() == S) {
-                count++;
-            }
-        }
-
-        return count;
+        for (int n : nums)
+            sum += n;
+        return sum < s || (s + sum) % 2 > 0 ? 0 : subsetSum(nums, (s + sum) >>> 1);
     }
 
-//    [27,22,39,22,40,32,44,45,46,8,8,21,27,8,11,29,16,15,41,0]
-//            10
+    public static int subsetSum(int[] nums, int s) {
+        int[] dp = new int[s + 1];
+        dp[0] = 1;
+        for (int n : nums)
+            for (int i = s; i >= n; i--)
+                dp[i] += dp[i - n];
+        return dp[s];
+    }
+
     public static void main(String[] args) {
-        System.out.println(findTargetSumWays(new int[]{27,22,39,22,40,32,44,45,46,8,8,21,27,8,11,29,16,15,41,0}, 10));
+        long start = System.currentTimeMillis();
+//        System.out.println(findTargetSumWays(new int[]{2,20,24,38,44,21,45,48,30,48,14,9,21,10,46,46,12,48,12,38}, 48));
+        System.out.println(findTargetSumWays(new int[]{2, 2, 3, 4}, 3));
+        long end = System.currentTimeMillis();
+        System.out.println(end-start);
     }
 }
