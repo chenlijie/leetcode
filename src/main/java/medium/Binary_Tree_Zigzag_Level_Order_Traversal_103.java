@@ -3,6 +3,7 @@ package medium;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 /**
  * Created by chenlijie on 5/17/17.
@@ -11,48 +12,47 @@ public class Binary_Tree_Zigzag_Level_Order_Traversal_103 {
 
     public static List<List<Integer>> zigzagLevelOrder(TreeNode root) {
 
-        List<List<Integer>> zigzag = new ArrayList<>();
-        LinkedList<TreeNode> zig = new LinkedList<>();
-        LinkedList<TreeNode> zag = new LinkedList<>();
-
         if (root != null) {
-            zig.add(root);
+            return new ArrayList<>();
         }
 
-        while (!zig.isEmpty()) {
+        List<List<Integer>> res = new ArrayList<>();
+        Queue<TreeNode> queue1 = new LinkedList<>();
+        Queue<TreeNode> queue2 = new LinkedList<>();
+        queue1.offer(root);
 
-            List<Integer> list = new ArrayList<>();
-            while (!zig.isEmpty()) {
-                TreeNode node = zig.pollFirst();
-                list.add(node.val);
-                if (node.left != null) {
-                    zag.add(node.left);
-                }
-                if (node.right != null) {
-                    zag.add(node.right);
-                }
-            }
-            if (list.size() != 0) {
-                zigzag.add(list);
-            }
+        while (!queue1.isEmpty() || !queue2.isEmpty()) {
+            List<Integer> temp = new ArrayList<>();
 
-            list = new ArrayList<>();
-            while (!zag.isEmpty()) {
-                TreeNode node = zag.pollLast();
-                list.add(node.val);
-                if (node.right != null) {
-                    zig.addFirst(node.right);
+            if (!queue1.isEmpty()) {
+                while (!queue1.isEmpty()) {
+                    TreeNode node = queue1.poll();
+                    temp.add(node.val);
+
+                    if (node.right != null) {
+                        queue2.offer(node.right);
+                    }
+                    if (node.left != null) {
+                        queue2.offer(node.left);
+                    }
                 }
-                if (node.left != null) {
-                    zig.addFirst(node.left);
+            } else {
+                while (!queue2.isEmpty()) {
+                    TreeNode node = queue2.poll();
+                    temp.add(node.val);
+
+                    if (node.left != null) {
+                        queue1.offer(node.left);
+                    }
+                    if (node.right != null) {
+                        queue1.offer(node.right);
+                    }
                 }
             }
-            if (list.size() != 0) {
-                zigzag.add(list);
-            }
+            res.add(temp);
         }
 
-        return zigzag;
+        return res;
     }
 
     public static void main(String[] args) {
@@ -66,6 +66,6 @@ public class Binary_Tree_Zigzag_Level_Order_Traversal_103 {
         node2.left = node3;
         node2.right = node4;
 
-        zigzagLevelOrder(root);
+        System.out.println(zigzagLevelOrder(root));
     }
 }

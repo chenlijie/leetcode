@@ -50,20 +50,16 @@ public class ToplogicalSorting {
 
     public static void main(String[] args) {
         new ToplogicalSorting().sort(new int[][]{
-                {4, 0},
-                {5, 0},
-                {4, 3},
-                {3, 0},
-                {2, 1},
+                {0, 2},
                 {1, 2}
-        }, 6);
+        }, 3);
 
         int x = (int) (Math.ceil(Math.log(15) / Math.log(2)));
 
         //Maximum size of segment tree
-        int max_size = 2 * (int) Math.pow(2, x) - 1;
-
-        System.out.println(x);
-        System.out.println(max_size);
+//        int max_size = 2 * (int) Math.pow(2, x) - 1;
+//
+//        System.out.println(x);
+//        System.out.println(max_size);
     }
 }

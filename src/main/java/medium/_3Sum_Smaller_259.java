@@ -28,6 +28,6 @@ public class _3Sum_Smaller_259 {
 
 
     public static void main(String[] args) {
-        System.out.println(threeSumSmaller(new int[]{-4,-3,-2,-1,0,1,2,3,4}, 5));
+        System.out.println(threeSumSmaller(new int[]{3, 1, 0, -2}, 2));
     }
 }

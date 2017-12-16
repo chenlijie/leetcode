@@ -1,0 +1,52 @@
+1. is parking lot free ?
+2. how to charge price, base on vehicle size, parking lot spot size ?
+S - small, M - medium, L - large, XL - extra large
+<= 1h : 5, <=2 : 10, <=4 : 18, <=8 25, one day : 30
+3. is parking lot in an open area or in building ?
+4. how many levels ?
+5. how many entrances does it have ?
+6. does parking lot have different size of spot ?
+7. can user make a reservation online ?
+
+abstract class Vehicle
+-String plateLicense;
+-VehicleSize size; // enum: SMALL, MEDIUM, LARGE, EXTRA_LARGE
+-ParkingSpot spot; // if bus parks in multiple continues parking lot, using List
++void parkInSpot();
++void unPark();
+
+class MicroCycle
+class Sedan
+class SUV
+class Bus
+
+class ParkingSpot
+-int id;
+-VehicleSize size;
+-Vehicle vehicle;
++boolean canFitVehicle(Vehicle v);
++boolean park(Vehicle v);
+
+class ParkingLot
+-List<ParkingSpot> parkingSpots;
++int findAvailableParkingSpot();
++boolean parkAtSpot(int spotId, Vehicle v);
++boolean parkVehicle(Vehicle v); // find available parking spot by going through parkingSpots list
+
+
+
+class ParkingLot
+-Queue microCar;
+-Queue Sedan;
+-Queue SUV;
+-Queue Bus;
+-Map<String, Spot> occupiedSpots;
++int/Spot placeVehicle; //
++void returnSpot(Spot spot); //
+
+
+class Price
++double calculate(Vehicle v);
+
+
+

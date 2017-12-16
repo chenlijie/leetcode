@@ -54,6 +54,14 @@ public class TreeIteration {
         }
     }
 
+    public static void postOrder(TreeNode root) {
+        if (root != null) {
+            postOrder(root.left);
+            postOrder(root.right);
+            System.out.print(root.val + " ");
+        }
+    }
+
     public static void main(String[] args) {
         TreeNode node1 = new TreeNode(1);
         TreeNode node2 = new TreeNode(2);
@@ -88,8 +96,7 @@ public class TreeIteration {
 //        preOrderIter(node1);
 
         System.out.println("Post order iteration");
-        preOrder(node1);
+        postOrder(node1);
         System.out.println();
-        preOrderIter(node1);
     }
 }

@@ -5,7 +5,7 @@ package medium;
  */
 public class Decode_Ways_91 {
 
-    public static int numDecodings(String s) {
+    public static int numDecodings4(String s) {
         int n = s.length();
         if (n == 0) return 0;
 
@@ -79,7 +79,35 @@ public class Decode_Ways_91 {
         return a[a.length-1][0];
     }
 
+    public static int numDecodings(String s) {
+        if (s == null || s.length() == 0 || s.charAt(0) == '0') return 0;
+
+        int len = s.length();
+        char[] nums = s.toCharArray();
+
+        int first = 1;
+        int second = 1;
+        int current = 1;
+
+        for (int i = 1; i < len; i++) {
+            if ((nums[i-1] == '0' || nums[i-1] >= '3') && nums[i] == '0')
+                return 0;
+
+            if ((nums[i-1] == '1' && nums[i] >= '1') || (nums[i-1] == '2' && nums[i] >= '1' && nums[i] <= '6'))
+                current = first + second;
+            else if (nums[i] == '0')
+                current = first;
+            else
+                current = second;
+
+            first = second;
+            second = current;
+        }
+
+        return current;
+    }
+
     public static void main(String[] args) {
-        System.out.println(numDecodings("10000"));
+        System.out.println(numDecodings("110"));
     }
 }

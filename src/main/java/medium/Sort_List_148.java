@@ -6,10 +6,9 @@ package medium;
 public class Sort_List_148 {
 
     public ListNode sortList(ListNode head) {
-
         if (head != null && head.next != null) {
             ListNode slow = head;
-            ListNode fast = slow.next;
+            ListNode fast = head.next;
 
             while (fast != null && fast.next != null) {
                 slow = slow.next;
@@ -18,45 +17,43 @@ public class Sort_List_148 {
 
             fast = slow.next;
             slow.next = null;
-            slow = head;
 
-            slow = sortList(slow);
-            fast = sortList(fast);
+            ListNode leftPart = sortList(head);
+            ListNode rightPart = sortList(fast);
 
-            head = merge(slow, fast);
+            return merge(leftPart, rightPart);
         }
 
         return head;
     }
 
-    private ListNode merge(ListNode slow, ListNode fast) {
-        ListNode head = new ListNode(0);
-        ListNode cursor = head;
-
-        while (slow != null && fast != null) {
-            if (slow.val < fast.val) {
-                cursor.next = slow;
-                slow = slow.next;
+    private ListNode merge(ListNode leftPart, ListNode rightPart) {
+        ListNode dummy = new ListNode(0);
+        ListNode cur = dummy;
+        while (leftPart != null && rightPart != null) {
+            if (leftPart.val < rightPart.val) {
+                cur.next = leftPart;
+                leftPart = leftPart.next;
             } else {
-                cursor.next = fast;
-                fast = fast.next;
+                cur.next = rightPart;
+                rightPart = rightPart.next;
             }
-            cursor = cursor.next;
+            cur = cur.next;
         }
 
-        while (slow != null) {
-            cursor.next = slow;
-            slow = slow.next;
-            cursor = cursor.next;
+        while (rightPart != null) {
+            cur.next = rightPart;
+            rightPart = rightPart.next;
+            cur = cur.next;
         }
 
-        while (fast != null) {
-            cursor.next = fast;
-            fast = fast.next;
-            cursor = cursor.next;
+        while (leftPart != null) {
+            cur.next = leftPart;
+            leftPart = leftPart.next;
+            cur = cur.next;
         }
 
-        return head.next;
+        return dummy.next;
     }
 
 
@@ -76,7 +73,6 @@ public class Sort_List_148 {
             System.out.print(head.val + "  ");
             head = head.next;
         }
-
     }
 
 }

@@ -9,65 +9,54 @@ import java.util.List;
  */
 public class Find_K_Closest_Elements_658 {
 
-    public static List<Integer> findClosestElements(List<Integer> arr, int k, int x) {
+    public List<Integer> findClosestElements(int[] arr, int k, int x) {
+        int idx = findIndex(arr, x);
+        return extendRange(arr, idx, k);
+    }
 
+    List<Integer> extendRange(int[] nums, int from, int k) {
+        List<Integer> result = new ArrayList<>();
+
+        int i = from - 1;
+        int j = from;
+
+        while (k > 0) {
+            if (i >= 0 && j < nums.length) {
+                if (k - nums[i] < nums[j] - k) {
+                    result.add(nums[i--]);
+                } else {
+                    result.add(nums[j++]);
+                }
+            } else if (i < 0) {
+                result.add(nums[j++]);
+            } else {
+                result.add(nums[i--]);
+            }
+        }
+
+        return result;
+    }
+
+    int findIndex(int[] nums, int k) {
         int lo = 0;
-        int hi = arr.size();
-        int mi = 0;
+        int hi = nums.length;
 
         while (lo < hi) {
+            int mi = (lo + hi)/2;
 
-            mi = (lo+hi)>>1;
-
-            if (arr.get(mi) > x && (mi - lo) > k) {
+            if (nums[mi] >= k) {
                 hi = mi;
-            } else if (arr.get(mi) < x && (hi - mi) > k) {
+            } else {
                 lo = mi + 1;
-            } else {
-                break;
             }
         }
 
-        List<Integer> closest = new ArrayList<>();
-
-        for (int i = Math.max(0,mi-k); i < mi+k && closest.size() < k; i++) {
-            closest.add(arr.get(i));
-        }
-
-        int i = Math.max(0, mi-k);
-        int j = i + k;
-
-        while (j < arr.size()) {
-            if (Math.abs(arr.get(j) - x) < Math.abs(arr.get(i) - x)) {
-                closest.remove(0);
-                closest.add(arr.get(j));
-                i++;
-                j++;
-            } else {
-                break;
-            }
-        }
-
-        i--;
-        j--;
-        while (i > 0) {
-            if (Math.abs(arr.get(j) - x) >= Math.abs(arr.get(i) - x)){
-                closest.remove(k-1);
-                closest.add(0, arr.get(i));
-                i--;
-                j--;
-            } else {
-                break;
-            }
-        }
-
-        return closest;
+        return lo;
     }
 
     public static void main(String[] args) {
-//        List<Integer> list = Arrays.asList(0,0,1,2,3,3,4,7,7,8);
-        List<Integer> list = Arrays.asList(0,0,0,1,3,5,6,7,8,8);
-        for (int i : findClosestElements(list, 2, 2)) {
+        Find_K_Closest_Elements_658 k = new Find_K_Closest_Elements_658();
+        for (int i : k.findClosestElements(new int[]{1, 2, 3, 4, 5}, 4, 3)) {
             System.out.print(i + "  ");
         }
 

@@ -1,0 +1,31 @@
+Question:
+1. How many elevators ?
+2. How many floor ?
+3. What is service strategy, first come first serve, select the nearest elevator to serve ?
+
+class Elevator implement Runnable
+-int id;
+-int currentLevel;
+-ElevatorState state; // enum up, down, stand
+-List<Integer> request; // requested floor
++void openDoor(); // which means one request is complete, remove it from request list
++void closeDoor();
++int getCurrentLevel();
++ElevatorState getState();
++void updateState(); // include current level and state if request list is empty, update state to stand
++boolean needStop(); // when elevator goes up or down, check if any request on its way. check the request list.
++void move(); // needStop -> openDoor -> updateState
++void start();
++void stop();
++void addRequest();
+
+
+class ElevatorController // start, stop, set request
+-int numOfElevators; // elevator id array, 0, 1, 3, ...
+-Elevator[] elevators;
++void startElevator(idx);
++void stopElevator(idx);
++void setRequest(int level); // choose one elevator to serve the request
++int selectBestElevator(); // shortest distance among all elevators.
+                           // Elevator state is stand, the distance is request level - elevator current level
+                           // up and request level is larger than elevator current level,

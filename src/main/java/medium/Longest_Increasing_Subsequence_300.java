@@ -56,7 +56,7 @@ public class Longest_Increasing_Subsequence_300 {
 
 
 
-    public static int lengthOfLIS(int[] nums) {
+    public static int lengthOfLIS2(int[] nums) {
 
         int[] m = new int[nums.length];
         for (int i = 0; i < m.length; i++) {
@@ -79,12 +79,46 @@ public class Longest_Increasing_Subsequence_300 {
         return max;
     }
 
+    public static int lengthOfLIS(int[] nums) {
+        if (nums == null || nums.length == 0) {
+            return 0;
+        }
+
+        int[] tails = new int[nums.length];
+        tails[0] = nums[0];
+        int len = 1;
+
+        for (int i = 1; i < nums.length; i++) {
+            int lo = 0;
+            int hi = len;
+
+            while (lo < hi) {
+                int mi = (lo + hi) / 2;
+                if (nums[i] > tails[mi]) {
+                    lo = mi + 1;
+                } else {
+                    hi = mi;
+                }
+            }
+
+            tails[lo] = nums[i];
+            if (lo == len) {
+                len++;
+            }
+        }
+
+        return len;
+    }
+
 
 
     public static void main(String[] args) {
+        System.out.println(lengthOfLIS2(new int[]{3, 2, 4, -1, 1, 2, 8, 3, 9, 5}));
+        System.out.println(lengthOfLIS(new int[]{3, 2, 4, -1, 1, 2, 8, 3, 9, 5}));
+
 //        System.out.println(lengthOfLIS(new int[]{3, 2, 4, -1, 1, 2, 8, 3, 9, 5}));
 
-        System.out.println(Arrays.binarySearch(new int[]{3, 5}, 0, 2, 4));
+//        System.out.println(Arrays.binarySearch(new int[]{3, 5}, 0, 2, 4));
 //        int A[] = { 2, 5, 3, 7, 11, 8, 10, 0, 13, 6 };
 //        int n = A.length;
 //        System.out.println("Length of Longest Increasing Subsequence is "+

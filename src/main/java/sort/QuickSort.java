@@ -10,7 +10,7 @@ public class QuickSort {
         int lo = 0;
         int hi = nums.length;
 
-        sortUtil(nums, lo, hi-1);
+        sortUtil3(nums, lo, hi-1);
     }
 
     //select last element as pivot
@@ -62,8 +62,32 @@ public class QuickSort {
         }
     }
 
+    // 3 2 1 5 6 4
+    void sortUtil3(int[] nums, int lo, int hi) {
+        if (lo < hi) {
+            int pivot = nums[hi];
+
+            int j = lo;
+            for (int i = lo; i < hi; i++) {
+                if (nums[i] < pivot) {
+                    swap(nums, i, j);
+                    j++;
+                }
+            }
+            swap(nums, j, hi);
+            sortUtil3(nums, lo, j-1);
+            sortUtil3(nums, j + 1, hi);
+        }
+    }
+
+    void swap(int[] nums, int i, int j) {
+        int t = nums[i];
+        nums[i] = nums[j];
+        nums[j] = t;
+    }
+
     public static void main(String[] args) {
-        int[] nums = new int[]{1,2,3,4,5,6};
+        int[] nums = new int[]{3,2,1,5,6,4};
         new QuickSort().sort(nums);
         for (int i : nums) {
             System.out.print(i + " ");

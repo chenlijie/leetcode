@@ -5,7 +5,7 @@ package medium;
  */
 public class Number_of_Islands_200 {
 
-    public int numIslands(char[][] grid) {
+    public int numIslands2(char[][] grid) {
         if (grid == null || grid.length == 0 || grid[0].length == 0) {
             return 0;
         }
@@ -37,12 +37,42 @@ public class Number_of_Islands_200 {
         return 1;
     }
 
+    public int numIslands(char[][] grid) {
+        if (grid == null || grid.length == 0 || grid[0].length == 0) {
+            return 0;
+        }
+
+        int count = 0;
+        for (int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[0].length; j++) {
+                if (grid[i][j] == '0') {
+                    count++;
+                    mark(grid, i, j);
+                }
+            }
+        }
+
+        return count;
+    }
+
+    void mark(char[][] grid, int i, int j) {
+        if (i < 0 || j < 0 || i >= grid.length || j >= grid[0].length || grid[i][j] == '1') {
+            return;
+        }
+
+        grid[i][j] = '1';
+        mark(grid, i-1, j);
+        mark(grid, i+1, j);
+        mark(grid, i, j-1);
+        mark(grid, i, j+1);
+    }
+
     public static void main(String[] args) {
         char[][] map = new char[][]{
-                {'1', '0', '1', '0', '1'},
-                {'0', '1', '0', '1', '1'},
-                {'1', '0', '0', '0', '0'},
-                {'0', '1', '0', '1', '1'},
+                {'0', '0', '0', '0', '0'},
+                {'0', '0', '0', '0', '0'},
+                {'0', '0', '0', '0', '0'},
+                {'0', '0', '0', '0', '0'}
         };
         map = new char[0][0];
         System.out.println(new Number_of_Islands_200().numIslands(map));

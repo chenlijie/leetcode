@@ -8,7 +8,7 @@ import java.util.Map;
  */
 public class Isomorphic_Strings_205 {
 
-    public static boolean isIsomorphic(String s, String t) {
+    public static boolean isIsomorphic2(String s, String t) {
 
         Map<Character, Character> st = new HashMap<>();
         Map<Character, Character> ts = new HashMap<>();
@@ -22,6 +22,34 @@ public class Isomorphic_Strings_205 {
             }
         }
 
+        return true;
+    }
+
+    static boolean isIsomorphic(String s, String t) {
+        Map<Character, Character> from = new HashMap<>();
+        Map<Character, Character> to = new HashMap<>();
+
+        for (int i = 0; i < s.length(); i++) {
+            char c1 = s.charAt(i);
+            Character x = to.get(from.get(c1));
+            if (x != null && x != c1) {
+                return false;
+            }
+
+            char c2 = t.charAt(i);
+            Character y = from.get(to.get(c2));
+
+            if (y != null && y != c2) {
+                return false;
+            }
+
+            if (x == null || y == null) {
+                return false;
+            }
+
+            from.put(c1, c2);
+            to.put(c2, c1);
+        }
         return true;
     }
 

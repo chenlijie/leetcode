@@ -1,8 +1,6 @@
 package medium;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by chenlijie on 8/2/17.
@@ -10,6 +8,39 @@ import java.util.List;
 public class Permutations_II_47 {
 
     public List<List<Integer>> permuteUnique(int[] nums) {
+
+        Arrays.sort(nums);
+        Set<List<Integer>> results = new HashSet<>();
+        permute(results, nums, 0);
+        return new ArrayList<>(results);
+    }
+
+    void permute(Set<List<Integer>> results, int[] num, int next) {
+        if (num.length == next) {
+            List<Integer> result = new ArrayList<>();
+            for (int i : num) {
+                result.add(i);
+            }
+            results.add(result);
+            return;
+        }
+
+        for (int i = next; i < num.length; i++) {
+            if (i > next && num[i] == num[next])
+                continue;
+            swap(num, next, i);
+            permute(results, num, next + 1);
+            swap(num, next, i);
+        }
+    }
+
+    void swap(int[] num, int next, int i) {
+        int t = num[next];
+        num[next] = num[i];
+        num[i] = t;
+    }
+
+    public List<List<Integer>> permuteUnique2(int[] nums) {
 
         Arrays.sort(nums);
         List<List<Integer>> permute = new ArrayList<>();
@@ -42,6 +73,6 @@ public class Permutations_II_47 {
     }
 
     public static void main(String[] args) {
-        System.out.println(new Permutations_II_47().permuteUnique(new int[]{3,3,0,0,2,3,2}));
+        System.out.println(new Permutations_II_47().permuteUnique(new int[]{1,1,1,1}));
     }
 }

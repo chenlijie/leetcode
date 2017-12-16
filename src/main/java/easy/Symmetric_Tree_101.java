@@ -1,12 +1,9 @@
 package easy;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 
 public class Symmetric_Tree_101 {
-    
+
     static class TreeNode {
         int val;
         TreeNode left;
@@ -86,6 +83,7 @@ public class Symmetric_Tree_101 {
     }
 
     public static void main(String[] args) {
+
         Symmetric_Tree_101.TreeNode root = new Symmetric_Tree_101.TreeNode(1);
         Symmetric_Tree_101.TreeNode root1 = new Symmetric_Tree_101.TreeNode(2);
         Symmetric_Tree_101.TreeNode root2 = new Symmetric_Tree_101.TreeNode(2);

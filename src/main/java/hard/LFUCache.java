@@ -1,202 +1,177 @@
 package hard;
 
 import java.util.HashMap;
-import java.util.LinkedHashSet;
 import java.util.Map;
 
 /**
- * Created by chenlijie on 8/4/17.
+ * Created by chenlijie on 8/3/17.
  */
 public class LFUCache {
 
+    static class DoubleLinkedNode {
+        int key;
+        int val;
+        int cnt;
+        DoubleLinkedNode pre;
+        DoubleLinkedNode next;
 
-    int capacity = 0;
-    int count = 0;
-    Map<Integer, CountNode> countMap = new HashMap<>();
-    Map<Integer, ValueNode> valueMap = new HashMap<>();
+        public DoubleLinkedNode(int key, int val) {
+            this.key = key;
+            this.val = val;
+            this.cnt = 1;
+        }
+    }
 
-    CountNode countHead = new CountNode();
-    CountNode countTail = new CountNode();
+    static class LinkedNode {
+        int cnt;
+        LinkedNode pre;
+        LinkedNode next;
+        DoubleLinkedNode head;
+        DoubleLinkedNode tail;
+
+        public LinkedNode(int cnt) {
+            this.cnt = cnt;
+            head = new DoubleLinkedNode(0, 0);
+            tail = new DoubleLinkedNode(0, 0);
+            head.cnt = 0;
+            tail.cnt = 0;
+            head.next = tail;
+            tail.pre = head;
+        }
+
+        public void addFirstValNode(DoubleLinkedNode valNode) {
+            head.next.pre = valNode;
+            valNode.next = head.next;
+
+            head.next = valNode;
+            valNode.pre = head;
+        }
+
+        public DoubleLinkedNode removeLastValNode() {
+            DoubleLinkedNode last = tail.pre;
+            last.pre.next = tail;
+            tail.pre = last.pre;
+            return last;
+        }
+
+        public void removeValNode(DoubleLinkedNode valNode) {
+            valNode.pre.next = valNode.next;
+            valNode.next.pre = valNode.pre;
+        }
+    }
+
+    int size;
+    int capacity;
+    LinkedNode head;
+    LinkedNode tail;
+    Map<Integer, LinkedNode> counts;
+    Map<Integer, DoubleLinkedNode> values;
 
     public LFUCache(int capacity) {
+        this.size = 0;
         this.capacity = capacity;
-        countHead.next = countTail;
-        countTail.pre = countHead;
+        counts = new HashMap<>();
+        values = new HashMap<>();
+        head = new LinkedNode(-1);
+        tail = new LinkedNode(-1);
+        head.next = tail;
+        tail.pre = head;
     }
 
     public int get(int key) {
-        if (valueMap.get(key) == null) {
-            return -1;
-        } else {
-            ValueNode valueNode = valueMap.get(key);
-            CountNode countNode = valueNode.countNode;
-            CountNode preCountNode = countNode.pre;
-            int count = countNode.count;
+        if (values.containsKey(key)) {
+            DoubleLinkedNode valNode = values.get(key);
+            LinkedNode cntNode = counts.get(valNode.cnt);
 
-            removeValueNodeFromLink(valueNode);
+            cntNode.removeValNode(valNode);
 
-            if (countMap.get(count+1) == null) {
-                addValueNodeToCountNode(valueNode, createCountNode(count+1, preCountNode, countNode));
-            } else {
-                addValueNodeToCountNode(valueNode, countMap.get(count+1));
+            int cnt = valNode.cnt + 1;
+            LinkedNode nextCntNode = getOrCreateCntNode(cnt, cntNode);
+            valNode.cnt = cnt;
+            nextCntNode.addFirstValNode(valNode);
+
+            if (cntNode.head.next == cntNode.tail) {
+                removeCntNode(cntNode);
             }
 
-            removeCountNode(countNode);
-
-            return valueNode.value;
+            return valNode.val;
         }
+        return -1;
+    }
+
+    void removeCntNode(LinkedNode cntNode) {
+        cntNode.pre.next = cntNode.next;
+        cntNode.next.pre = cntNode.pre;
+        counts.remove(cntNode.cnt);
+    }
+
+    LinkedNode getOrCreateCntNode(int cnt, LinkedNode pre) {
+        LinkedNode nextCntNode = counts.get(cnt);
+        if (nextCntNode == null) {
+            nextCntNode = new LinkedNode(cnt);
+
+            nextCntNode.next = pre.next;
+            pre.next.pre = nextCntNode;
+
+            pre.next = nextCntNode;
+            nextCntNode.pre = pre;
+            counts.put(cnt, nextCntNode);
+        }
+        return nextCntNode;
     }
 
     public void put(int key, int value) {
-        if (capacity == 0) {
+        if (values.containsKey(key)) {
+            get(key);
             return;
         }
-        if (valueMap.get(key) == null) {
 
-            if (count == capacity) {
-                removeValueNode();
+        if (size == capacity) {
+            LinkedNode cntNode = head.next;
+            DoubleLinkedNode removedNode = cntNode.removeLastValNode();
+            values.remove(removedNode.key);
+
+            if (cntNode.head.next == cntNode.tail) {
+                removeFirstCntNode();
             }
-
-            ValueNode valueNode = createValueNode(key, value);
-
-            if (countMap.get(1) == null) {
-                createCountNode(1, countTail.pre, countTail);
-            }
-
-            addValueNodeToCountNode(valueNode, countMap.get(1));
-
-        } else {
-            ValueNode valueNode = valueMap.get(key);
-            CountNode countNode = valueNode.countNode;
-            CountNode preCountNode = countNode.pre;
-            int count = countNode.count;
-
-            valueNode.value = value;
-
-            removeValueNodeFromLink(valueNode);
-
-            if (countMap.get(count + 1) == null) {
-                CountNode newCountNode = createCountNode(count + 1, preCountNode, countNode);
-                addValueNodeToCountNode(valueNode, newCountNode);
-
-            } else {
-                CountNode existCountNode = countMap.get(count + 1);
-                addValueNodeToCountNode(valueNode, existCountNode);
-            }
-
-            removeCountNode(countNode);
+            size--;
         }
+
+        DoubleLinkedNode valNode = new DoubleLinkedNode(key, value);
+        values.put(key, valNode);
+        LinkedNode cntOneNode = getOrCreateCntNode(1, head);
+        cntOneNode.addFirstValNode(valNode);
+        size++;
     }
 
-    void removeValueNode() {
-        valueMap.remove(countTail.pre.valueTail.pre.key);
-        removeValueNodeFromLink(countTail.pre.valueTail.pre);
-        removeCountNode(countTail.pre);
-        count--;
-    }
+    void removeFirstCntNode() {
+        LinkedNode first = head.next;
 
-    ValueNode createValueNode(int key, int value) {
-        ValueNode valueNode = new ValueNode();
-        valueNode.key = key;
-        valueNode.value = value;
-        valueMap.put(key, valueNode);
-        count++;
-        return valueNode;
-    }
+        head.next = head.next.next;
+        head.next.pre = head;
 
-    void removeCountNode(CountNode countNode) {
-
-        if (countNode.valueHead.next == countNode.valueTail) {
-            countNode.pre.next = countNode.next;
-            countNode.next.pre = countNode.pre;
-
-            countMap.remove(countNode.count);
-        }
-    }
-
-    CountNode createCountNode(int count, CountNode preCountNode, CountNode countNode) {
-        CountNode newCountNode = new CountNode();
-        newCountNode.count = count;
-        countMap.put(count, newCountNode);
-
-        preCountNode.next = newCountNode;
-        newCountNode.next = countNode;
-
-        countNode.pre = newCountNode;
-        newCountNode.pre = preCountNode;
-
-        return  newCountNode;
-    }
-
-    void addValueNodeToCountNode(ValueNode valueNode, CountNode countNode) {
-        ValueNode head = countNode.valueHead;
-        ValueNode next = countNode.valueHead.next;
-
-        head.next = valueNode;
-        valueNode.next = next;
-
-        next.pre = valueNode;
-        valueNode.pre = head;
-
-        valueNode.countNode = countNode;
-    }
-
-    void removeValueNodeFromLink(ValueNode valueNode) {
-        valueNode.pre.next = valueNode.next;
-        valueNode.next.pre = valueNode.pre;
-    }
-
-    static class ValueNode {
-        int key;
-        int value;
-        CountNode countNode;
-
-        ValueNode pre;
-        ValueNode next;
-    }
-
-    static class CountNode {
-        int count;
-
-        CountNode pre;
-        CountNode next;
-
-        ValueNode valueHead = new ValueNode();
-        ValueNode valueTail = new ValueNode();
-
-        public CountNode() {
-            valueHead.next = valueTail;
-        }
+        counts.remove(first.cnt);
     }
 
 
     public static void main(String[] args) {
-        LFUCache cache = new LFUCache( 0 /* capacity */ );
-
-        cache.put(1, 1);
-        cache.put(2, 2);
-        cache.get(1);       // returns 1
-        cache.put(3, 3);    // evicts key 2
-        cache.get(2);       // returns -1 (not found)
-        cache.get(3);       // returns 3.
-        cache.put(4, 4);    // evicts key 1.
-        cache.get(1);       // returns -1 (not found)
-        cache.get(3);       // returns 3
-        cache.get(4);       // returns 4
-
-        LinkedHashSet<String> hs = new LinkedHashSet();
-
-        // add elements to the hash set
-        hs.add("B");
-        hs.add("A");
-        hs.add("D");
-        hs.add("E");
-        hs.add("C");
-        hs.add("F");
-
-        for (String s : hs) {
-            System.out.println(s);
-        }
-        System.out.println(hs);
+        LFUCache cache = new LFUCache(1);
+        cache.put(2, 1);
+        cache.get(2);
+        cache.put(3, 2);
+        cache.get(2);
+        cache.get(3);
+//        cache.put(2, 2);
+//        cache.put(1, 1);
+//        cache.get(2);       // returns 1
+//        cache.get(1);       // returns 1
+//        cache.get(2);       // returns 1
+//        cache.put(3, 3);
+//        cache.put(4, 4);    // evicts key 1
+//
+//        System.out.println(cache.get(3));
+//        System.out.println(cache.get(2));
+//        System.out.println(cache.get(1));
+//        System.out.println(cache.get(4));
     }
 }

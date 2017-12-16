@@ -13,10 +13,10 @@ public class Binary_Tree_Level_Order_Traversal_102 {
 
     //BFS
     public static List<List<Integer>> levelOrder(TreeNode root) {
-        if (root == null) return new ArrayList<List<Integer>>();
+        if (root == null) return new ArrayList<>();
 
-        List<List<Integer>> list = new ArrayList<List<Integer>>();
-        Queue<TreeNode> queue = new LinkedList<TreeNode>();
+        List<List<Integer>> list = new ArrayList<>();
+        Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
 
         while (!queue.isEmpty()) {
@@ -24,6 +24,7 @@ public class Binary_Tree_Level_Order_Traversal_102 {
             int size = queue.size();
             for (int i= 0; i < size; i++) {
                 TreeNode temp = queue.poll();
+                System.out.print(temp.val);
                 if (temp.left != null)
                     queue.add(temp.left);
 
@@ -33,13 +34,12 @@ public class Binary_Tree_Level_Order_Traversal_102 {
                 subList.add(temp.val);
             }
             list.add(subList);
+            System.out.println();
         }
 
         return list;
     }
 
-
-    //DFS
 
     public static void main(String[] args) {
         Binary_Tree_Level_Order_Traversal_102.TreeNode root = new Binary_Tree_Level_Order_Traversal_102.TreeNode(1);

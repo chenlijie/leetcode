@@ -3,13 +3,13 @@ package hard;
 /**
  * Created by chenlijie on 8/3/17.
  */
-public class LRUCache {
+public class LRUCache2 {
 
     private int capacity = 0;
     private int current = -1;
     private int[][] cache;
 
-    public LRUCache(int capacity) {
+    public LRUCache2(int capacity) {
         this.capacity = capacity;
         cache = new int[2][capacity];
     }
@@ -65,7 +65,7 @@ public class LRUCache {
     }
 
     public static void main(String[] args) {
-        LRUCache cache = new LRUCache(2);
+        LRUCache2 cache = new LRUCache2(2);
         cache.put(1, 1);
         cache.put(2, 2);
         cache.get(1);       // returns 1

@@ -1,0 +1,67 @@
+does it have other chains in city, or just one ?
+is walkin permitted ?
+is it online booking or call booking ?
+does it have mutiple seating location, inside, open area ?
+can user book couple of days in advance ?
+what's buisness hour ? from 9 am to 8 pm
+1. how many level does restaurant have ?
+2. does restaurant have different size of table ?
+3. how many tables does it have ?
+
+abstract class People
+-int id;
+-String name;
+
+class Waitress extends People
+-List<Table> tables;
++void serving(Table t);
+
+class Receiver extends People
+
+class Customer extends People
+-Order order;
+-Table table;
+
+abstract class Table
+-int id;
+-int size;
+-Waitress waitress;
+-Order order;
+-List<Bill> bill;
+-boolean isReserved;
++boolean serveFood(int foodId); // order.serverFood();
++boolean payBill();
+
+class SmallTable, MediumTable, LargeTable
+
+class Order
+-OrderType orderType; // to go, dining
+-List<Food> foods;
++boolean serveFood(int foodId);
+
+abstract class Food
+-int id;
+-String name;
+-double price;
+-boolean isVega;
+-boolean isServed;
+
+class Drinks;
+class Entre;
+class Dessert;
+
+class Restaurant
+-String phone;
+-String address;
+-List<Table> freeSmallTable;
+-List<Table> freeMediumTable;
+-List<Table> freeLargeTable;
+-List<Waitress> waitresses;
++boolean assignTable(int numOfCustomer);
++boolean assignWaitress(int waitressId, int tableId);
++boolean freeTable(int tableId);
++int findReservation(String name, String number)
+
+class Bill
+-String payMethod;
+-double amount;

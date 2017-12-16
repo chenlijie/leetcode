@@ -1,0 +1,26 @@
+设计Amazon Product Page, 在SQL里面一个产品有多个图片多个价格的话怎么设计数据库。后台提取数值render到页面上得时候，class怎么设计，服务器怎么安排,另外怎么考虑suggest product。]
+
+
+本帖最后由 staycrazy 于 2016-2-4 15:12 编辑
+
+
+为什么要定死是SQL。。。其实column based是更合适的数据库。
+
+Amazon有一个概念叫ASIN，http://www.amazon.com/gp/seller/asin-upc-isbn-info.html Amazon Standard Identification Number
+
+无论是你用SQL还是HBase，对应这个产品这个detail page的asin是你设计的这个table的primary key。
+
+然后因为有不同颜色的variation，这个table有一列应该是指明该asin是否是parent asin：http://docs.aws.amazon.com/AWSECommerceService/latest/DG/VariationParent.html
+
+Parent asin的price之类的column都可以缺失。
+
+然后它对应的variation是一个map，以各种不同的configuration对应不同的子asin。
+
+子asin也同样是这个表中的条目，但是它们有price，可以被purchase。
+
+设计class主要是围绕着ProductItem来，就不细说了。
+
+要有一个默认的子asin，而每个asin有对应的一系列图片url，这样你切换颜色的时候就可以切换一系列图片。
+这里比较tricky的地方是当有多个变化维度的时候（比如说color和size），如何去让上面的设计adapt这个新的需求（先卖个关子。。提示：多重parent asin可以解决这个问题，或者要改schema
+
+suggest product属于recommendation system的内容，基本上做个简单的只要搞聚类就行了。后端处理推荐的时候主要是offline，因为这玩意实时性要求不高。
