@@ -8,7 +8,7 @@ public class First_Bad_Version_278 {
 
     public int firstBadVersion(int n) {
         int lo = 1;
-        int hi = n+1;
+        int hi = n;
         int mi;
         while (lo < hi) {
             mi = (lo + hi)/2;

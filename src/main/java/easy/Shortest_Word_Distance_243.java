@@ -1,7 +1,9 @@
 package easy;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 /**
  * Created by chenlijie on 12/7/17.
@@ -42,5 +44,12 @@ public class Shortest_Word_Distance_243 {
 
     public static void main(String[] args) {
         System.out.println(shortestDistance(new String[]{"a", "b", "c", "d", "d", "c", "a"}, "a", "d"));
+
+        Map<Integer, Integer> treeMap = new TreeMap<>();
+        treeMap.put(1, 10);
+        treeMap.put(-1, 110);
+        treeMap.put(3, 20);
+
+        System.out.println(treeMap.keySet());
     }
 }

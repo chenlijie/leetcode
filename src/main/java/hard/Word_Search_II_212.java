@@ -1,63 +1,86 @@
 package hard;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 /**
  * Created by chenlijie on 7/31/17.
  */
 public class Word_Search_II_212 {
 
-    public List<String> findWords(char[][] board, String[] words) {
-        List<String> res = new ArrayList<>();
-        TrieNode root = buildTrie(words);
-        for (int i = 0; i < board.length; i++) {
-            for (int j = 0; j < board[0].length; j++) {
-                dfs (board, i, j, root, res);
-            }
+    static class TrieNode {
+        TrieNode[] children;
+        boolean isWord;
+
+        public TrieNode() {
+            children = new TrieNode[26];
+            isWord = false;
         }
-        return res;
     }
 
-    public void dfs(char[][] board, int i, int j, TrieNode p, List<String> res) {
-        char c = board[i][j];
-        if (c == '#' || p.next[c - 'a'] == null) return;
-        p = p.next[c - 'a'];
-        if (p.word != null) {   // found one
-            res.add(p.word);
-            p.word = null;     // de-duplicate
-        }
+    int[][] dirct = new int[][] { {-1, 0}, {1, 0}, {0, -1}, {0, 1}};
 
-        board[i][j] = '#';
-        if (i > 0) dfs(board, i - 1, j ,p, res);
-        if (j > 0) dfs(board, i, j - 1, p, res);
-        if (i < board.length - 1) dfs(board, i + 1, j, p, res);
-        if (j < board[0].length - 1) dfs(board, i, j + 1, p, res);
-        board[i][j] = c;
-    }
-
-    public TrieNode buildTrie(String[] words) {
+    TrieNode buildDict(String[] words) {
         TrieNode root = new TrieNode();
+
         for (String w : words) {
-            TrieNode p = root;
+            TrieNode node = root;
             for (char c : w.toCharArray()) {
-                int i = c - 'a';
-                if (p.next[i] == null) p.next[i] = new TrieNode();
-                p = p.next[i];
+                if (node.children[c - 'a'] == null)
+                    node.children[c - 'a'] = new TrieNode();
+                node = node.children[c - 'a'];
             }
-            p.word = w;
+            node.isWord = true;
         }
         return root;
     }
 
-    class TrieNode {
-        TrieNode[] next = new TrieNode[26];
-        String word;
+    void backTracking(char[][] board, int i, int j, int m, int n, TrieNode node, String builder, Set<String> ans) {
+        if (i < 0 || i >= m || j < 0 || j >= n || board[i][j] == '#') return;
+
+        int idx = board[i][j] - 'a';
+        if (node.children[idx] == null) return;
+
+        char c = board[i][j];
+        if (node.children[idx] != null && node.children[idx].isWord) {
+            ans.add(builder + c);
+        }
+
+        board[i][j] = '#';
+        for (int[] d : dirct) {
+            backTracking(board, i + d[0], j + d[1], m, n, node.children[idx], builder + c, ans);
+        }
+        board[i][j] = c;
+    }
+
+
+    public List<String> findWords(char[][] board, String[] words) {
+        TrieNode root = buildDict(words);
+
+        int m = board.length;
+        int n = board[0].length;
+
+        Set<String> ans = new HashSet<>();
+
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                backTracking(board, i, j, m, n, root, "", ans);
+            }
+        }
+
+        return new ArrayList<>(ans);
     }
 
     public static void main(String[] args) {
-        String[] strs = new String[]{"abcd", "acd", "bd"};
-        TrieNode node = new Word_Search_II_212().buildTrie(strs);
-        System.out.println(node);
+        char[][] board = new char[][] {
+                {'a','a'},{'a','b'}
+        };
+        
+        String[] strs = new String[]{"aaab","aaa"};
+        Word_Search_II_212 search = new Word_Search_II_212();
+        System.out.println(search.findWords(board, strs));
+
     }
 }

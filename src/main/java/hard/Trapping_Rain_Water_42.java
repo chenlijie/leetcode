@@ -7,46 +7,43 @@ public class Trapping_Rain_Water_42 {
 
     public static int trap(int[] height) {
 
-        int first = 0;
-        int second = 0;
-        int start = 0;
-        int sum = 0;
-        boolean down = false;
-        boolean up = false;
+        if (height.length <= 1)
+            return 0;
 
-        for (int i = 0; i < height.length; i++) {
+        int len = height.length;
+        int area = 0;
 
-            while (height[i] >= first) {
-                first = height[i];
-                i++;
+        for (int l = 0, r = 1; r < len; r++) {
+            int reduce = 0;
+            while (r < len && height[l] > height[r]) {
+                reduce += height[r];
+                r++;
             }
-
-            start = i;
-
-
-            if (first == 0) {
-                first = height[i];
-                start = i;
-            } else {
-                if (height[i] < first) {
-                    down = true;
-                }
-
-                if (height[i] >= first) {
-                    for (int j = start+1; j < i; j++) {
-                        sum = sum + first - height[j];
-                    }
-                    first = height[i];
-                    start = i;
-                }
-
+            if (r < len) {
+                area += (r-l)*height[l]-reduce;
+                l = r;
             }
         }
 
-        return sum;
+        for (int r = len-1, l = len-2; l >= 0; l--) {
+            int reduce = 0;
+            while (l >= 0 && height[r] >= height[l]) {
+                reduce += height[l];
+                l--;
+            }
+            if (l >= 0) {
+                area += (r-l)*height[r]-reduce;
+                r = l;
+            }
+        }
+        return area;
     }
 
     public static void main(String[] args) {
-        System.out.println(trap(new int[]{0,1,0,2,1,0,1,3,2,1,2,1}));
+        System.out.println(trap(new int[]{2, 0, 2}));
+
+        int[][] a = new int[][]{{1}};
+        System.out.println(a.length);
+        System.out.println(a[0].length);
     }
 }

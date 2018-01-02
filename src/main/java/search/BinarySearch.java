@@ -27,13 +27,14 @@ public class BinarySearch {
             }
         }
 
-        System.out.println("It takes " + count + " times to search.");
+//        System.out.println("It takes " + count + " times to search.");
+        System.out.println("low = " + low);
         return -1;
     }
 
     public static void main(String[] args) {
 
-//        System.out.println(search(new int[] {1}, 1) == 0);
+        System.out.println(search(new int[] {1, 3, 5}, 0));
 //        System.out.println(search(new int[] {1, 2}, 1) == 0);
 //        System.out.println(search(new int[] {1, 2}, 2) == 1);
 //        System.out.println(search(new int[] {1, 2, 3}, 1) == 0);
@@ -45,12 +46,12 @@ public class BinarySearch {
 //        System.out.println(search(new int[] {1, 2, 3, 4, 5, 6, 7, 8}, 0) == -1);
 //        System.out.println(search(new int[] {1, 2, 3, 5, 6, 7, 8}, 9) == 4);
 
-        int[] nums = new int[1 << 9];
-        for (int i = 0; i < nums.length; i++) {
-            nums[i] = i;
-        }
-
-        search(nums, 1000);
+//        int[] nums = new int[1 << 9];
+//        for (int i = 0; i < nums.length; i++) {
+//            nums[i] = i;
+//        }
+//
+//        search(nums, 1000);
     }
 
 }

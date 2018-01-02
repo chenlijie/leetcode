@@ -1,13 +1,13 @@
 package hard;
 
-import java.util.Stack;
+import java.util.*;
 
 /**
  * Created by chenlijie on 4/13/17.
  */
 public class Longest_Valid_Parentheses_32 {
 
-    public static int longestValidParentheses(String s) {
+    public static int longestValidParentheses4(String s) {
 
         char[] c = s.toCharArray();
         int len = s.length();
@@ -87,5 +87,40 @@ public class Longest_Valid_Parentheses_32 {
             }
         }
         return max;
+    }
+
+
+    public int longestValidParentheses(String s) {
+        int max = 0;
+        for (int i = 1; i < s.length(); i++) {
+            if (s.charAt(i-1) == '(' && s.charAt(i) == ')') {
+                max = Math.max(max, helper(s, i-1, i) + 2);
+            }
+        }
+        return max;
+    }
+
+    int helper(String s, int l, int r) {
+        int left = 0;
+        int mid = 0;
+        int right = 0;
+        if (l - 2 >= 0 && s.charAt(l-2) == '(' && s.charAt(l-1) == ')') {
+            left = 2 + helper(s, l-2, r);
+        }
+        if (l - 1 >= 0 && r + 1 < s.length() && s.charAt(l-1) == '(' && s.charAt(r+1) == ')') {
+            mid = 2 + helper(s, l-1, r + 1);
+        }
+        if (r + 2 < s.length() && s.charAt(r+1) == '(' && s.charAt(r+2) == ')') {
+            right = 2 + helper(s, l, r + 2);
+        }
+        return Math.max(left, Math.max(mid, right));
+    }
+
+    public static void main(String[] args) {
+//        Longest_Valid_Parentheses_32 v = new Longest_Valid_Parentheses_32();
+//        System.out.println(v.longestValidParentheses("((((()())()()))()(()))"));
+
+        List<Integer> list = new ArrayList<>(10);
+        System.out.println(list.size());
     }
 }
