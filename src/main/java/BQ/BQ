@@ -7,6 +7,82 @@
 你最近有没有学到什么新的可以帮助你的工具？
 
 
-我再来具体说一下第四轮（bar raiser）。一开始manager介绍了一下自己，然后要我介绍我自己，我说我很pasionate，always willing to learn，刚说完这一句，他就说本公司的员工都有一些特质，其中有14个特质我们非常看重（其实就是leadership principles），其中有一条就是curiosity，我瞎猫碰死耗子了。。。，因为没有提前准备自我介绍。。。然后他开始问我BQ3，我举了一个我在本科的时候遇到的一个问题，我说一开始我们想法不同，我就说要不咱们分析一下利弊，再做决定，最后我说我认识到了自己的错误，就跟和我想法不同的那个人说我的想法是错的，就用你的想法吧。然后是BQ4，我局的例子是我弹吉他录beyond的一首歌，被我朋友批的一文不值。。。他还开玩笑说其实有时候号朋友才会当面指责你，因为关系铁嘛，可见举例子不一定非要是做项目的，但是举专业领域的例子一定是好的。然后是BQ5和BQ6，我说我前不久在准备其他公司的面试，那家公司用的是C，我就去网上找了很多关于C的东西，然后我发现了balabala-google 1point3acres
-鏉ユ簮涓€浜�.涓夊垎鍦拌鍧�.
-总体感觉下来，交流很重要，很多时候不仅可以让面试官知道你在想什么，也可以帮助你自己想明白应该怎么去做。其次就是BQ的例子一定要准备，最好是真实的，他们问的很细，而且你稍微回头看一下你以往的项目或者作业或者生活中的一些事情，很多都可以作为例子。至于说代码题，我觉得难度也就LeetCode中等难度的，一开始做不出来也不要慌，面试官应该会给你提示，应该。。。对于一些常用的数据结构你也应该要十分了解，比如像HashMap, HashTable,Hashsomething..., priority queue, tree之类的第四轮那个题我能想到用trie其实也是因为我复习了trie，所以数据结构很重要。至于算法嘛。。。也不外呼back tracking,迭代，greedy,dynamic programming这之类的老生常谈的问题。四轮面试里算法题最难的就是我第四轮的题，如果我不知道trie，我一定想不出效率高的解法。
+adaptability
+1.Tell me about a time when you were asked to do something you had never done before. How did you react? What did you learn?
+It should be the first time I work with client in US. Previously I worked in China, so most people work with me are speaking Chinese;
+I'm familiar with working environment and the way how to process my work.
+When I came to work with client, I need communicate with others in English, need to learn the way how to work here. I remembered there was
+a meeting, people were from different teams. All people gave brief introduction of themselves, I didn't catch up much at that time. After meeting,
+I gather much information from colleges, like who is from which team, what does that team do? So I know who or which team team I should contact
+with when I have question and concern. sometimes in the meeting, I didn't catch up question or statement from others, I felt a bit enbramencing
+to ask but I know I have to ask and get understand.
+I have learn from this experience. I need gather all information I need, and ask question on what I'm not clear.
+
+2. Describe a situation in which you embraced a new system, process, technology, or idea at work that was a major departure from the
+old way of doing things.
+It would be the first project I worked in. It's reporting system which using SSIS and SSRS, both of them are micro soft product. As a fresh java
+developer, I have no idea about SSIS, SSRS and how to write such kind code or script.
+First, I gather high level information of project from leader like what does this project do, what functions we need to work on ?
+Second, I did my own reach on what is SSIS, SSRS, why using them, how to develop them
+Last, I read some tutorial and write some small example.
+From above process, I fell I'm confident with this project.
+
+3.Recall a time when you were assigned a task outside of your job description. How did you handle the situation? What was the outcome?
+I was asked to pull data from database, generate report manually at end of day. I suggest my leader that we should build a small system but
+I was told that it's temperiory and no budget for it. It doesn't take a long time to generate a report, but it's boring. So I wrote a small
+program and scheduled it.
+
+4.Tell me about the biggest change that you have had to deal with. How did you adapt to that change?
+
+5.Tell me about a time when you had to adjust to a colleague’s working style in order to complete a project or achieve your objectives.
+
+culture add
+1.What are the three things that are most important to you in a job?
+Technolegy, people and chanllege.
+As a developer, I'm excited to see the new technolegy and new stuff which will be used in the project. when those tech is used in project,
+i'm very proud that I make it.
+You can always learn from your co-workers. They inspire you when you have no idea about something. They help you when you have some questions
+on project. They also bring you new vision on the tech, the way how to think or resolve a problem.
+Challege means there are new things for you, you need to dig and explore, you will learn new knowledge.
+
+2.Tell me about a time in the last week when you’ve been satisfied, energized, and productive at work. What were you doing?
+
+
+3.What’s the most interesting thing about you that’s not on your resume?
+
+4.What would make you chose our company over others?
+Linkedin is one of biggest network on internet. It has cool product and it helps people find jobs, and employers find employees.
+I want to be part of linkedin and build nice service.
+
+5.What’s the biggest misconception your coworkers have about you and why do they think that?
+One of my co-worker says why you are serious when you're coding. I guess I'm so focusing on code that no movement on my face which make
+me serious. Actually, I like jokes.
+
+collaboration
+1.Give an example of when you had to work with someone who was difficult to get along with. How did you handle interactions with that person?
+I worked with one of this kind guy. When we started a project which includes micro services, we have a team decision that we're going to
+use groovy. But he was using java when he started a new micro service. So I raised this concern during meeting, he had to change it to groovy.
+We have agreed that do desk check with other developer and QA before push code to code repository. But he always ignored it. We had to apply
+approval rule. Developers only can checkin code until the code get approved from other team members. When I reviewed code and found problem,
+I discussed with him. And he agreed and would do change. But he didn't change anything.
+
+2.Tell me about a time when you were communicating with someone and they did not understand you. What did you do?
+It was the time when I just came to US and worked with client. I always attached example or screenshot in email when I ask or answer question.
+It's much vivid. I would like have a meeting with him/her, face to face discussion is efficient, we can draw some
+pic and work flow which help us understand each other.
+
+3.Tell me about one of your favorite experiences working with a team and your contribution
+I was working with a offshore team that is from China. We talked and discuss questions and requirement when they started working, and they
+provided me very detailed daily update in email at end of day. From which, you can clearly know what they have done. We are always on the
+same page so the communication is very good between us. Also they provided good idea and shared useful information which make project better.
+Although the project time was tight, we made a good project and delivered it on time. It is very nice teamwork experience.
+
+4.Describe the best partner or supervisor with whom you’ve worked. What part of their managing style appealed to you?
+
+5.Can you share an experience where a project dramatically shifted directions at the last minute? What did you do?
+
+It's a legacy ordering system which is built on old java version, it doesn't use any framework, it requires manually depoyment.
+Client wants to rebuild in a new way, it aims to decouple service and build micro service,
+other apps can consume those service as well, build UI with react, have CICI and make deployment simple.
+We don't build it from scratch, but pull service from it and rebuild it as a micro service, the legacy system consumes the micro service
+instead of old service. In this way, customers can continue use this application without any function break.
