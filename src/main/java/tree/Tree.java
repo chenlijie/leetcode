@@ -7,7 +7,7 @@ import java.util.Random;
  */
 public class Tree {
 
-    static class TreeNode {
+    private static class TreeNode {
         int data;
         TreeNode left;
         TreeNode right;

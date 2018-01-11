@@ -2,7 +2,7 @@ package linkedin;
 
 import java.util.*;
 
-public class RetainBestCache<K, T extends Rankable> {
+class RetainBestCache2<K, T extends Rankable> {
 
     private Map<K, T> cache;
     private Map<Long, Set<K>> rankingOfObject;
@@ -10,7 +10,7 @@ public class RetainBestCache<K, T extends Rankable> {
     private int maxSizeOfCache;
 
     /* Constructor with a data source (assumed to be slow) and a cache size */
-    public RetainBestCache(DataSource<K,T> ds, int entriesToRetain) {
+    public RetainBestCache2(DataSource<K,T> ds, int entriesToRetain) {
         // Implementation here
         cache = new HashMap<>();
         rankingOfObject = new TreeMap<>();
@@ -46,26 +46,77 @@ public class RetainBestCache<K, T extends Rankable> {
     }
 
     private void evictElement() {
-        Map.Entry<Long, Set<K>> entry = null;//rankingOfObject.topEntry();
+        Long rank = rankingOfObject.keySet().iterator().next();
+        rankingOfObject.get(rank).iterator().remove();
+
+        Map.Entry<Long, Set<K>> entry = null;//rankingOfObject.keySet();
         K key = entry.getValue().iterator().next();
         entry.getValue().remove(key);
         cache.remove(key);
-        if(entry.getValue().size() == 0) {
+        if (entry.getValue().size() == 0) {
             rankingOfObject.remove(entry.getKey());
         }
     }
-
 }
 
 // What if rank is defined as number of reads of element in cache?
 // LRU
 // Let's assume that rank can change dynamicly. It is not immutable, but it is not LRU. We do not know how it is changed. 鐣欏鐢宠璁哄潧-涓€浜╀笁鍒嗗湴
 
-/*. 鐗涗汉浜戦泦,涓€浜╀笁鍒嗗湴
+/*
 * For reference, here are the Rankable and DataSource interfaces.
 * You do not need to implement them, and should not make assumptions
 * about their implementations.-google 1point3acres
 */
+
+public class RetainBestCache<K, T extends Rankable> {
+
+    private PriorityQueue<T> queue;
+    private Map<K, T> cache;
+    private Map<T, K> cacheOp;
+    private int size;
+    private DataSource<K,T> ds;
+
+    /* Constructor with a data source (assumed to be slow) and a cache size */
+    public RetainBestCache(DataSource<K,T> ds, int entriesToRetain) {
+        // Implementation here
+        this.ds = ds;
+        queue = new PriorityQueue<>((o1,o2) -> (int)(o1.getRank()-o1.getRank()));
+        cache = new HashMap<>();
+        cacheOp = new HashMap<>();
+        size = entriesToRetain;
+    }
+
+    /* Gets some data. If possible, retrieves it from cache to be fast. If the data is not cached,. visit 1point3acres.com for more.
+     * retrieves it from the data source. If the cache is full, attempt to cache the returned data,
+     * evicting the T with lowest rank among the ones that it has available
+     * If there is a tie, the cache may choose any T with lowest rank to evict.
+     */
+    public T get(K key) {
+        // Implementation here. From 1point 3acres bbs
+        if (cache.containsKey(key)) {
+            return cache.get(key);
+        }
+
+        if (cache.size() == size) {
+            T t = queue.poll();
+            K k = cacheOp.get(t);
+            cache.remove(k);
+            cacheOp.remove(t);
+        }
+
+        T obj = ds.get(key);
+        queue.offer(obj);
+        cache.put(key, obj);
+        cacheOp.put(obj, key);
+
+        return obj;
+    }
+
+    public static void main(String[] args) {
+
+    }
+}
 
 interface Rankable {
     /**

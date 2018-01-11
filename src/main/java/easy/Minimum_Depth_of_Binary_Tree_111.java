@@ -7,7 +7,7 @@ import java.util.Queue;
 
 public class Minimum_Depth_of_Binary_Tree_111 {
 
-    static class TreeNode {
+    private static class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;

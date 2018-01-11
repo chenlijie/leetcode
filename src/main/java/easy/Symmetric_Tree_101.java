@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Symmetric_Tree_101 {
 
-    static class TreeNode {
+    private static class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;

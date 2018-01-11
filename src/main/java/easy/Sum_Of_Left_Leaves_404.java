@@ -44,7 +44,7 @@ public class Sum_Of_Left_Leaves_404 {
         return sum(root.left, true) + sum(root.right, false);
     }
 
-    static class TreeNode {
+    private static class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;

@@ -8,7 +8,7 @@ import utility.Utils;
  */
 public class SecondMinInTree {
 
-    //  bianry tree, 每个节点下有0 或2 个子节点，每个节点的值都是两个子节点
+    //  binary tree, 每个节点下有0 或2 个子节点，每个节点的值都是两个子节点
     //  的最小值，让你找second min
 
     static int findSecondMin(TreeNode node) {

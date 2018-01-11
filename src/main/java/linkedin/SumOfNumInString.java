@@ -32,5 +32,7 @@ public class SumOfNumInString {
         System.out.println(findSum("") == 0);
         System.out.println(findSum("a1b2c3") == 6);
         System.out.println(findSum("1a1bc10") == 12);
+
+        System.out.println(Integer.valueOf("00123"));
     }
 }

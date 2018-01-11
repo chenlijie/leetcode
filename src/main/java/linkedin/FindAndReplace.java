@@ -30,7 +30,7 @@ public class FindAndReplace {
     }
 
     public static void main(String[] args) {
-        System.out.println(findAndReplace("abc", "ab", "d"));
+        System.out.println(findAndReplace("eabc", "ab", "d"));
         System.out.println(findAndReplace("abc", "abcd", "d"));
         System.out.println(findAndReplace("abcabcab", "ab", "d"));
         System.out.println(findAndReplace("abcabcab", "ab", ""));

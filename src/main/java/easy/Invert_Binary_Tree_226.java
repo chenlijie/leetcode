@@ -18,7 +18,7 @@ public class Invert_Binary_Tree_226 {
     }
 
 
-    static class TreeNode {
+    private static class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;

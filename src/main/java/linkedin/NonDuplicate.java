@@ -26,29 +26,18 @@ public class NonDuplicate {
         return new ArrayList<>(nonDup);
     }
 
-    // 1
-
     static List<Integer> getNonDuplicate(int[] nums) {
         Arrays.sort(nums);
 
         List<Integer> res = new ArrayList<>();
 
         int len = nums.length;
-        int j = 0;
-        int i = 0;
-        while (++i < len) {
-            if (i < len && nums[j] == nums[i]) {
-                continue;
-            }
+        for (int i = 0; i < len; i++) {
+            res.add(nums[i]);
 
-            if (i == j + 1) {
-                res.add(nums[j]);
+            while (i+1 < len && nums[i] == nums[i+1]) {
+                i++;
             }
-            j = i;
-        }
-
-        if (i == j+1) {
-            res.add(nums[j]);
         }
 
         return res;

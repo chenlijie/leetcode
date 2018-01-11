@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class House_Robber_III_337 {
 
-    static class TreeNode {
+    private static class TreeNode {
       int val;
       TreeNode left;
       TreeNode right;

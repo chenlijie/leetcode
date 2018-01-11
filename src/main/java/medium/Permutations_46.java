@@ -3,6 +3,7 @@ package medium;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Random;
 
 /**
  * Created by chenlijie on 4/15/17.
@@ -10,46 +11,38 @@ import java.util.List;
 public class Permutations_46 {
 
     public List<List<Integer>> permute(int[] nums) {
-        List<List<Integer>> all = new ArrayList<>();
-        backTrack(nums, all, new ArrayList<>());
-        return all;
+        List<List<Integer>> results = new ArrayList<>();
+        permute(nums, 0, nums.length - 1, results);
+        return results;
     }
 
-    private void backTrack(int[] nums, List<List<Integer>> all, List<Integer> list) {
-        if (list.size() == nums.length) {
-            all.add(new ArrayList<>(list));
-        }
-
-        for (int i = 0; i < nums.length; i++) {
-            if (list.contains(nums[i])) {
-                continue;
+    void permute(int[] nums, int l, int r, List<List<Integer>> results) {
+        if (l >= r) {
+            List<Integer> temp = new ArrayList<>();
+            for (int n : nums) {
+                temp.add(n);
             }
-            list.add(nums[i]);
-            backTrack(nums, all, list);
-            list.remove(list.size()-1);
+            results.add(temp);
+            return;
+        }
+
+        for (int i = l; i <= r; i++) {
+            swap(nums, l, i);
+            permute(nums, i+1, r, results);
+            swap(nums, l, i);
         }
     }
 
-    public List<List<Integer>> permute2(int[] num) {
-        LinkedList<List<Integer>> res = new LinkedList<>();
-        res.add(new ArrayList<>());
-        for (int n : num) {
-            int size = res.size();
-            for (; size > 0; size--) {
-                List<Integer> r = res.pollFirst();
-                for (int i = 0; i <= r.size(); i++) {
-                    List<Integer> t = new ArrayList<>(r);
-                    t.add(i, n);
-                    res.add(t);
-                }
-            }
-        }
-        return res;
+    void swap(int[] nums, int i, int j) {
+        int t = nums[i];
+        nums[i] = nums[j];
+        nums[j] = t;
     }
+    int c = 1;
 
 
     public static void main(String[] args) {
-        for(List<Integer> list : new Permutations_46().permute2(new int[]{1,2,3})) {
+        for(List<Integer> list : new Permutations_46().permute(new int[]{1,2,3})) {
             System.out.println(list);
         }
     }

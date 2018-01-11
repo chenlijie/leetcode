@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Binary_Tree_Level_Order_Traversal_II_107 {
 
-    static class TreeNode {
+    private static class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;

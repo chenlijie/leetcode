@@ -22,5 +22,6 @@ public class Best_Time_to_Buy_and_Sell_Stock_with_Cooldown_309 {
 
     public static void main(String[] args) {
         maxProfit(new int[]{1,3,2,3});
+        System.out.println("0123456".substring(2,5));
     }
 }

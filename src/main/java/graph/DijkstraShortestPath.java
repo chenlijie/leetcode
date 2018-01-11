@@ -82,5 +82,7 @@ public class DijkstraShortestPath {
 
         new DijkstraShortestPath().shortestPath(path, 7, 1);
 
+        List<Integer> list = new ArrayList<>();
+        list = list.subList(0, 1);
     }
 }
