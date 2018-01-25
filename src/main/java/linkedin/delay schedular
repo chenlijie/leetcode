@@ -1,0 +1,21 @@
+我大概凭记忆说说DelayedScheduled是啥样的，因为一直不想回忆，所以可能没记得太清楚了。。。.1point3acres缃�
+
+问：给个接口，implement这样一个功能：给一个Runnable和一个timestamp，在未来的时间调用这个Runnable. from: 1point3acres.com/bbs
+答：最naive的方法，开一个线程然后Sleep一段时间再执行
+followup：（*（@（&@（&@&. more info on 1point3acres.com
+答：。。。。。。什么鬼听不懂啊. Waral 鍗氬鏈夋洿澶氭枃绔�,
+followup: InterruptedException是什么，做什么的？
+答：按照《Java并发实践》答的
+followup：￥&@*#￥*#￥&
+答：靠。。。是不是让我优化一下？
+followup：Yes， but￥%￥#￥#%%￥￥#%￥#%
+答：我自由发挥了，那我下一步就是用一个PriorityQueue来做这个
+followup：￥%￥%#……￥#……#￥……#￥……#
+答：听不懂，我写代码给你看行吗？
+面试官：OK
+答：写完了，你觉得怎么样？
+问：good， but%￥……#……%……%￥……￥###@￥#@￥#￥
+答：Yeah，所以我有这么几个优化方法， 1.不要轮询queue，用Conditional变量 2. 可以引入ExecutorService+Future来更好地管理时间
+followup： why not#￥#@%#%#%#%？
+答：轮询慢没有效率，Conditional var更好做同步
+问：good， do you have any question （问另外一个面试官）do you have any question（问我）

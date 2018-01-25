@@ -9,98 +9,27 @@ import java.util.List;
  */
 public class Letter_Combinations_of_a_Phone_Number_17 {
 
+    String[] map = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+
     public List<String> letterCombinations(String digits) {
-        List<String> all = new ArrayList<String>();
-        if (digits.length() == 0) {
-            return all;
-        } else {
-            letterCombinations(all, new ArrayList<Character>(), digits.toCharArray(), 0);
-            return all;
-        }
+        List<String> ans = new ArrayList<>();
+
+        if (digits == null || digits.length() == 0)
+            return ans;
+
+        backTracking(digits, 0, new char[digits.length()], ans);
+        return ans;
     }
 
-    private char[] abc = new char[]{'a', 'b', 'c'};
-    private char[] def = new char[]{'d', 'e', 'f'};
-    private char[] ghi = new char[]{'g', 'h', 'i'};
-    private char[] jkl = new char[]{'j', 'k', 'l'};
-    private char[] mno = new char[]{'m', 'n', 'o'};
-    private char[] pqrs = new char[]{'p', 'q', 'r', 's'};
-    private char[] tuv = new char[]{'t', 'u', 'v'};
-    private char[] wxyz = new char[]{'w', 'x', 'y', 'z'};
-    private StringBuilder sb;
+    void backTracking(String digits, int idx, char[] comb, List<String> ans) {
+        if (idx == digits.length()) {
+            ans.add(new String(comb));
+            return;
+        }
 
-    private void letterCombinations(List<String> all, List<Character> temp, char[] digits, int start) {
-
-        if (temp.size() == digits.length) {
-            sb = new StringBuilder("");
-            for (char s : temp) {
-                sb.append(s);
-            }
-            all.add(sb.toString());
-        } else {
-            for (int i = start; i < digits.length; i++) {
-                switch (digits[i]) {
-                    case '2':
-                        for (int j = 0; j < 3; j++) {
-                            temp.add(abc[j]);
-                            letterCombinations(all, temp, digits, start+1);
-                            temp.remove(temp.size()-1);
-                        }
-                        break;
-                    case '3':
-                        for (int j = 0; j < 3; j++) {
-                            temp.add(def[j]);
-                            letterCombinations(all, temp, digits, start+1);
-                            temp.remove(temp.size()-1);
-                        }
-                        break;
-                    case '4':
-                        for (int j = 0; j < 3; j++) {
-                            temp.add(ghi[j]);
-                            letterCombinations(all, temp, digits, start+1);
-                            temp.remove(temp.size()-1);
-                        }
-                        break;
-                    case '5':
-                        for (int j = 0; j < 3; j++) {
-                            temp.add(jkl[j]);
-                            letterCombinations(all, temp, digits, start+1);
-                            temp.remove(temp.size()-1);
-                        }
-                        break;
-                    case '6':
-                        for (int j = 0; j < 3; j++) {
-                            temp.add(mno[j]);
-                            letterCombinations(all, temp, digits, start+1);
-                            temp.remove(temp.size()-1);
-                        }
-                        break;
-                    case '7':
-                        for (int j = 0; j < 4; j++) {
-                            temp.add(pqrs[j]);
-                            letterCombinations(all, temp, digits, start+1);
-                            temp.remove(temp.size()-1);
-                        }
-                        break;
-                    case '8':
-                        for (int j = 0; j < 3; j++) {
-                            temp.add(tuv[j]);
-                            letterCombinations(all, temp, digits, start+1);
-                            temp.remove(temp.size()-1);
-                        }
-                        break;
-                    case '9':
-                        for (int j = 0; j < 4; j++) {
-                            temp.add(wxyz[j]);
-                            letterCombinations(all, temp, digits, start+1);
-                            temp.remove(temp.size()-1);
-                        }
-                        break;
-                    default:
-                        break;
-                }
-                break;
-            }
+        for (char c : map[digits.charAt(idx) - '0'].toCharArray()) {
+            comb[idx] = c;
+            backTracking(digits, idx + 1, comb, ans);
         }
     }
 
@@ -120,8 +49,7 @@ public class Letter_Combinations_of_a_Phone_Number_17 {
     }
 
     public static void main(String[] args) {
-        for (String str : new Letter_Combinations_of_a_Phone_Number_17().letterCombinations2("23")) {
-            System.out.print(str + ", ");
-        }
+        System.out.println(new Letter_Combinations_of_a_Phone_Number_17().letterCombinations("010123"));
+
     }
 }

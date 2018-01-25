@@ -81,6 +81,7 @@ public class DotProduct {
         System.out.println(p.doProduct2(v1, v2));
 
         System.out.println("ab\n\t".indexOf("\n"));
+
     }
 
 }

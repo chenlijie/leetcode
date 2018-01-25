@@ -79,12 +79,7 @@ public class StringCompare {
 //        System.out.println(isGreatThan("b", "1"));
 //        System.out.println(isGreatThan("2", "1"));
 //        System.out.println(isGreatThan("abc", "ab2"));
-        System.out.println(isGreatThan("12345a", "12345"));
+        System.out.println(isGreatThan("12345a1", "12345a02"));
 
-        List[] lists = new List[3];
-        for (List l : lists)
-            l = new ArrayList();
-
-        lists[0].add(1);
     }
 }

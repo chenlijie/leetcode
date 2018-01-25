@@ -3,6 +3,7 @@ package utility;
 import medium.ListNode;
 import medium.TreeNode;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
@@ -88,5 +89,42 @@ public class Utils {
         node.right = buildTreeFromString(queue);
 
         return node;
+    }
+
+    public static void printInOrderTreeNode(TreeNode node) {
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(node);
+
+        List<List<Integer>> ans = new ArrayList<>();
+
+        while (!queue.isEmpty()) {
+            int size = queue.size();
+
+            List<Integer> temp = new ArrayList<>();
+            for (int i = 0; i < size; i++) {
+                TreeNode t = queue.poll();
+                temp.add(t.val);
+
+                if (t.left != null) {
+                    queue.offer(t.left);
+                }
+
+                if (t.right != null) {
+                    queue.offer(t.right);
+                }
+            }
+            ans.add(temp);
+        }
+
+        for (List<Integer> l : ans) {
+            System.out.println(l);
+        }
+    }
+
+    public static void printArray(char[] letters) {
+        for (char c :
+                letters) {
+            System.out.print(c + " ");
+        }
     }
 }

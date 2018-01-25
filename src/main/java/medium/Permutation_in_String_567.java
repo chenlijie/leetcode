@@ -5,67 +5,41 @@ package medium;
  */
 public class Permutation_in_String_567 {
 
-    public static boolean checkInclusion2(String s1, String s2) {
-
-        int count = s1.length();
-        int[] targets = new int[256];
-
-        for (int i = 0; i < s1.length(); i++) {
-            targets[s1.charAt(i)]++;
-        }
-
-        for (int left = 0, right = 0; right < s2.length(); right++) {
-
-            if (targets[s2.charAt(right)] > 0) {
-                targets[s2.charAt(right)]--;
-                count--;
-            } else {
-                while (left <= right) {
-                    targets[s2.charAt(left++)]++;
-                    count++;
-                }
-                count = right;
-            }
-
-            if (count == 0) {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
     static boolean checkInclusion(String s1, String s2) {
-        int len1 = s1.length();
-        int len = s2.length();
-        int[] c = new int[256];
+        if (s1 == null || s2 == null || s1.length() > s2.length())
+            return false;
 
+        int len1 = s1.length();
+        int len2 = s2.length();
+
+        char[] map = new char[256];
         for (int i = 0; i < len1; i++) {
-            c[s1.charAt(i)]++;
+            map[s1.charAt(i)]++;
         }
 
-        int left = 0;
-        int right = 0;
+        int count = len1;
 
-        while (right < len) {
-            while (right < len) {
-                if (--c[s2.charAt(right++)] < 0) {
-                    break;
+        for (int j = 0, i = 0; i < len2; i++) {
+            char c = s2.charAt(i);
+
+            if (map[c]-- > 0) {
+                count--;
+
+                while (count == 0) {
+                    if (len1 == i - j + 1) {
+                        return true;
+                    }
+                    if (++map[s2.charAt(j++)] > 0) {
+                        count++;
+                    }
                 }
             }
-
-            while (left < right && c[s2.charAt(right-1)] < 0) {
-                c[s2.charAt(left++)]++;
-            }
-
-            if (len1 == right - left)
-                return true;
         }
 
         return false;
     }
 
     public static void main(String[] args) {
-        System.out.println(checkInclusion("ab", "eba"));
+        System.out.println(checkInclusion("ab", "eidbaooo"));
     }
 }

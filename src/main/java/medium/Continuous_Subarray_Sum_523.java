@@ -53,6 +53,6 @@ public class Continuous_Subarray_Sum_523 {
     }
 
     public static void main(String[] args) {
-        System.out.println(checkSubarraySum(new int[]{0}, 0));
+        System.out.println(checkSubarraySum(new int[]{1,3,7}, 7));
     }
 }

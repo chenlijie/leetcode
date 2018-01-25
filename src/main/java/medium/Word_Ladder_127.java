@@ -9,35 +9,43 @@ public class Word_Ladder_127 {
 
     public int ladderLength2(String beginWord, String endWord, List<String> wordList) {
 
-        Queue<String> queue = new LinkedList<>();
+        Set<String> dict = new HashSet<>(wordList);
         Set<String> visited = new HashSet<>();
-        Map<String, Integer> path = new HashMap<>();
-        queue.add(beginWord);
-        path.put(beginWord, 1);
-        List<String> wordDic = wordList;
+        visited.add(beginWord);
+        visited.add(endWord);
+        Set<String> qs = new HashSet<>();
+        Set<String> qe = new HashSet<>();
+        qs.add(beginWord);
+        qe.add(endWord);
+        int len = 0;
 
-        while (!queue.isEmpty()) {
+        while (!qs.isEmpty()) {
+            len++;
 
-            String from = queue.poll();
-            visited.add(from);
+            Set<String> temp = new HashSet<>();
 
-            wordList = wordDic;
-            wordDic = new ArrayList<>();
-            for (String to : wordList) {
-                if (!to.equals(beginWord)) {
-                    if (!visited.contains(to) && oneDiff(from, to)) {
-                        if (!path.containsKey(to) || path.get(from)+1 < path.get(to)) {
-                            path.put(to, path.get(from)+1);
+            for (String cur : qs) {
+                char[] ch = cur.toCharArray();
+                for (int j = 0; j < ch.length; j++) {
+                    char t = ch[j];
+                    for (char c = 'a'; c <= 'z'; c++) {
+                        if (ch[j] != c) {
+                            ch[j] = c;
+                            String w = new String(ch);
+
+                            if (qe.contains(w)) return len+1;
+
+                            if (dict.contains(w) && !visited.contains(w)) {
+                                temp.add(w);
+                                visited.add(w);
+                            }
+                            ch[j] = t;
                         }
-                        if (to.equals(endWord)) {
-                            return path.get(to);
-                        }
-                        queue.offer(to);
-                    } else {
-                        wordDic.add(to);
                     }
                 }
             }
+            qs = qe;
+            qe = temp;
         }
 
         return 0;
@@ -162,7 +170,8 @@ public class Word_Ladder_127 {
     }
 
     public static void main(String[] args) {
-        System.out.println(new Word_Ladder_127().ladderLength("hot", "dog", Arrays.asList("hot","dog","cog","pot","dot")));
-        System.out.println(new Word_Ladder_127().ladderLength2("hit", "cog", Arrays.asList("hot","dot","dog","lot","log")));
+//        System.out.println(new Word_Ladder_127().ladderLength("hot", "dog", Arrays.asList("hot","dog","cog","pot","dot")));
+        System.out.println(new Word_Ladder_127().ladderLength2("hit", "cog", Arrays.asList("hot","dot","dog","lot","log","cog")));
+        System.out.println(new Word_Ladder_127().ladderLength2("hit", "hog", Arrays.asList("hot", "hog")));
     }
 }

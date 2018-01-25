@@ -7,31 +7,32 @@ public class Multiply_Strings_43 {
 
     public static String multiply(String num1, String num2) {
 
-        int[] t = new int[num1.length() + num2.length()];
+        int last1 = num1.length()-1;
+        int last2 = num2.length()-1;
+        int[] total = new int[last1 + last2 + 2];
 
-        for (int i = num1.length()-1; i >= 0; i--) {
+        for (int i = last1; i >= 0; i--) {
+            for (int j = last2; j >= 0; j--) {
+                int p = (num1.charAt(i) - '0') * (num2.charAt(j) - '0')
+                        + total[last1 - i + last2 - j];
 
-            for (int j = num2.length()-1; j >= 0; j--) {
-                t[t.length-i-j-2] = t[t.length-i-j-2] + Integer.valueOf(num1.substring(i, i+1)) * Integer.valueOf(num2.substring(j, j+1));
+                total[last1 - i + last2 - j] = p%10;
+                total[last1 - i + last2 - j + 1] += p/10;
             }
         }
 
-        StringBuilder builder = new StringBuilder("");
-        int carry = 0;
-        for (int i = 0 ; i < t.length; i++) {
-            if (t[i] != 0 || (i+1) != t.length) {
-                t[i] += carry;
-                carry = t[i]/10;
-                builder.insert(0, t[i]%10);
-            }
+        StringBuilder ans = new StringBuilder();
+        int i = last1 + last2 + 1;
+        while (i >= 0 && total[i] == 0) {
+            i--;
         }
-        if (carry != 0) {
-            builder.insert(0, carry);
+        while (i >= 0) {
+            ans.append(total[i--]);
         }
-        return builder.charAt(0) == '0' ? "0" : builder.toString();
+        return ans.length() == 0 ? "0" : ans.toString();
     }
 
     public static void main(String[] args) {
-        System.out.println(multiply("0", "0").equals(String.valueOf(0*0)));
+        System.out.println(multiply("98", "9"));
     }
 }

@@ -6,77 +6,29 @@ package sort;
 public class QuickSort {
 
 
-    public void sort(int[] nums) {
+    public void quickSort(int[] nums) {
         int lo = 0;
-        int hi = nums.length;
+        int hi = nums.length - 1;
 
-        sortUtil3(nums, lo, hi-1);
+        quickUtils(nums, lo, hi);
     }
 
-    //select last element as pivot
-    private void sortUtil(int[] nums, int lo, int hi) {
+    void quickUtils(int[] nums, int lo, int hi) {
         if (lo < hi) {
             int pivot = nums[hi];
 
-            int j = lo;
-            for (int i = lo; i < hi; i++) {
-
-                if (nums[i] < pivot) {
-                    int t = nums[i];
-                    nums[i] = nums[j];
-                    nums[j] = t;
-                    j++;
-                }
-            }
-
-            nums[hi] = nums[j];
-            nums[j] = pivot;
-
-            sortUtil(nums, lo, j-1);
-            sortUtil(nums, j+1, hi);
-        }
-    }
-
-    //select middle element as pivoit
-    private void sortUtil2(int[] nums, int lo, int hi) {
-        if (lo < hi) {
-            int mi = lo + (hi-lo)/2;
-            int pivot = nums[mi];
-
-            int j = lo;
-            for (int i = lo; i <= hi; i++) {
-
-                if (nums[i] < pivot) {
-                    int t = nums[i];
-                    nums[i] = nums[j];
-                    nums[j] = t;
-                    j++;
-                }
-            }
-
-            nums[hi] = nums[j];
-            nums[j] = pivot;
-
-            sortUtil(nums, lo, j-1);
-            sortUtil(nums, j+1, hi);
-        }
-    }
-
-    // 3 2 1 5 6 4
-    void sortUtil3(int[] nums, int lo, int hi) {
-        if (lo < hi) {
-            int pivot = nums[hi];
-
-            int j = lo;
-            for (int i = lo; i < hi; i++) {
-                if (nums[i] < pivot) {
+            int j = 0;
+            for (int i = 0; i < hi; i++) {
+                if (nums[i] <= pivot) {
                     swap(nums, i, j);
                     j++;
                 }
             }
+
             swap(nums, j, hi);
-            sortUtil3(nums, lo, j-1);
-            sortUtil3(nums, j + 1, hi);
+
+            quickUtils(nums, lo, j-1);
+            quickUtils(nums, j + 1, hi);
         }
     }
 
@@ -87,8 +39,8 @@ public class QuickSort {
     }
 
     public static void main(String[] args) {
-        int[] nums = new int[]{3,2,1,5,6,4};
-        new QuickSort().sort(nums);
+        int[] nums = new int[]{3,2,1,5,3,6,4,3};
+        new QuickSort().quickSort(nums);
         for (int i : nums) {
             System.out.print(i + " ");
         }

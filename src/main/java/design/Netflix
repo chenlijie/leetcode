@@ -1,0 +1,9 @@
+我先总结一下我觉得我失误的地方： 我没一上来就讨论好user cases --
+
+可能我的讲解思路也比较乱。
+一开始我从用户的角度来考虑的，貌似面试官不是很满意，于是我就行系统维护的角度说了，我们需要有一个pipeline，把视频转换成不同的编码率(如4k,1080p,720p)，这样方便网络差的地方收看。
+貌似这次尝试依旧错了，我认了。我就想，我就一步步来吧，于是从capacity estimation考虑，估计了disk和贷款的需求。算了好多的数据。差不多的时候，我就画出了系统的架构图，前端（用户+web server）|load balance|后端（db for metadata+object storage）。
+
+user case 1: 用户访问首页： web server从数据库读取meta data数据，然后显示一个视频list给用户
+user case 2: 用户访问具体视频: 服务器根据meta data从object storage读取视频(考虑到用户可能看到一半就关了，讨论了一下可以把视频分割成一个个chunk，分段传输，不用一次性全传输完，只需要提前多传1-2个chunk)。考虑到播放速度，考虑使用cdn(讨论下怎么知道从哪个cdn取：说可以用一个reverse proxy来做router)。最后说假设有millons用户，你需要多少cdn节点。算了一段时间和迭代，他说，嗯，这个数据(好几百K)还是蛮现实的。
+最后，时间结束了。

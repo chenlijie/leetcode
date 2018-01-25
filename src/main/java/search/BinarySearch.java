@@ -1,5 +1,8 @@
 package search;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * Created by chenlijie on 8/14/17.
  */
@@ -52,6 +55,17 @@ public class BinarySearch {
 //        }
 //
 //        search(nums, 1000);
+
+        Set<Integer> set = new HashSet<>();
+        for (int i=0; i<=1000000; i++)
+            set.add(i);
+        for (int i=0; i<1000000; i++)
+            set.remove(i);
+
+        long t0 = System.currentTimeMillis();
+        for (int i=0; i<10000; i++)
+            set.iterator().next();
+        System.out.println(System.currentTimeMillis() - t0);
     }
 
 }
