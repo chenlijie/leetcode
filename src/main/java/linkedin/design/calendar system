@@ -1,0 +1,31 @@
+要求设计一个calendar system。要求1000用户，并可能拓展到100M+
+
+http://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=175497#pid2272026
+canlendar design
+几个主要功能，添加修改删除event，邀请别人，看别人的availability。
+然后跟server怎么交互，数据怎么load，数据库schema设计等等。
+说完功能考量scalability，都常规的design题步骤走一下.
+
+1. what functions does calendar system provide ?
+query/add/update/delete event
+
+2. can user see different date range of calendar, or always display one month
+calendar view ?
+Yearly view, monthly view, weekly view, daily view. or custom range
+
+3. can user send invitation to other users ?
+
+4. Does it provide notification function ? notify by email/txt
+
+5. Can the calendar event be repeat, like it happens every week,
+or every month ?
+
+6. holiday/birthday mark
+
+7. can calendar be shared with other users ?
+
+8. re-occurring event
+
+Zookeeper,Kafka,cassandra
+
+http://massivetechinterview.blogspot.com/2015/10/google-calendar-architecture.html

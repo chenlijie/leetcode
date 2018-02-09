@@ -1,0 +1,51 @@
+User case :
+    Is it about providing an algrithm to generate a short url, or design a system provide tiny url function ?
+    which functions does it include, generate tiny url for the long url, get long url based on the short url ?
+    Is it a web application that includes UI and service side, or we only need provide the service ?
+    What's the traffic volume?
+    What's the mapping function?
+    How long is the shortened URL?
+    Can people modify or delete links? Let's leave that out for now.
+
+    If people can't delete links...do they persist forever? Or do we automatically remove old ones? First, it's worth considering what policies we could use for removing old ones:
+
+    We could remove links that were created some length of time ago...like 6 months.
+    We could remove links that haven't been visited in some length of time...like 6 months.
+
+    how many url we create on a busy day
+
+Constraints:
+    What's maximum size of the tiny url?
+    How many tiny urls service can generate per second?
+
+Abstract design:
+    RESTFul API
+
+    client --- RESTFul API--> server (SpringBoot, Dropwizard)
+
+Tiny URL should be unique.
+
+a-z A-Z 0-9   6 character = provide 50 billion urls
+
+1. First simple idea is web layer to generate tiny url, we can randomly generate 6 characters. then check if it's
+existing in db, if it's already in db. we need to re-generate it until we don't see it in db. So there is a lot
+conflict.
+
+2. Let's use the incremental id from db, then convert it to 62 based number and it will part of tiny url. then we can save
+it and long url in db.
+
+
+As we need to handle big amount of request, we can have load balancer and scale servers. We only have DB, I think the DB will
+have pressure.  then we can have multiple DBs. let's say we have 3 DBs, the first DB starts id with
+number 1, second db starts id with number 2, and the third db starts id with 3. Every time,they increase 3. so first db generates
+number 1, 4, 7 ... second generates 2, 5, 8... and third generates 3, 6, 9 ...
+
+the new created tiny url will be very hot in the first 2 hours, we can cache it for 2 hours by using cache like redis and delete.
+
+we can have one service which assign key range to each server. let's say
+1 - 1,000,000
+1,000,001 - 2,000,000
+2,000,001 - 3,000,000
+...
+we can assign ranges to each server, once it reaches end, we can re-assign a new one. Zookeeper is good candidate, it's
+centralized service and provide distributed synchronization.

@@ -1,0 +1,37 @@
+http://www.projecthoneypot.org/list_of_ips.php
+1. Do we want to design a system which detect malicious Ip address and add them to
+blacklist, so we block them.
+Or we want to provide a system to customers so they can maintain their blacklist.
+
+If it's first case, we need collect visiting information and have some rules,
+then determine whether the IP is malicious or not.
+
+what kind of rules do we define, if the IP visits application thousands times
+per second ?
+
+do we need design the tool which collects visiting information ?
+
+
+1. Prevent other host visit one server.
+let's say we have one application, we don't want it visited by some other hosts.
+
+2. we need maintain the relationship between this app and other hosts.
+
+3. what's user volume ?
+
+4. Do we
+
+App
+- App Id
+- URL
+
+BlackList
+- App Id
+- Host Address
+
+
+只需要设计block的service，假设已经有办法获得一个blacklist的列表。
+主要debate在于这个service部署在哪里，
+一般来说blacklist会是reverse proxy/load balancer的一部分，
+不过interviewer认为这个service应该独立出来做一个单独的service，run在一个有cache的box上
+

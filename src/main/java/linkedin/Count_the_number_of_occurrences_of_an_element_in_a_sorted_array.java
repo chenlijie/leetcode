@@ -44,6 +44,6 @@ public class Count_the_number_of_occurrences_of_an_element_in_a_sorted_array {
     }
 
     public static void main(String[] args) {
-        System.out.println(search(new int[]{1,1,1,4,4,4,4,5,6,7}, 8));
+        System.out.println(search(new int[]{1,1,1,4,4,4,4,5,6,7}, 1));
     }
 }

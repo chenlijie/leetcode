@@ -1,0 +1,25 @@
+design a system to get top k exceptions/errors within a system for the given period of time.
+
+1. there are large number of servers
+2. there are large number of exceptions
+3. k is subject to change
+4. time period is subject to change
+5. granularity of time is minute level
+
+请问怎么获取各个server的exception？是从log file 里读取exception message吗？
+请问我应该从哪些方面展开设计？
+
+
+top N exceptions in recent K time,
+基本是frequency estimation of streaming data，
+然后再讨论下如果要处理N台机器的log怎么做分布式。
+
+https://soulmachine.gitbooks.io/system-design/content/cn/bigdata/heavy-hitters.html
+http://zqdevres.qiniucdn.com/data/20080404140103/index.html
+http://zpjiang.me/2017/11/13/top-k-elementes-system-design/
+
+
+Bloom Filter
+http://asecuritysite.com/encryption/bloom
+Count-min sketch
+http://hkorte.github.io/slides/cmsketch/#/13

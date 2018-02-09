@@ -1,0 +1,19 @@
+LinkedIn design : http://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=294114&extra=page%3D1%26filter%3Dsortid%26sortid%3D311%26searchoption%5B3089%5D%5Bvalue%5D%5B3%5D%3D3%26searchoption%5B3089%5D%5Btype%5D%3Dcheckbox%26searchoption%5B3046%5D%5Bvalue%5D%3D6%26searchoption%5B3046%5D%5Btype%5D%3Dradio%26sortid%3D311
+https://www.linkedin.com/pulse/system-design-101-learn-7-easy-steps-subodh-jain/?trk=pulse_spock-articles&lipi=urn%3Ali%3Apage%3Ad_flagship3_pulse_read%3BPT6DFHF7RFm3A0IQWl5pJQ%3D%3D
+
+
+
+1. Sharding
+https://medium.com/@jeeyoungk/how-sharding-works-b4dec46b3f6
+
+2. NO-SQL
+    Key-value model: Cassandra
+    Column store: HBase
+    Document database: MongoDB, CouchDB
+https://www.upwork.com/hiring/data/sql-vs-nosql-databases-whats-the-difference/
+https://www.sisense.com/blog/postgres-vs-mongodb-for-storing-json-data/
+
+
+
+Links:
+https://yuelng.github.io/2015/11/13/note/note_system_design_question/

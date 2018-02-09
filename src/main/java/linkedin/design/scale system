@@ -1,0 +1,15 @@
+Database
+Too much load - replicate database
+one database for write, multiple databases for read
+sych lag in replication db, consistent
+They were set up to handle all read traffic and logic was built to know when it was safe (consistent) to read from a replica versus the main master DB.
+
+Too much data - sharding
+range query
+
+Load Balancer - It provides the ability to scale your app.
+High availability - which means your system is always online.
+    eg. if server A is down, server B will switch it and user does't
+    notice anything.
+
+vertical scaling - throw more CPUs and memory

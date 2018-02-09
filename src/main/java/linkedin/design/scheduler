@@ -1,0 +1,60 @@
+https://www.linkedin.com/pulse/system-design-101-example-subodh-jain/?published=t
+
+1. user cases
+
+2. Constraints
+    traffic - How many jobs will be in running state per sec
+
+3. Abstract design
+
+4. Bottlenecks
+
+5. Scalable design
+
+6. Tech stack
+
+
+How about using PriorityQueue, sort job by timestamp. we inserted all delay jobs into it. And have another job
+scan the queue every certain second, like 1 second, to check those jobs. If a
+job expired, we execute it. otherwise, we add it to queue again. Also we need make
+sure it's thread-safe so we need lock the queue when we operate it.
+If interval time is too short, it consumes a lot of CPU.
+If interval time is too long, some job will be delayed.
+
+We can check the top element of queue, if it doesn't expired, we calculate the expiring time and wait.
+But it will introduce one big issue, the later added job may have higher priority than than top element.
+for example, we add one job to queue which needs to execute in 1 minute, our program check the time and
+find that need wait for 1 minute so it suspend for 1 minute, but 1 second late, anther job adds to queue
+and it needs to bu execute in 10 second. As our program is suspend, so this job will be delayed around 50
+second.
+
+There is one class named DelayQueue in java, it works good for our requirement.
+when queue is empty, all comsumer are suspend.
+when queue is not empty, consuer race for the top element of the queue. if the job doesn't expire,
+the comsumer will wait for the specific time. otherwise, we can take it job from queue.
+If we add a new job which will execute before all jobs in the queue, and now all consumers are suspend, it
+wakes up all consumer, all consumers race for this new job.
+
+执行加锁操作
+取出优先级队列元素q的队首
+如果元素q的队首/队列为空,阻塞请求
+如果元素q的队首(first)不为空,获得这个元素的delay时间值
+如果first的延迟delay时间值为0的话,说明该元素已经到了可以使用的时间,调用poll方法弹出该元素,跳出方法
+如果first的延迟delay时间值不为0的话,释放元素first的引用,避免内存泄露
+判断leader元素是否为空,不为空的话阻塞当前线程
+如果leader元素为空的话,把当前线程赋值给leader元素,然后阻塞delay的时间,即等待队首到达可以出队的时间,在finally块中释放leader元素的引用
+循环执行从1~8的步骤
+如果leader为空并且优先级队列不为空的情况下(判断还有没有其他后续节点),调用signal通知其他的线程
+执行解锁操作
+
+作者：jsondream
+链接：https://www.jianshu.com/p/e0bcc9eae0ae
+來源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+HashedWheelTimer
+
+
+
+
+

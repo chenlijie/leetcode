@@ -1,6 +1,7 @@
 package medium;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -8,70 +9,37 @@ import java.util.List;
  */
 public class Text_Justification_68 {
 
-    public List<String> fullJustify(String[] words, int maxWidth) {
+    public List<String> fullJustify(String[] words, int L) {
 
-        List<String> ans = new ArrayList<>();
-        int len = words.length;
-        int i = 0;
+        List<String> list = new LinkedList<String>();
 
-        while (i < len) {
-            int j = i;
-            int left = maxWidth - words[j++].length();
-
-            while (j < len && left >= 1 + words[j].length()) {
-                left -= 1 + words[j].length();
-                j++;
+        for (int i = 0, w; i < words.length; i = w) {
+            int len = -1;
+            for (w = i; w < words.length && len + words[w].length() + 1 <= L; w++) {
+                len += words[w].length() + 1;
             }
-            ans.add(buildLine(words, i, j-1, maxWidth));
-            i = j;
+
+            StringBuilder strBuilder = new StringBuilder(words[i]);
+            int space = 1, extra = 0;
+            if (w != i + 1 && w != words.length) { // not 1 char, not last line
+                space = (L - len) / (w - i - 1) + 1;
+                extra = (L - len) % (w - i - 1);
+            }
+            for (int j = i + 1; j < w; j++) {
+                for (int s = space; s > 0; s--) strBuilder.append(' ');
+                if (extra-- > 0) strBuilder.append(' ');
+                strBuilder.append(words[j]);
+            }
+            int strLen = L - strBuilder.length();
+            while (strLen-- > 0) strBuilder.append(' ');
+            list.add(strBuilder.toString());
         }
 
-        return ans;
-    }
-
-    String buildLine(String[] words, int l, int r, int maxWidth) {
-        StringBuffer buffer = new StringBuffer();
-        if (r == words.length-1) {
-            for (int i = l; i <= r; i++) {
-                if (i == l) {
-                    buffer.append(words[i]);
-                } else {
-                    buffer.append(" ").append(words[i]);
-                }
-            }
-
-        } else {
-            int spaceLen = maxWidth;
-            for (int i = l; i <= r; i++) {
-                spaceLen -= words[i].length();
-            }
-
-            int spaceNum = r == l ? spaceLen : spaceLen/(r - l);
-            int spaceLeft = spaceLen - spaceNum*(r-l);
-            StringBuffer space = new StringBuffer();
-            for (int i = 0; i < spaceNum; i++) {
-                space.append(" ");
-            }
-
-
-            for (int i = l; i <= r; i++) {
-                if (i == l) {
-                    buffer.append(words[i]);
-                } else {
-                    if (spaceLeft-- > 0) buffer.append(" ");
-                    buffer.append(space).append(words[i]);
-                }
-            }
-        }
-        int left = maxWidth - buffer.length();
-        for (int i = 0; i < left; i++) {
-            buffer.append(" ");
-        }
-        return buffer.toString();
+        return list;
     }
 
     public static void main(String[] args) {
         Text_Justification_68 text = new Text_Justification_68();
-        System.out.println(text.fullJustify(new String[]{"This", "is", "an", "example"}, 16));
+        System.out.println(text.fullJustify(new String[]{"This", "is", "an", "example"}, 17));
     }
 }

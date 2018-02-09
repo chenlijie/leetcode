@@ -2,9 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0304e08d-d138-42df-bc1c-59471b67e4b1" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hard/Serialize_and_Deserialize_Binary_Tree_297.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hard/The_Skyline_Problem_218.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/airbnb/Alien_Dictionary_269.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/airbnb/Contains_Duplicate_III_220.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/airbnb/Flatten_2D_Vector_251.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/airbnb/Happy_Number_202.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/airbnb/IP_to_CIDR_751.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/airbnb/Mini_Parser_385.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/airbnb/NestedInteger.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/airbnb/Palindrome_Pairs_336.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/airbnb/Sliding_Puzzle_773.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/airbnb/Text_Justification_68.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/facebook/BQ/bq" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/facebook/design/system design" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/facebook/onsite/AllRangeSums.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/facebook/onsite/FriendRequest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/facebook/onsite/MinLengthOfTwoCharacters.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/linkedin/MultiListToDoubleList.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/linkedin/design/Top K Frequent Items Algorithm" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/linkedin/design/Top k个shared links" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/linkedin/design/blacklist IP" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/linkedin/design/calendar system" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/linkedin/design/delay/DelayedTask.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/linkedin/design/delay/DelayedTaskTest.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/linkedin/design/delay/Task.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/linkedin/design/delay/TaskConsumer.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/linkedin/design/delay/TaskProducer.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/linkedin/design/delay/TaskScheduler.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/linkedin/design/delay/Test.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/linkedin/design/hangman" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/linkedin/design/key value store" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/linkedin/design/scale system" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/linkedin/design/scheduler" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/linkedin/design/tech" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/linkedin/design/tiny url" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/linkedin/design/top N exceptions in recent K time" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/linkedin/design/设计Linkedin里面的people you may know" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/linkedin/design/设计如何计算不同的人的关联degree" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/linkedin/onsite/BQ" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/linkedin/onsite/ToDo" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amazon_onsite/BinaryTreeSerializeAndDeserialize.java" afterPath="$PROJECT_DIR$/src/main/java/amazon/BinaryTreeSerializeAndDeserialize.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amazon_onsite/ClosetTotalSum.java" afterPath="$PROJECT_DIR$/src/main/java/amazon/ClosetTotalSum.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/amazon_onsite/LeftRight.java" afterPath="$PROJECT_DIR$/src/main/java/amazon/LeftRight.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/design/TinyUrl.java" afterPath="$PROJECT_DIR$/src/main/java/design/TinyUrl.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/easy/Roman_to_Integer_13.java" afterPath="$PROJECT_DIR$/src/main/java/easy/Roman_to_Integer_13.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/graph/ToplogicalSorting.java" afterPath="$PROJECT_DIR$/src/main/java/graph/ToplogicalSorting.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/linkedin/AllDirectionDoubleLinkedList.java" afterPath="$PROJECT_DIR$/src/main/java/linkedin/AllDirectionDoubleLinkedList.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/linkedin/Count_the_number_of_occurrences_of_an_element_in_a_sorted_array.java" afterPath="$PROJECT_DIR$/src/main/java/linkedin/Count_the_number_of_occurrences_of_an_element_in_a_sorted_array.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/linkedin/EmailAndId.java" afterPath="$PROJECT_DIR$/src/main/java/linkedin/EmailAndId.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/linkedin/FindAndReplace.java" afterPath="$PROJECT_DIR$/src/main/java/linkedin/FindAndReplace.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/medium/Linked_List_Cycle_II_142.java" afterPath="$PROJECT_DIR$/src/main/java/medium/Linked_List_Cycle_II_142.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/medium/Text_Justification_68.java" afterPath="$PROJECT_DIR$/src/main/java/medium/Text_Justification_68.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sort/Maximal_Square_221.java" afterPath="$PROJECT_DIR$/src/main/java/sort/Maximal_Square_221.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -55,85 +104,66 @@
     <favorites_list name="leetcode" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Multiply_Strings_43.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/medium/Multiply_Strings_43.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Mini_Parser_385.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/airbnb/Mini_Parser_385.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="35" column="48" lean-forward="false" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
+            <state relative-caret-position="0">
+              <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Alien_Dictionary_269.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/airbnb/Alien_Dictionary_269.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="648">
+              <caret line="36" column="9" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="36" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ToplogicalSorting.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/graph/ToplogicalSorting.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="78" column="9" lean-forward="false" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Happy_Number_202.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/airbnb/Happy_Number_202.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding>
-                <element signature="e#971#972#0" expanded="true" />
-                <element signature="e#1026#1027#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#521#522#0" expanded="true" />
+                <element signature="e#567#568#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Word_Ladder_127.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/medium/Word_Ladder_127.java">
+      <file leaf-file-name="Maximal_Square_221.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sort/Maximal_Square_221.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="46" lean-forward="true" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
+            <state relative-caret-position="260">
+              <caret line="91" column="17" lean-forward="true" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sqrt_69.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/easy/Sqrt_69.java">
+      <file leaf-file-name="Contains_Duplicate_III_220.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/airbnb/Contains_Duplicate_III_220.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-67">
-              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MySqrt.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/linkedin/MySqrt.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Palindrome_Linked_List_234.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/easy/Palindrome_Linked_List_234.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="82" column="5" lean-forward="true" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Search_in_Rotated_Sorted_Array_33.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/medium/Search_in_Rotated_Sorted_Array_33.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="43" column="13" lean-forward="true" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Integer_to_English_Words_273.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hard/Integer_to_English_Words_273.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="65">
-              <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Serialize_and_Deserialize_Binary_Tree_297.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hard/Serialize_and_Deserialize_Binary_Tree_297.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="759">
-              <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+            <state relative-caret-position="144">
+              <caret line="17" column="49" lean-forward="true" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -141,12 +171,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="The_Skyline_Problem_218.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hard/The_Skyline_Problem_218.java">
+      <file leaf-file-name="Sliding_Puzzle_773.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/airbnb/Sliding_Puzzle_773.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+            <state relative-caret-position="239">
+              <caret line="96" column="44" lean-forward="true" selection-start-line="96" selection-start-column="44" selection-end-line="96" selection-end-column="44" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IP_to_CIDR_751.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/airbnb/IP_to_CIDR_751.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Text_Justification_68.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/airbnb/Text_Justification_68.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="158">
+              <caret line="15" column="61" lean-forward="false" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Math.java" pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/lang/Math.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="1182" column="0" lean-forward="false" selection-start-line="1182" selection-start-column="0" selection-end-line="1182" selection-end-column="0" />
+              <folding>
+                <element signature="e#46266#46267#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -156,17 +222,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="JUnit4 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>'1'</find>
-      <find>nums[i-1]</find>
-      <find>arrSize</find>
       <find>col + d</find>
       <find>post</find>
       <find>Symmetric_Tree_101.</find>
@@ -174,7 +237,6 @@
       <find>string</find>
       <find>values</find>
       <find>remove</find>
-      <find>*</find>
       <find>鏉ユ簮涓€浜�.涓夊垎鍦拌鍧�.</find>
       <find>LCA.</find>
       <find>buildMaxHeap</find>
@@ -194,6 +256,10 @@
       <find>http://www.1point3acres.com/bbs/forum.php?mod=viewthread&amp;tid=308331&amp;extra=page%3D1%26filter%3Dsortid%26sortid%3D311%26searchoption%5B3090%5D%5Bvalue%5D%3D2%26searchoption%5B3090%5D%5Btype%5D%3Dradio%26searchoption%5B3046%5D%5Bvalue%5D%3D2%26searchoption%5B3046%5D%5Btype%5D%3Dradio%26sortid%3D311</find>
       <find>seq</find>
       <find>&quot;&quot;</find>
+      <find>leader</find>
+      <find>available</find>
+      <find>*</find>
+      <find>List&lt;Integer&gt; adj</find>
     </findStrings>
     <replaceStrings>
       <replace>temp</replace>
@@ -518,57 +584,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/facebook/WoodCut.java" />
-        <option value="$PROJECT_DIR$/src/main/java/medium/Minimum_Height_Trees_310.java" />
-        <option value="$PROJECT_DIR$/src/main/java/design/point of interest" />
-        <option value="$PROJECT_DIR$/src/main/java/sort/QuickSort.java" />
-        <option value="$PROJECT_DIR$/src/main/java/facebook/links" />
-        <option value="$PROJECT_DIR$/src/main/java/facebook/fblist/ShortestPathFromLeftToRight.java" />
-        <option value="$PROJECT_DIR$/src/main/java/facebook/fblist/wordDic.java" />
-        <option value="$PROJECT_DIR$/src/main/java/facebook/fblist/WildCardSearch.java" />
-        <option value="$PROJECT_DIR$/src/main/java/medium/Top_K_Frequent_Words_692.java" />
-        <option value="$PROJECT_DIR$/src/main/java/facebook/fblist/LongestIncreasingSubsequence.java" />
-        <option value="$PROJECT_DIR$/src/main/java/facebook/fblist/KLargestNumSum.java" />
-        <option value="$PROJECT_DIR$/src/main/java/facebook/fblist/SumExpression.java" />
-        <option value="$PROJECT_DIR$/src/main/java/design/Netflix" />
-        <option value="$PROJECT_DIR$/src/main/java/facebook/fblist/BSTToMinHeap.java" />
-        <option value="$PROJECT_DIR$/src/main/java/easy/Diameter_of_Binary_Tree_543.java" />
-        <option value="$PROJECT_DIR$/src/main/java/facebook/fblist/BSTToDoubleLinkedList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hard/Sliding_Window_Maximum_239.java" />
-        <option value="$PROJECT_DIR$/src/main/java/facebook/fblist/ValidTreeByLinkedNode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/facebook/fblist/MakeLeftAndRightEqual.java" />
-        <option value="$PROJECT_DIR$/src/main/java/facebook/fblist/MSortedArray.java" />
-        <option value="$PROJECT_DIR$/src/main/java/facebook/fblist/IslandPerimeter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/facebook/fblist/TwoBSTToList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/facebook/fblist/LCAWithMutipleChildren.java" />
-        <option value="$PROJECT_DIR$/src/main/java/facebook/fblist/PrintRectangle.java" />
-        <option value="$PROJECT_DIR$/src/main/java/utility/Utils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/facebook/fblist/TwoArraySort.java" />
-        <option value="$PROJECT_DIR$/src/main/java/facebook/fblist/VersionSort.java" />
-        <option value="$PROJECT_DIR$/src/main/java/facebook/fblist/RemoveInvalidParenthesesByOneLoop.java" />
-        <option value="$PROJECT_DIR$/src/main/java/design/news feed" />
-        <option value="$PROJECT_DIR$/src/main/java/facebook/fblist/MergeSets.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hard/Regular_Expression_Matching_10.java" />
-        <option value="$PROJECT_DIR$/src/main/java/facebook/fblist/TargetInSortedArray.java" />
-        <option value="$PROJECT_DIR$/src/main/java/facebook/fblist/SubArraySum.java" />
-        <option value="$PROJECT_DIR$/src/main/java/medium/Continuous_Subarray_Sum_523.java" />
-        <option value="$PROJECT_DIR$/src/main/java/medium/AbsIncreasing.java" />
-        <option value="$PROJECT_DIR$/src/main/java/medium/PrimeNumberProduct.java" />
-        <option value="$PROJECT_DIR$/src/main/java/facebook/StringCompare.java" />
-        <option value="$PROJECT_DIR$/src/main/java/facebook/DotProduct.java" />
-        <option value="$PROJECT_DIR$/src/main/java/facebook/fblist/TaskCoolDown.java" />
-        <option value="$PROJECT_DIR$/src/main/java/facebook/fblist/UniqueNums.java" />
-        <option value="$PROJECT_DIR$/src/main/java/design/Audio mixer" />
-        <option value="$PROJECT_DIR$/src/main/java/facebook/fblist/APlusBEqualsCPlusD.java" />
-        <option value="$PROJECT_DIR$/src/main/java/medium/Kth_Largest_Element_in_an_Array_215.java" />
-        <option value="$PROJECT_DIR$/src/main/java/medium/Letter_Combinations_of_a_Phone_Number_17.java" />
-        <option value="$PROJECT_DIR$/src/main/java/medium/Multiply_Strings_43.java" />
-        <option value="$PROJECT_DIR$/src/main/java/medium/Word_Ladder_127.java" />
-        <option value="$PROJECT_DIR$/src/main/java/linkedin/MySqrt.java" />
-        <option value="$PROJECT_DIR$/src/main/java/easy/Palindrome_Linked_List_234.java" />
         <option value="$PROJECT_DIR$/src/main/java/medium/Search_in_Rotated_Sorted_Array_33.java" />
         <option value="$PROJECT_DIR$/src/main/java/hard/Serialize_and_Deserialize_Binary_Tree_297.java" />
         <option value="$PROJECT_DIR$/src/main/java/hard/The_Skyline_Problem_218.java" />
+        <option value="$PROJECT_DIR$/src/main/java/linkedin/onsite/BQ" />
+        <option value="$PROJECT_DIR$/src/main/java/medium/Text_Justification_68.java" />
+        <option value="$PROJECT_DIR$/src/main/java/linkedin/MultiListToDoubleList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/linkedin/design/key value store" />
+        <option value="$PROJECT_DIR$/src/main/java/linkedin/design/blacklist IP" />
+        <option value="$PROJECT_DIR$/src/main/java/linkedin/design/Top k个shared links" />
+        <option value="$PROJECT_DIR$/src/main/java/linkedin/design/top N exceptions in recent K time" />
+        <option value="$PROJECT_DIR$/src/main/java/linkedin/design/Top K Frequent Items Algorithm" />
+        <option value="$PROJECT_DIR$/src/main/java/linkedin/design/tech" />
+        <option value="$PROJECT_DIR$/src/main/java/linkedin/FindAndReplace.java" />
+        <option value="$PROJECT_DIR$/src/main/java/linkedin/design/hangman" />
+        <option value="$PROJECT_DIR$/src/main/java/linkedin/design/delay/TaskProducer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/linkedin/design/delay/Task.java" />
+        <option value="$PROJECT_DIR$/src/main/java/linkedin/design/delay/TaskConsumer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/linkedin/design/delay/TaskScheduler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/linkedin/design/delay/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/linkedin/EmailAndId.java" />
+        <option value="$PROJECT_DIR$/src/main/java/linkedin/design/delay/DelayedTask.java" />
+        <option value="$PROJECT_DIR$/src/main/java/linkedin/design/delay/DelayedTaskTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/linkedin/design/scheduler" />
+        <option value="$PROJECT_DIR$/src/main/java/linkedin/design/calendar system" />
+        <option value="$PROJECT_DIR$/src/main/java/linkedin/design/设计如何计算不同的人的关联degree" />
+        <option value="$PROJECT_DIR$/src/main/java/linkedin/design/设计Linkedin里面的people you may know" />
+        <option value="$PROJECT_DIR$/src/main/java/linkedin/design/scale system" />
+        <option value="$PROJECT_DIR$/src/main/java/design/TinyUrl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/linkedin/design/tiny url" />
+        <option value="$PROJECT_DIR$/src/main/java/linkedin/Count_the_number_of_occurrences_of_an_element_in_a_sorted_array.java" />
+        <option value="$PROJECT_DIR$/src/main/java/linkedin/AllDirectionDoubleLinkedList.java" />
+        <option value="$PROJECT_DIR$/src/main/java/medium/Linked_List_Cycle_II_142.java" />
+        <option value="$PROJECT_DIR$/src/main/java/easy/Roman_to_Integer_13.java" />
+        <option value="$PROJECT_DIR$/src/main/java/linkedin/onsite/ToDo" />
+        <option value="$PROJECT_DIR$/src/main/java/facebook/onsite/FriendRequest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/facebook/BQ/bq" />
+        <option value="$PROJECT_DIR$/src/main/java/facebook/design/system design" />
+        <option value="$PROJECT_DIR$/src/main/java/facebook/onsite/AllRangeSums.java" />
+        <option value="$PROJECT_DIR$/src/main/java/facebook/onsite/MinLengthOfTwoCharacters.java" />
+        <option value="$PROJECT_DIR$/src/main/java/airbnb/Palindrome_Pairs_336.java" />
+        <option value="$PROJECT_DIR$/src/main/java/airbnb/Flatten_2D_Vector_251.java" />
+        <option value="$PROJECT_DIR$/src/main/java/airbnb/NestedInteger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/airbnb/Mini_Parser_385.java" />
+        <option value="$PROJECT_DIR$/src/main/java/airbnb/Alien_Dictionary_269.java" />
+        <option value="$PROJECT_DIR$/src/main/java/graph/ToplogicalSorting.java" />
+        <option value="$PROJECT_DIR$/src/main/java/airbnb/Happy_Number_202.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sort/Maximal_Square_221.java" />
+        <option value="$PROJECT_DIR$/src/main/java/airbnb/Contains_Duplicate_III_220.java" />
+        <option value="$PROJECT_DIR$/src/main/java/airbnb/Sliding_Puzzle_773.java" />
+        <option value="$PROJECT_DIR$/src/main/java/airbnb/IP_to_CIDR_751.java" />
+        <option value="$PROJECT_DIR$/src/main/java/airbnb/Text_Justification_68.java" />
       </list>
     </option>
   </component>
@@ -674,6 +740,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -705,16 +773,44 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="hard" type="462c0819:PsiDirectoryNode" />
+              <item name="airbnb" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -739,12 +835,8 @@
       <recent name="medium" />
       <recent name="easy" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="google" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-      <recent name="spock.lang.Specification" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/design" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="linkedin" />
@@ -753,8 +845,12 @@
       <recent name="facebook" />
       <recent name="sort" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java/design" />
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+      <recent name="spock.lang.Specification" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="google" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -769,7 +865,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Serialize_and_Deserialize_Binary_Tree_297">
+  <component name="RunManager" selected="Application.Text_Justification_68">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -777,14 +873,14 @@
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
     </configuration>
-    <configuration name="Multiply_Strings_43" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Contains_Duplicate_III_220" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="medium.*" />
+          <option name="PATTERN" value="airbnb.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="medium.Multiply_Strings_43" />
+      <option name="MAIN_CLASS_NAME" value="airbnb.Contains_Duplicate_III_220" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -796,14 +892,14 @@
       <module name="leetcode_main" />
       <envs />
     </configuration>
-    <configuration name="MySqrt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="IP_to_CIDR_751" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="linkedin.*" />
+          <option name="PATTERN" value="airbnb.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="linkedin.MySqrt" />
+      <option name="MAIN_CLASS_NAME" value="airbnb.IP_to_CIDR_751" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -815,14 +911,14 @@
       <module name="leetcode_main" />
       <envs />
     </configuration>
-    <configuration name="Palindrome_Linked_List_234" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Maximal_Square_221" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="easy.*" />
+          <option name="PATTERN" value="sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="easy.Palindrome_Linked_List_234" />
+      <option name="MAIN_CLASS_NAME" value="sort.Maximal_Square_221" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -834,14 +930,14 @@
       <module name="leetcode_main" />
       <envs />
     </configuration>
-    <configuration name="Serialize_and_Deserialize_Binary_Tree_297" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Sliding_Puzzle_773" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="hard.*" />
+          <option name="PATTERN" value="airbnb.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="hard.Serialize_and_Deserialize_Binary_Tree_297" />
+      <option name="MAIN_CLASS_NAME" value="airbnb.Sliding_Puzzle_773" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -853,14 +949,14 @@
       <module name="leetcode_main" />
       <envs />
     </configuration>
-    <configuration name="Word_Ladder_127" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Text_Justification_68" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="medium.*" />
+          <option name="PATTERN" value="airbnb.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="medium.Word_Ladder_127" />
+      <option name="MAIN_CLASS_NAME" value="airbnb.Text_Justification_68" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1258,19 +1354,19 @@
       <envs />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.Multiply_Strings_43" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Word_Ladder_127" />
-      <item index="2" class="java.lang.String" itemvalue="Application.MySqrt" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Palindrome_Linked_List_234" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Serialize_and_Deserialize_Binary_Tree_297" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Maximal_Square_221" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Contains_Duplicate_III_220" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Sliding_Puzzle_773" />
+      <item index="3" class="java.lang.String" itemvalue="Application.IP_to_CIDR_751" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Text_Justification_68" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Serialize_and_Deserialize_Binary_Tree_297" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Palindrome_Linked_List_234" />
-        <item index="2" class="java.lang.String" itemvalue="Application.MySqrt" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Word_Ladder_127" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Multiply_Strings_43" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Text_Justification_68" />
+        <item index="1" class="java.lang.String" itemvalue="Application.IP_to_CIDR_751" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Sliding_Puzzle_773" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Contains_Duplicate_III_220" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Maximal_Square_221" />
       </list>
     </recent_temporary>
   </component>
@@ -1365,7 +1461,9 @@
       <workItem from="1515701639817" duration="55000" />
       <workItem from="1515710254966" duration="33000" />
       <workItem from="1515710311757" duration="743000" />
-      <workItem from="1515711872401" duration="173942000" />
+      <workItem from="1515711872401" duration="174520000" />
+      <workItem from="1517019813026" duration="86419000" />
+      <workItem from="1518061409257" duration="19796000" />
     </task>
     <option name="localTasksCounter" value="3" />
     <servers />
@@ -1403,7 +1501,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1792245000" />
+    <option name="totallyTimeSpent" value="1899038000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="778" extended-state="0" />
@@ -1417,13 +1515,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29656607" sideWeight="0.5021299" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24087591" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25693431" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32848838" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29489052" sideWeight="0.4978701" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.355178" sideWeight="0.49295774" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24919094" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3511327" sideWeight="0.49295774" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994187" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18446602" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1431,13 +1528,14 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35474452" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46423358" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45234248" sideWeight="0.5070422" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24919094" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1456,17 +1554,17 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48029196" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21605839" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2788321" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34160584" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30364963" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32848838" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29505813" sideWeight="0.4978701" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32119742" sideWeight="0.49295774" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29489052" sideWeight="0.4978701" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24838188" sideWeight="0.49295774" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994187" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18446602" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -2000,7 +2098,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/graph/ToplogicalSorting.java</url>
-          <line>38</line>
+          <line>39</line>
           <properties />
           <option name="timeStamp" value="663" />
         </line-breakpoint>
@@ -2377,19 +2475,19 @@
           <option name="timeStamp" value="818" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/amazon_onsite/ClosetTotalSum.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/amazon/ClosetTotalSum.java</url>
           <line>83</line>
           <properties />
           <option name="timeStamp" value="820" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/amazon_onsite/LeftRight.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/amazon/LeftRight.java</url>
           <line>18</line>
           <properties />
           <option name="timeStamp" value="823" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/amazon_onsite/LeftRight.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/amazon/LeftRight.java</url>
           <line>27</line>
           <properties />
           <option name="timeStamp" value="824" />
@@ -2755,34 +2853,10 @@
           <option name="timeStamp" value="988" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/design/TinyUrl.java</url>
-          <line>28</line>
-          <properties />
-          <option name="timeStamp" value="989" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/design/TinyUrl.java</url>
-          <line>33</line>
-          <properties />
-          <option name="timeStamp" value="991" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/design/TinyUrl.java</url>
-          <line>22</line>
-          <properties />
-          <option name="timeStamp" value="992" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/medium/Divide_Two_Integers_29.java</url>
           <line>15</line>
           <properties />
           <option name="timeStamp" value="995" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/lang/Math.java</url>
-          <line>1182</line>
-          <properties />
-          <option name="timeStamp" value="996" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/medium/Divide_Two_Integers_29.java</url>
@@ -3019,12 +3093,6 @@
           <option name="timeStamp" value="1082" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/lang/AbstractStringBuilder.java</url>
-          <line>182</line>
-          <properties />
-          <option name="timeStamp" value="1086" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/facebook/fblist/LongestIncreasingSubsequence.java</url>
           <line>78</line>
           <properties />
@@ -3210,11 +3278,137 @@
           <properties />
           <option name="timeStamp" value="1139" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/medium/Text_Justification_68.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="1140" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/design/TinyUrl.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="1160" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/design/TinyUrl.java</url>
+          <line>50</line>
+          <properties />
+          <option name="timeStamp" value="1162" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/linkedin/AllDirectionDoubleLinkedList.java</url>
+          <line>108</line>
+          <properties />
+          <option name="timeStamp" value="1166" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/medium/Linked_List_Cycle_II_142.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="1167" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/medium/Linked_List_Cycle_II_142.java</url>
+          <line>19</line>
+          <properties />
+          <option name="timeStamp" value="1168" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/easy/Roman_to_Integer_13.java</url>
+          <line>76</line>
+          <properties />
+          <option name="timeStamp" value="1169" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/easy/Roman_to_Integer_13.java</url>
+          <line>64</line>
+          <properties />
+          <option name="timeStamp" value="1170" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/facebook/onsite/FriendRequest.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="1171" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/airbnb/Mini_Parser_385.java</url>
+          <line>66</line>
+          <properties />
+          <option name="timeStamp" value="1175" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/graph/ToplogicalSorting.java</url>
+          <line>119</line>
+          <properties />
+          <option name="timeStamp" value="1178" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/graph/ToplogicalSorting.java</url>
+          <line>122</line>
+          <properties />
+          <option name="timeStamp" value="1179" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/graph/ToplogicalSorting.java</url>
+          <line>107</line>
+          <properties />
+          <option name="timeStamp" value="1180" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/airbnb/Alien_Dictionary_269.java</url>
+          <line>38</line>
+          <properties />
+          <option name="timeStamp" value="1186" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/graph/ToplogicalSorting.java</url>
+          <line>97</line>
+          <properties />
+          <option name="timeStamp" value="1187" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/sort/Maximal_Square_221.java</url>
+          <line>86</line>
+          <properties />
+          <option name="timeStamp" value="1189" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/airbnb/Contains_Duplicate_III_220.java</url>
+          <line>15</line>
+          <properties />
+          <option name="timeStamp" value="1191" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/airbnb/Sliding_Puzzle_773.java</url>
+          <line>78</line>
+          <properties />
+          <option name="timeStamp" value="1194" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/airbnb/Sliding_Puzzle_773.java</url>
+          <line>68</line>
+          <properties />
+          <option name="timeStamp" value="1195" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/airbnb/IP_to_CIDR_751.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="1197" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/airbnb/Text_Justification_68.java</url>
+          <line>11</line>
+          <properties />
+          <option name="timeStamp" value="1206" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="1140" />
+      <option name="time" value="1207" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -3225,519 +3419,474 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
+        <expression-string>text.length()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>maxWidth - text.length()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>s.substring(pre + 1, i)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>q</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>_expireInSecond - (cal.getTimeInMillis() / 1000)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>task1.getDelay()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(L - len) / (w - i - 1)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>w - i - 1</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>ch[j]</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>num1.charAt(last1)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>num1.charAt(last1) - '0'</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>map.get(sum)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>map.get(sum</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>p.charAt(i - 2)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>dp[i - 2][j]</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>(s.charAt(i - 2) == p.charAt(j - 1)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>dp[i-1][j-1] &amp;&amp; s.charAt(i - 1) == p.charAt(j - 1)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/util/TreeMap.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/linkedin/design/delay/TaskProducer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="110" column="20" lean-forward="false" selection-start-line="110" selection-start-column="13" selection-end-line="110" selection-end-column="20" />
-          <folding />
+        <state relative-caret-position="198">
+          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/util/TreeSet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/linkedin/design/delay/Task.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="29" column="1" lean-forward="false" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/linkedin/design/delay/TaskConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/linkedin/design/delay/TaskScheduler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/linkedin/design/delay/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/util/Calendar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="2757" column="25" lean-forward="false" selection-start-line="2757" selection-start-column="25" selection-end-line="2757" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/linkedin/EmailAndId.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
-          <caret line="97" column="47" lean-forward="true" selection-start-line="97" selection-start-column="47" selection-end-line="97" selection-end-column="47" />
-          <folding />
+          <caret line="26" column="44" lean-forward="false" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/facebook/fblist/BSTToDoubleLinkedList.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/linkedin/design/delay/DelayedTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="89" column="25" lean-forward="true" selection-start-line="89" selection-start-column="25" selection-end-line="89" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#262#263#0" expanded="false" />
-            <element signature="e#300#301#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="250">
+          <caret line="31" column="22" lean-forward="false" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hard/Sliding_Window_Maximum_239.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/linkedin/design/delay/DelayedTaskTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="102" column="5" lean-forward="true" selection-start-line="31" selection-start-column="4" selection-end-line="102" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#236#237#0" expanded="false" />
-            <element signature="e#274#275#0" expanded="false" />
-            <element signature="e#1563#1564#0" expanded="false" />
-            <element signature="e#1606#1607#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="394">
+          <caret line="85" column="19" lean-forward="false" selection-start-line="85" selection-start-column="19" selection-end-line="85" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/facebook/fblist/ValidTreeByLinkedNode.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/util/concurrent/DelayQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="102" column="0" lean-forward="false" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
-          <folding>
-            <element signature="e#195#196#0" expanded="false" />
-            <element signature="e#233#234#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="154">
+          <caret line="220" column="0" lean-forward="false" selection-start-line="220" selection-start-column="0" selection-end-line="220" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/facebook/fblist/MakeLeftAndRightEqual.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/linkedin/design/scheduler">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="42" column="39" lean-forward="true" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+        <state relative-caret-position="416">
+          <caret line="52" column="34" lean-forward="false" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/util/Comparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="486" column="36" lean-forward="false" selection-start-line="486" selection-start-column="36" selection-end-line="486" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/facebook/fblist/MSortedArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="58" column="29" lean-forward="false" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/facebook/fblist/IslandPerimeter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/facebook/fblist/TwoBSTToList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="22" column="19" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/lang/AbstractStringBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="1005" column="24" lean-forward="true" selection-start-line="1005" selection-start-column="24" selection-end-line="1005" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/lang/StringBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="290" column="16" lean-forward="false" selection-start-line="290" selection-start-column="16" selection-end-line="290" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/facebook/fblist/LCAWithMutipleChildren.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="29" column="20" lean-forward="false" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#210#211#0" expanded="false" />
-            <element signature="e#248#249#0" expanded="false" />
-            <element signature="e#302#303#0" expanded="false" />
-            <element signature="e#345#346#0" expanded="false" />
-            <element signature="e#1139#1140#0" expanded="false" />
-            <element signature="e#1190#1191#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utility/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="126" column="28" lean-forward="false" selection-start-line="126" selection-start-column="28" selection-end-line="126" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/facebook/fblist/TwoArraySort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="22" column="9" lean-forward="false" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/lang/NumberFormatException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/facebook/fblist/VersionSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13">
-          <caret line="114" column="31" lean-forward="false" selection-start-line="114" selection-start-column="31" selection-end-line="114" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#3695#3696#0" expanded="false" />
-            <element signature="e#3751#3752#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/design/news feed">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/facebook/fblist/MergeSets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hard/Regular_Expression_Matching_10.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="35" column="9" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="35" selection-end-column="9" />
-          <folding>
-            <element signature="e#1163#1164#0" expanded="false" />
-            <element signature="e#1218#1219#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/facebook/fblist/PrintRectangle.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/linkedin/design/calendar system">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
-          <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-          <folding />
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/facebook/fblist/RemoveInvalidParenthesesByOneLoop.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/linkedin/design/设计如何计算不同的人的关联degree">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="398">
+          <caret line="36" column="64" lean-forward="false" selection-start-line="36" selection-start-column="64" selection-end-line="36" selection-end-column="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/facebook/fblist/TargetInSortedArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="61" column="42" lean-forward="false" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/facebook/fblist/SubArraySum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="59" column="52" lean-forward="false" selection-start-line="59" selection-start-column="52" selection-end-line="59" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1288#1289#0" expanded="false" />
-            <element signature="e#1354#1355#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/medium/Continuous_Subarray_Sum_523.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="e#1265#1266#0" expanded="false" />
-            <element signature="e#1338#1339#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/medium/Sort_Colors_75.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="55" column="16" lean-forward="false" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/medium/AbsIncreasing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="32" column="32" lean-forward="false" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/medium/PrimeNumberProduct.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#731#732#0" expanded="false" />
-            <element signature="e#800#801#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/facebook/AlphabeticalSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="19" column="61" lean-forward="false" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/facebook/ProductOfPrimeNumber.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/facebook/StringCompare.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="81" column="47" lean-forward="false" selection-start-line="81" selection-start-column="47" selection-end-line="81" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/facebook/DotProduct.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="84" column="5" lean-forward="false" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/facebook/fblist/TaskCoolDown.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="20" column="37" lean-forward="false" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#997#998#0" expanded="false" />
-            <element signature="e#1078#1079#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/facebook/fblist/UniqueNums.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="25" column="27" lean-forward="false" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/design/insgram upload photo">
+    <entry file="file://$PROJECT_DIR$/src/main/java/linkedin/design/设计Linkedin里面的people you may know">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/linkedin/design/key value store">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="45" lean-forward="false" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/linkedin/design/scale system">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/design/TinyUrl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="66" column="62" lean-forward="false" selection-start-line="66" selection-start-column="62" selection-end-line="66" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/linkedin/design/tiny url">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="40" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/linkedin/design/tech">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/linkedin/Count_the_number_of_occurrences_of_an_element_in_a_sorted_array.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="46" column="67" lean-forward="false" selection-start-line="46" selection-start-column="67" selection-end-line="46" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/linkedin/AllDirectionDoubleLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="97" column="21" lean-forward="false" selection-start-line="97" selection-start-column="21" selection-end-line="97" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/medium/Linked_List_Cycle_II_142.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/easy/Roman_to_Integer_13.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="781">
+          <caret line="135" column="47" lean-forward="false" selection-start-line="134" selection-start-column="49" selection-end-line="135" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/linkedin/onsite/ToDo">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="4" lean-forward="false" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/linkedin/SecondMinInTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-119">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="e#266#267#0" expanded="false" />
+            <element signature="e#308#309#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/facebook/onsite/FriendRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="48" column="62" lean-forward="false" selection-start-line="48" selection-start-column="62" selection-end-line="48" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/BQ/BQ">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-582">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/design/Audio mixer">
+    <entry file="file://$PROJECT_DIR$/src/main/java/linkedin/ValidNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/facebook/BQ/bq">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="33" lean-forward="false" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/facebook/design/system design">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/facebook/onsite/AllRangeSums.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="36" column="31" lean-forward="false" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/facebook/onsite/MinLengthOfTwoCharacters.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
-          <caret line="8" column="34" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/facebook/fblist/APlusBEqualsCPlusD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/medium/Kth_Largest_Element_in_an_Array_215.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="116" column="46" lean-forward="false" selection-start-line="116" selection-start-column="46" selection-end-line="116" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/medium/Letter_Combinations_of_a_Phone_Number_17.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/medium/Multiply_Strings_43.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="35" column="48" lean-forward="false" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
-          <folding>
-            <element signature="e#971#972#0" expanded="true" />
-            <element signature="e#1026#1027#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/medium/Word_Ladder_127.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="46" lean-forward="true" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/easy/Sqrt_69.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-67">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/linkedin/MySqrt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/util/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1273">
-          <caret line="1087" column="14" lean-forward="false" selection-start-line="1087" selection-start-column="14" selection-end-line="1087" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/easy/Palindrome_Linked_List_234.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="82" column="5" lean-forward="true" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/medium/Search_in_Rotated_Sorted_Array_33.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="43" column="13" lean-forward="true" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hard/Integer_to_English_Words_273.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="2408" column="20" lean-forward="false" selection-start-line="2408" selection-start-column="20" selection-end-line="2408" selection-end-column="20" />
+        <state relative-caret-position="-1519">
+          <caret line="136" column="11" lean-forward="false" selection-start-line="136" selection-start-column="11" selection-end-line="136" selection-end-column="11" />
           <folding>
-            <element signature="e#94262#94263#0" expanded="true" />
-            <element signature="e#94300#94301#0" expanded="true" />
+            <element signature="e#4677#4678#0" expanded="false" />
+            <element signature="e#4717#4718#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/com/sun/org/apache/xpath/internal/operations/String.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="850" column="0" lean-forward="false" selection-start-line="850" selection-start-column="0" selection-end-line="850" selection-end-column="0" />
+        <state relative-caret-position="144">
+          <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hard/Serialize_and_Deserialize_Binary_Tree_297.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/airbnb/Flatten_2D_Vector_251.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+        <state relative-caret-position="432">
+          <caret line="29" column="5" lean-forward="false" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#385#386#0" expanded="false" />
+            <element signature="e#420#421#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/airbnb/Palindrome_Pairs_336.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="37" column="34" lean-forward="false" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/linkedin/NestedInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/airbnb/NestedInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="57" column="68" lean-forward="false" selection-start-line="57" selection-start-column="68" selection-end-line="57" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#173#174#0" expanded="true" />
+            <element signature="e#213#214#0" expanded="true" />
+            <element signature="e#252#253#0" expanded="true" />
+            <element signature="e#286#287#0" expanded="true" />
+            <element signature="e#413#414#0" expanded="true" />
+            <element signature="e#448#449#0" expanded="true" />
+            <element signature="e#638#639#0" expanded="true" />
+            <element signature="e#666#667#0" expanded="true" />
+            <element signature="e#763#764#0" expanded="true" />
+            <element signature="e#797#798#0" expanded="true" />
+            <element signature="e#923#924#0" expanded="true" />
+            <element signature="e#951#952#0" expanded="true" />
+            <element signature="e#1147#1148#0" expanded="true" />
+            <element signature="e#1174#1175#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/lang/NumberFormatException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/airbnb/Mini_Parser_385.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/airbnb/Alien_Dictionary_269.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="36" column="9" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="36" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/graph/ToplogicalSorting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="78" column="9" lean-forward="false" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/airbnb/Happy_Number_202.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#521#522#0" expanded="true" />
+            <element signature="e#567#568#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sort/Maximal_Square_221.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="91" column="17" lean-forward="true" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/airbnb/Contains_Duplicate_III_220.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="17" column="49" lean-forward="true" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hard/The_Skyline_Problem_218.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/util/Arrays.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="7" column="39" lean-forward="false" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        <state relative-caret-position="212">
+          <caret line="4610" column="25" lean-forward="false" selection-start-line="4610" selection-start-column="25" selection-end-line="4610" selection-end-column="25" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/lang/Math.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="1182" column="0" lean-forward="false" selection-start-line="1182" selection-start-column="0" selection-end-line="1182" selection-end-column="0" />
+          <folding>
+            <element signature="e#46266#46267#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/airbnb/Sliding_Puzzle_773.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="96" column="44" lean-forward="true" selection-start-line="96" selection-start-column="44" selection-end-line="96" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/src.zip!/java/util/BitSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="64" column="13" lean-forward="false" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/airbnb/IP_to_CIDR_751.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/airbnb/Text_Justification_68.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="15" column="61" lean-forward="false" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

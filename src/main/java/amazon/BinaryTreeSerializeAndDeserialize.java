@@ -1,4 +1,4 @@
-package amazon_onsite;
+package amazon;
 
 /**
  * Created by chenlijie on 12/5/17.

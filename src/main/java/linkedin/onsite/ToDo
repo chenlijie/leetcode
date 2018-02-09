@@ -1,0 +1,20 @@
+word ladder
+
+ 给一个string list 和 k, 要求打印每个list的元素，按照每行k个元素, 要求不用额外空间
+
+ 1.implement a class to finish data operation methods: add， delete， random delete
+ 2. repeated DNA sequence (leetcode)
+ 是要求按大小顺序输出来着，alphabetical order
+能具体说说用int array怎么做吗。因为按照leetcode那道DNA题的做法， 是一旦发现有重复的（通过 hashmap）就加到result里面。如果按字母顺序的话，就要collection.sort(),那就变成nlogn了
+ 我当时是这样，hash函数把结果变成整数，范围是0到4^10 - 1， 然后直接用一个这么大的数组来记录结果。之后遍历数组，把找到的结果reverse hash回去~
+
+
+ Round 6应该是利口272
+
+ 5. design 面经题，设计key-value store
+ 6. design 面经题，设计领英get distance的API（求1，2，3度联系人）
+
+
+    利口 以奇死 和利口 气流
+
+

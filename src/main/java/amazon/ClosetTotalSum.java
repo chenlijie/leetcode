@@ -1,4 +1,4 @@
-package amazon_onsite;
+package amazon;
 
 import utility.Utils;
 

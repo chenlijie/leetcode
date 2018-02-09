@@ -1,0 +1,23 @@
+https://github.com/FreemanZhang/system-design/blob/master/linkedin/hangmanGame.md#past-comments
+
+1. user cases
+    What is hangman game ?
+    Is it a web page game ?
+    Is it user against computer, or user against user ?
+    what's the rules of this game ?
+    Is user required to login before start a game, or user can be visitor ?
+    How many chances user can guess a word, can it be customized ?
+    How to pair users, How does one player choose another player, randomly choose or choose player from his knowing friends list ?
+    Can user save game then restore it ?
+    Where do we get words ? can user provides a word for a game ?
+    Do we need collect game history for user, like how many games he win/lost, who he win ?
+    Users will be updated the result for each step ?
+
+
+2. constraints
+    How many users are allowed in one game ?
+    What's the maximum user number online at same time ?
+
+
+3. abstract design
+

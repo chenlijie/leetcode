@@ -1,6 +1,7 @@
 package graph;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Stack;
 
@@ -49,17 +50,82 @@ public class ToplogicalSorting {
     }
 
     public static void main(String[] args) {
-        new ToplogicalSorting().sort(new int[][]{
-                {0, 2},
-                {1, 2}
-        }, 3);
+//        new ToplogicalSorting().sort(new int[][]{
+//                {0, 2},
+//                {1, 2}
+//        }, 3);
 
-        int x = (int) (Math.ceil(Math.log(15) / Math.log(2)));
+        topSort(new int[][]{
+                {5, 2},
+                {5, 0},
+                {4, 0},
+                {4, 1},
+                {2, 3},
+                {3, 1},
+//                {1, 2}
+        }, 6);
 
-        //Maximum size of segment tree
-//        int max_size = 2 * (int) Math.pow(2, x) - 1;
-//
-//        System.out.println(x);
-//        System.out.println(max_size);
     }
+
+    static void topSort(int[][] edges, int n) {
+        List<Integer>[] adj = new List[n];
+
+        for (int i = 0; i < n; i++) {
+            adj[i] = new ArrayList();
+        }
+
+        for (int[] e : edges) {
+            adj[e[0]].add(e[1]);
+        }
+        
+        boolean[] visited = new boolean[n];
+        Stack<Integer> stack = new Stack<>();
+
+        for (int i = 0; i < n; i++) {
+            if (!visited[i]) {
+                topSortUtil(i, visited, adj, stack);
+            }
+        }
+
+        while (!stack.isEmpty()) {
+            System.out.print(stack.pop() + ", ");
+        }
+    }
+
+    static void topSortUtil(int i, boolean[] visited, List<Integer>[] adj, Stack<Integer> stack) {
+        visited[i] = true;
+
+        for (int u : adj[i]) {
+            if (!visited[u]) {
+                topSortUtil(u, visited, adj, stack);
+            }
+        }
+
+        stack.push(i);
+    }
+
+    static boolean isCyclic(int i, int[] indgree, int[] status, List[] adj, Stack<Integer> stack) {
+        if (status[i] == 1)
+            return true;
+
+        status[i] = 1;
+        stack.push(i);
+
+        for (int j = 0; j < adj[i].size(); j++) {
+            int next = (int)adj[i].get(j);
+            indgree[next]--;
+
+            if (indgree[next] == 0 && status[next] == 0) {
+                if (isCyclic(next, indgree, status, adj, stack)) {
+                    return true;
+                }
+            } else if (status[next] == 1) {
+                return true;
+            }
+        }
+
+        status[i] = 2;
+        return false;
+    }
+
 }

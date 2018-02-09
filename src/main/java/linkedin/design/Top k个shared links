@@ -1,0 +1,11 @@
+1. Can I assume we already have a way collect the frequency or shared times of a link ?
+we dont care about system collect the shared times of a link
+
+2. Is it a single server system or distributed system ?
+
+3. How many hits per second?
+
+
+http://zpjiang.me/2017/11/13/top-k-elementes-system-design/
+http://massivetechinterview.blogspot.com/2015/06/algorithm-how-to-count-number-of.html
+

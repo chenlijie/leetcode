@@ -1,0 +1,7 @@
+http://zpjiang.me/2017/11/13/top-k-elementes-system-design/
+https://soulmachine.gitbooks.io/system-design/content/cn/bigdata/heavy-hitters.html
+http://zqdevres.qiniucdn.com/data/20080404140103/index.html
+https://micvog.com/2015/07/18/frequency-counting-algorithms-over-data-streams/
+
+
+kafka + samza + rate limiter (rolling window), database可以用Redis

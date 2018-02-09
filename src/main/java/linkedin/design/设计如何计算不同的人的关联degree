@@ -1,0 +1,37 @@
+https://engineering.linkedin.com/real-time-distributed-graph/using-set-cover-algorithm-optimize-query-latency-large-scale-distributed
+http://0b4af6cdc2f0c5998459-c0245c5c937c5dedcca3f1764ecc9b2f.r43.cf2.rackcdn.com/11567-hotcloud13-wang.pdf
+
+1. what is the user volume ?
+
+2. how about query traffic ? queries per second
+
+3. how far can one user see his connection ?
+
+4. latency
+
+5. what amount of traffic / load or data your software would be handling
+
+Network Cache Service (NCS),
+
+retrieving a member’s connections
+computing shared connections between members, and
+calculating distances in the graph
+
+如何判断friend，friend of friend，friend of friend of friend，followup如何shard data提高效率
+（design api。给定一个get_friends_lists() 问怎么判断两个是1 degree friends，2 degree friends 还是 3 degree friends。)
+（已知一个函数，输入用户ID，可以返回该用户的所有友好（degree 1 friends），按好友ID从小到大排序。
+
+A - B
+1 degree friends : To check if A is a friend of B, we can get the friend list of B and verify if A is on the list or not.
+    The time complexity is O(n). As ids are sorted, we can do binary search. It will be O(lgN)
+
+A - C - B
+2 degree friends : get the friend list of A and B, to check if there is one intersection which means A and B have a common
+    friend C. we can do binary search for each friend of A in B's friend list. or we can use two pointers to go through both
+    friend list, always move the pointer of small idx, so time complexity is O(A+B)
+
+A - C - D - B
+3 degree friends : if we do BFS starting from A, first we find A's friend list, then find each friend list of A's friend,
+    do same process until we arrival the 3rd level. let's say avg size of friend list is N, the time complexiy is O(N3).
+    If we do bi-dirctional search staring from A and B, we get A's friend list and B's friend list. Then we get the all
+    friends of A's friends. Let's say Set(A's friend) and SetB, we need to check if any element in SetA appears in SetB

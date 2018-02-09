@@ -1,0 +1,12 @@
+https://soulmachine.gitbooks.io/system-design/content/cn/key-value-store.html
+
+
+我的做法最后大概是这样吧：
+. 鍥磋鎴戜滑@1point 3 acres
+1. in the main memory, maintain a hashmap, key is each input key appeared, value is the file ptr and line ptr(key-value pair location in the file system)
+2. each time when we need to update the value, write a new key value pair at the end of the file, and also update the related key value pairs in the main memory. Then when main memory cracks, we can reconstruct the main memory hashmap from the files content. 1point 3acres 璁哄潧
+3.  make file modification to save space: scan the file sequentially for each key to find the latest update, then put the latest key-value pairs into another file. After we finished doing this for all the keys in a file, delete that file. more info on 1point3acres.com
+4. deal with synchronization: when we do the file modification, put all the newest updates into another file, then replay it
+5. each file should have an limited amount of different keys, so that file modification is not that hard
+
+这个也主要是聊天，面试官会不断提到一些他好奇的地方，感觉基本都是暗示吧，有些细节不太记得了
