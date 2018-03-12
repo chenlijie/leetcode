@@ -1,1 +1,8 @@
-设计news feed 不是某章讲的那样  是让你设计request response   问了如何分页  问了response 如果用json 还是xml传哪个好  你该怎么选
+设计news feed 不是某章讲的那样
+是让你设计request response
+问了如何分页  问了response 如果用json 还是xml传哪个好  你该怎么选
+
+http://blog.bittiger.io/post156/
+https://www.quora.com/Software-Engineering-Best-Practices/What-are-the-best-practices-for-building-something-like-a-news-feed
+https://www.quora.com/What-are-the-scaling-issues-to-keep-in-mind-while-developing-a-social-network-feed
+http://blog.gainlo.co/index.php/2016/03/29/design-news-feed-system-part-1-system-design-interview-questions/?utm_campaign=quora&utm_medium=What+are+the+best+practices+for+building+something+like+a+News+Feed%3F&utm_source=quora

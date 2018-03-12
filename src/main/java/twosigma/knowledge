@@ -1,0 +1,12 @@
+1. difference between process and thread and how to communicate
+2. hashtable features and implement
+(1) HashTable怎么work？怎么解决Collision？
+  (2) 介绍熟悉的Design pattern
+  (3) Process与Thread区别
+  (4) Latency与Throughput区别
+  (5) Given a stream of numbers, 怎么实时计算average， standard deviation, median?
+       Followup: 怎么找出largest（smallest） K% elements？
+
+
+
+http://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=216941&extra=page%3D1%26filter%3Dsortid%26sortid%3D311%26searchoption%5B3046%5D%5Bvalue%5D%3D34%26searchoption%5B3046%5D%5Btype%5D%3Dradio%26sortid%3D311

@@ -11,34 +11,28 @@ import java.util.Map;
 public class Path_Sum_III_437 {
 
     public int pathSum(TreeNode root, int sum) {
-        Map<Integer, Integer> map = new HashMap<>();
-        map.put(0, 1);
-        int[] ans = new int[1];
-        helper(root, 0, sum, map, ans);
-        return ans[0];
+        if (root == null) return 0;
+        return dfs(root, 0, sum) + pathSum(root.left, sum) + pathSum(root.right, sum);
     }
 
-    void helper(TreeNode node, int sum, int target, Map<Integer, Integer> map, int[] ans) {
-        if (node == null)
-            return;
+    int dfs(TreeNode node, int sum, int target) {
+        if (node == null) return 0;
 
         sum += node.val;
 
-        ans[0] += map.getOrDefault(sum - target, 0);
-        map.put(sum, map.getOrDefault(sum, 0) + 1);
-
-        helper(node.left, sum, target, map, ans);
-        helper(node.left, sum, target, map, ans);
-
-        map.put(sum, map.get(sum) - 1);
+        return (target == sum ? 1 : 0)
+                + dfs(node.left, sum, target)
+                + dfs(node.right, sum, target);
     }
 
     public static void main(String[] args) {
         Path_Sum_III_437 sum = new Path_Sum_III_437();
-        TreeNode root = new TreeNode(0);
-        TreeNode left = new TreeNode(3);
-        left.val = 3;
-        root.left = left;
+        TreeNode root = new TreeNode(1);
+        TreeNode right = new TreeNode(2);
+        TreeNode rightright = new TreeNode(3);
+        root.right = right;
+        right.right = rightright;
+
         System.out.println(sum.pathSum(root, 3));
     }
 }
