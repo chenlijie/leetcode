@@ -1,0 +1,19 @@
+http://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=300910&pid=3332262&page=1&extra=page%3D1%26filter%3Dsortid%26sortid%3D311%26searchoption%255B3086%255D%255Bvalue%255D%3D7%26searchopti...
+
+店面：
+code: weighted random number.sgs
+concepts: 2 design pattern, hashmap (design, handle collision...), quicksort vs mergesort
+
+昂赛特：-google 1point3acres
+第三套题
+一：LRU
+二：median of two sorted array (debug), buy and sell stock III (leetcode原题 就是求交易两次最大利润)
+三：OOD design ATM
+给interface，加interface里面觉得需要的method的定义. from: 1point3acres.com/bbs
+实现ATM两个method
+给个interface大概有 displayConsole, CardHandler, CashEnvelopeHandler, CashExpenserHandler, Account(Account里面就要有query, transfer, deposit, withdrawl等methods定义)
+1. login界面
+2. 菜单选择是（query, transfer, deposit, withdrawl）
+两个method主题基本是根据用户的选择有个 switch case的结构
+. 1point3acres.com/bbs
+下午三轮manager比较开放 题目也随即 每个人都不一样 但是更多的是设计简单的算法题 这部分看面经不太管用 就不写了哈

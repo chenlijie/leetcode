@@ -74,6 +74,7 @@ public class TimeSeriesDataAggreation {
             processLog(msg);
         }
         printLog();
+        s.close();
 
         /*BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String line = null;

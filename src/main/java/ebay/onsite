@@ -1,11 +1,121 @@
 http://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=293203&extra=page%3D1%26filter%3Dsortid%26sortid%3D311%26searchoption%5B3046%5D%5Bvalue%5D%3D16%26searchoption%5B3046%5D%5Btype%5D%3Dradio%26sortid%3D311
-http://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=315628&extra=page%3D1%26filter%3Dsortid%26sortid%3D311%26searchoption%5B3046%5D%5Bvalue%5D%3D16%26searchoption%5B3046%5D%5Btype%5D%3Dradio%26sortid%3D311
 http://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=333349&extra=page%3D1%26filter%3Dsortid%26sortid%3D311%26searchoption%5B3046%5D%5Bvalue%5D%3D16%26searchoption%5B3046%5D%5Btype%5D%3Dradio%26sortid%3D311
 http://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=176792&extra=page%3D1%26filter%3Dsortid%26sortid%3D311%26searchoption%5B3046%5D%5Bvalue%5D%3D16%26searchoption%5B3046%5D%5Btype%5D%3Dradio%26sortid%3D311
-http://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=307982&extra=page%3D1%26filter%3Dsortid%26sortid%3D311%26searchoption%5B3046%5D%5Bvalue%5D%3D16%26searchoption%5B3046%5D%5Btype%5D%3Dradio%26sortid%3D311
-http://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=297972&extra=page%3D1%26filter%3Dsortid%26sortid%3D311%26searchoption%5B3046%5D%5Bvalue%5D%3D16%26searchoption%5B3046%5D%5Btype%5D%3Dradio%26sortid%3D311
 http://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=300188&extra=page%3D1%26filter%3Dsortid%26sortid%3D311%26searchoption%5B3046%5D%5Bvalue%5D%3D16%26searchoption%5B3046%5D%5Btype%5D%3Dradio%26sortid%3D311
 http://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=281766&extra=page%3D1%26filter%3Dsortid%26sortid%3D311%26searchoption%5B3046%5D%5Bvalue%5D%3D16%26searchoption%5B3046%5D%5Btype%5D%3Dradio%26sortid%3D311
+
 http://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=184156&extra=page%3D1%26filter%3Dsortid%26sortid%3D311%26searchoption%5B3046%5D%5Bvalue%5D%3D16%26searchoption%5B3046%5D%5Btype%5D%3Dradio%26sortid%3D311
 http://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=223971&extra=page%3D2%26filter%3Dsortid%26sortid%3D311%26searchoption%5B3046%5D%5Bvalue%5D%3D16%26searchoption%5B3046%5D%5Btype%5D%3Dradio%26sortid%3D311
 http://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=173984&extra=page%3D2%26filter%3Dsortid%26sortid%3D311%26searchoption%5B3046%5D%5Bvalue%5D%3D16%26searchoption%5B3046%5D%5Btype%5D%3Dradio%26sortid%3D311
+
+
+说说你遇到过的最困难的项目
+你觉得ebay有什么可以改进的东西什么的
+behavior 有一些奇葩问题：比如问你给你现在的team打分，然后如果没有了你，还能打几分？
+most challenge
+
+API  version management, new version of API published, how to not break old client(without changing code in the client).
+
+设计停车场,
+设计题，设计vending machine
+
+你会怎么设计collabedit或google doc，主要问到的点：multi user，history的存储，revert
+
+实现stack,
+设计一个Cache系统，如果是分布式的cache系统要怎么设计，设计的时候要考虑什么因素
+
+设计一个chat的软件，就像微信一样
+脸书这种社交网络，对于明星用户，有很多人follow他的那种，怎么处理这种明星发post的情况。
+
+ String match
+ product except itself
+ binary search in rotated array
+ 大文件字符串排序
+
+第二题是给一个整形二维矩阵，每一行从左到右递增，每一列从左到右递增，给一个target number，判断该数在不在矩阵里。请注意每一行的最后一个数字跟下一行的第一个数字并不是递增的，所以跟LC上的题不一样，不能用二分查找。但是仍然是divide & conquer的思路
+longest panlindrome subsequence 我写了基础解法，让优化成o(nlongn)
+算法，区间问题，我觉得这个面试官自己都不清楚答案，因为我回答之后找个面试官也是一愣一愣的。问题背景可以是metting room，有很多区间，面试官要你给出一个solution，要怎么安排才能保证overlap最少
+
+海量query，要求统计query的次数。follow up 如何在有限内存无法hold所有的query文件下统计词频， hash 分桶。
+follow up2， 建立倒排索引，query string 对应多个user ID,  如何找出两个query的共有user id， 即找 两个user id 集合的交集。 Naive 方案O(N2),
+follow up3, 如果user id list有序，要求O(N)的时间复杂度
+
+http://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=307982&extra=page%3D1%26filter%3Dsortid%26sortid%3D311%26searchoption%5B3046%5D%5Bvalue%5D%3D16%26searchoption%5B3046%5D%5Btype%5D%3Dradio%26sortid%3D311
+http://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=297972&extra=page%3D1%26filter%3Dsortid%26sortid%3D311%26searchoption%5B3046%5D%5Bvalue%5D%3D16%26searchoption%5B3046%5D%5Btype%5D%3Dradio%26sortid%3D311
+
+http://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=315628&extra=page%3D1%26filter%3Dsortid%26sortid%3D311%26searchoption%5B3046%5D%5Bvalue%5D%3D16%26searchoption%5B3046%5D%5Btype%5D%3Dradio%26sortid%3D311
+
+Factory
+creates objects without exposing the instantiation logic to the client.
+Abstract Factory patterns work around a super-factory which creates other factories.
+https://refactoring.guru/design-patterns/abstract-factory/java/example
+https://www.tutorialspoint.com/design_pattern/abstract_factory_pattern.htm
+
+Difference between interface and abstract class
+1. interface only has signature methods, method doesn't have body/implementation.
+    abstract class can have both signature method and implemented method.
+2. interface only has constants.
+    abstract class can have constants, members variables.
+3. interface supports multiple inheritances. sub class can implement more than on interface.
+    abstract class doesn't, sub class only can extend one abstract class
+4. interface doesn't have access modifiers, by default everything is assumed as public.
+    abstract class can access modifiers on member, method.
+
+5. interface is like an implementation guide.
+    abstract class has implementation of common method, sub classes have different implementations of abstract method.
+
+concurrency
+
+Java memory management
+    - Java Stack: each thread has its own stack
+    - Method area: class structure, code for method, stack fields
+    - PC register: each thread has separate PC register which hold the address of current executing instruction
+    - Native method area: native method information, c library
+    - Heap : young generation and old generation
+        young generation : eden space and survivor space
+
+
+garbage collection
+    garbage collectors clean unused objects in heap. There are two different collectors - minor and major collectors.
+    minor collector works in young generation. Yong generation has eden space and two survivor spaces - from and to survivor.
+    When initilizing one instance, it will be created in eden area. When eden space is full, minor garbage collector starts
+    working, all instances can be reach from root will be copy to survivor area. All survivor instances grow age. Now eden space
+    is empty, new instances will be created here. If it's full, all instances can be access from root in eden and from suvivor space
+    will be copied to to survivor space. Instances reach age threshold will be copied to old generation. When old generation
+    is full, major garbage collector starts work.
+
+    GC will run on metaspace when its getting full, it would also dynamically increase (given its allowed to) the memory allocated for metadata
+
+caching
+
+
+collections framework
+interface Collection
+    - interface Set
+        - class HashSet
+            - class LinkedHashSet
+        - interface SortedSet
+            - interface NavigableSet
+                - class TreeSet
+
+    - interface List
+        - class ArrayList
+        - class Vector
+            - class Stack
+        - class LinkedList
+
+    - interface Map
+        - class HashMap
+            - class LinkedHashMap
+        - interface SortedMap
+            - class TreeMap
+        - interface ConcurrentMap
+            - class ConcurrentHashMap
+
+    - interface Queue
+        - interface Deque
+            - class ArrayDeque
+            - class LinkedList
+        - interface BlockingQueue
+            - class BlockingDeque
+        - class PriorityQueue

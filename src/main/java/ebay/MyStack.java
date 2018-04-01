@@ -1,7 +1,6 @@
 package ebay;
 
-import java.util.Arrays;
-import java.util.EmptyStackException;
+import java.util.*;
 
 public class MyStack<T> {
 
@@ -57,5 +56,9 @@ public class MyStack<T> {
         }
 
         System.out.println("陈".equals("陈"));
+
+        List<Integer>[] adjs = new List[3];
+        adjs[1] = new ArrayList<>();
     }
+
 }

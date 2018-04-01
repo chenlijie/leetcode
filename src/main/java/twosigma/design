@@ -1,0 +1,3 @@
+取款机class里有cardHandler，display，accountStore，cardDeposit等class的obj，
+要求设计它们的interface以实现取款机的登录，取钱，存钱等func
+希望有大牛讨论一下这题怎么做，造福后人

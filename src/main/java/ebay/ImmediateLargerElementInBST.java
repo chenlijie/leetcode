@@ -5,7 +5,8 @@ import utility.Utils;
 
 public class ImmediateLargerElementInBST {
 
-//    given a num, find the immediate larger element in a BST. num may be not in the BST
+//    given a num, find the immediate larger element in a BST.
+//    num may be not in the BST
 
     static int find(TreeNode node, int k) {
         return helper(node, -1, k);
@@ -24,7 +25,7 @@ public class ImmediateLargerElementInBST {
 
     public static void main(String[] args) {
 //        TreeNode node = Utils.buildTree("5,3,X,X,7,X,X");
-        TreeNode node = Utils.buildTree("8,3,X,5,X,7,X,X");
-        System.out.println(find(node, 3));
+        TreeNode node = Utils.buildTree("10,1,20,X,X,X,X");
+        System.out.println(find(node, 100));
     }
 }

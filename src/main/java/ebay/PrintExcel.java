@@ -1,6 +1,8 @@
 package ebay;
 
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 public class PrintExcel {
 
@@ -25,6 +27,5 @@ public class PrintExcel {
         for (int i = 1; i < 100; i++) {
             System.out.println(i + " = " + printExcel(i));
         }
-
     }
 }

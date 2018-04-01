@@ -40,6 +40,7 @@ public class Roman_to_Integer_13 {
         map.put('C', 100);
         map.put('D', 500);
         map.put('M', 1000);
+        //"^M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$"
 
         // I,X,C,M max continues count is 3
         // V,L,D can't follow itself
