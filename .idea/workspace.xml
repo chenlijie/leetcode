@@ -1,101 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0304e08d-d138-42df-bc1c-59471b67e4b1" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/CombinationSum.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/Consumer.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/CourseSchedule.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/EquallyRandom.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/FindingKthClosestElementOfBSTToV.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/LCAWithParent.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/LongestIncreasingSubsequence.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/LongestWordFromPeriodicTable.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/MajorityNumber.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/MedianFinder.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/MedianTwoSortedArrays.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/MergeMultipleSortedArray.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/MyBlockingQueue.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/MyInterface.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/MyInterfaceImp.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/MyInterface_2.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/PalindromeBinaryNumber.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/Permutations_47.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/PhoneNumber.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/Print123.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/PrintBinaryTreeInVerticalOrder.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/Producer.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/ReduceToOne.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/SelfCrossing.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/SortIgnoreNegative.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/SubTreeOfAnotherTree.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/Sum3.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/SurroundedRegions.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/ThirdMaxInteger.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/TicTacToe.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/TinyUrl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/design/parkinglot/Bus.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/design/parkinglot/MotorCycle.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/design/parkinglot/ParkingLot.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/design/parkinglot/ParkingSpot.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/design/parkinglot/SUV.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/design/parkinglot/Sedan.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/design/parkinglot/Vehicle.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/design/parkinglot/VehicleSize.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/design/vendingMachine/Bucket.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/design/vendingMachine/DispensingState.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/design/vendingMachine/EmptyState.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/design/vendingMachine/HasMoneyState.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/design/vendingMachine/Item.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/design/vendingMachine/MachineTest.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/design/vendingMachine/NoMoneyState.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/design/vendingMachine/State.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ebay/design/vendingMachine/VendingMachine.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/microsoft/ArrayIterator.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/microsoft/BSTNextNumberLargeThanK.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/microsoft/EvenOddNumber.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/microsoft/ExcelTitleToNumber.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/microsoft/LeastGasStation.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/microsoft/MakeNumbersMatch.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/microsoft/MaxProductSubArray.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/microsoft/MinPathSum.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/microsoft/NumberToExcelTitle.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/microsoft/RemoveKDigits.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/microsoft/ReverseWord.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/microsoft/SortColor.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/microsoft/VersionCompare.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/twosigma/Best_Time_to_Buy_and_Sell_Stock_II.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/twosigma/FriendCircles.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/twosigma/ValidRoman.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/twosigma/design" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/twosigma/onsite" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/zillow/CombinationSum.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/zillow/Fibonacci.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/zillow/FindMedia.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/zillow/InsertAndDeleteInTrinary.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/zillow/MissingNumber.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/zillow/NearestHouse.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/zillow/Rearrange.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/zillow/ReverseInteger.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/zillow/ReverseWord.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/zillow/RightShift.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/zillow/StringToFloat.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/zillow/StringToLong.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/zillow/TaskPipeline.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/zillow/ValidateBST.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/zillow/questions" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/easy/Roman_to_Integer_13.java" afterPath="$PROJECT_DIR$/src/main/java/easy/Roman_to_Integer_13.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ebay/ImmediateLargerElementInBST.java" afterPath="$PROJECT_DIR$/src/main/java/ebay/ImmediateLargerElementInBST.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ebay/MyStack.java" afterPath="$PROJECT_DIR$/src/main/java/ebay/MyStack.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ebay/PrintExcel.java" afterPath="$PROJECT_DIR$/src/main/java/ebay/PrintExcel.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ebay/onsite" afterPath="$PROJECT_DIR$/src/main/java/ebay/onsite" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/linkedin/LCA.java" afterPath="$PROJECT_DIR$/src/main/java/linkedin/LCA.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tweeter/TimeSeriesDataAggreation.java" afterPath="$PROJECT_DIR$/src/main/java/tweeter/TimeSeriesDataAggreation.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/twosigma/LongestChain.java" afterPath="$PROJECT_DIR$/src/main/java/twosigma/LongestChain.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/twosigma/StringChain.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/twosigma/knowledge" afterPath="$PROJECT_DIR$/src/main/java/twosigma/knowledge" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utility/Utils.java" afterPath="$PROJECT_DIR$/src/main/java/utility/Utils.java" />
-    </list>
+    <list default="true" id="0304e08d-d138-42df-bc1c-59471b67e4b1" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -1546,7 +1452,7 @@
       <workItem from="1520884120886" duration="18000" />
       <workItem from="1520994444476" duration="118572000" />
       <workItem from="1522269270972" duration="17380000" />
-      <workItem from="1522463897926" duration="14314000" />
+      <workItem from="1522463897926" duration="14672000" />
     </task>
     <option name="localTasksCounter" value="3" />
     <servers />
@@ -1584,11 +1490,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2186830000" />
+    <option name="totallyTimeSpent" value="2187188000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="778" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1598,9 +1503,9 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29656607" sideWeight="0.5021299" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928804" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24087591" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24087591" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32848838" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29489052" sideWeight="0.4978701" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29489052" sideWeight="0.4978701" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2920712" sideWeight="0.49295774" order="0" side_tool="false" content_ui="combo" />

@@ -12,6 +12,20 @@ public class Inorder_Successor_in_BST_285 {
 
      Note: If the given node has no in-order successor in the tree, return null.
      */
+
+    public TreeNode inorderSuccessor_2(TreeNode root, TreeNode p) {
+        TreeNode node = root, successor = null;
+        while (node != null) {
+            if (node.val > p.val) {
+                successor = node;
+                node = node.left;
+            } else {
+                node = node.right;
+            }
+        }
+        return successor;
+    }
+
     static TreeNode inOrderSuccessor(TreeNode root, TreeNode p) {
         if (root == null || p == null) {
             return null;
