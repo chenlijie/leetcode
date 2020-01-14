@@ -1,5 +1,7 @@
 package medium;
 
+import java.util.*;
+
 /**
  * Created by chenlijie on 8/18/17.
  */
@@ -54,11 +56,65 @@ public class Course_Schedule_II_210 {
 //        }
 
         System.out.println();
-        for (int i : findOrder(2, new int[][]{
+        for (int i : findOrder2(2, new int[][]{
                 {1, 0},
-                {0, 1}
         })) {
             System.out.print(i + "  ");
         }
+    }
+
+    public static int[] findOrder2(int numCourses, int[][] prerequisites) {
+
+        int[] indegree = new int[numCourses];
+        List<Integer>[] adj = new ArrayList[numCourses];
+
+        for (int i = 0; i < numCourses; i++)
+            adj[i] = new ArrayList<>();
+
+        for (int[] p : prerequisites) {
+            indegree[p[0]]++;
+            //adj[p[1]].add(p[0]);
+            adj[p[0]].add(p[1]);
+        }
+
+        Queue<Integer> q = new LinkedList<>();
+        for (int i = 0; i < numCourses; i++) {
+            if (indegree[i] == 0)
+                q.add(i);
+        }
+
+        Stack<Integer> ans = new Stack<>();
+        //boolean[] rec = new boolean[numCourses];
+
+        //0: not visted yet, 1: visting, 2: visited
+        int[] status = new int[numCourses];
+
+        for (int i = 0; i < numCourses; i++) {
+            if (status[i] == 0 && dfs(i, adj, ans, status))
+                return new int[0];
+        }
+
+
+        int[] res = new int[numCourses];
+        int i = ans.size() - 1;
+        while (!ans.isEmpty())
+            res[i--] = ans.pop();
+
+        return res;
+    }
+
+    static boolean dfs(int i, List<Integer>[] adj, Stack<Integer> ans, int[] status) {
+        status[i] = 1;
+
+        for (int j : adj[i]) {
+            if (status[i] == 1)
+                return true;
+            else if (status[i] == 0 && dfs(j, adj, ans, status))
+                return true;
+        }
+
+        ans.push(i);
+        status[i] = 2;
+        return false;
     }
 }

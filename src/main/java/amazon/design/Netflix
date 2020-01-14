@@ -1,0 +1,31 @@
+http://blog.bittiger.io/post180/
+
+1. can user watch videos from TV, tablet, phone and computer?
+2. does service provide different quality of same video?
+different versions based on video resolution and audio quality using machines on the cloud
+
+3. does quality depend on video quality?
+4. can user download video?
+
+
+A user loges in/out, register/unregister, update information, in Netflix
+A user searches Netflix by keywords, actors, directors or movie type.
+A user plays, fasten, pause, skip sections of a movie
+A user reads, writes or follows a comment
+A user pays/checks his/her subscription fees
+A user gets recommanded movies based on his/her profile and history
+
+上面有各种用户信息、搜索功能、以及列出的各个频道：Netflix流行的电影（Popular on Netflix）、
+当前的趋势（Trending Now）、惊险刺激电影（Exciting Movies）、
+漫画动画（Goofy Comedies）等等。每个电影类目下面会有很多具体的电影
+
+
+第一步：枚举在Netflix里面，到底有哪些场景
+注册/登陆
+播放电影
+电影推荐
+第二步：选出里面最重要的排序
+基本需求：播放电影
+获得频道
+获得频道内电影
+播放频道内电影

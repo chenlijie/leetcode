@@ -1,0 +1,25 @@
+requirement:
+1. is there any boundary which means snake cann't touch top line?
+2. How big the map is, 20 * 20
+3. how to calculate score? eat one fruit get 1 point
+4. how to control level, speed?
+5. is there any block on map?
+6. how frequent to generate a fruit?
+
+class Map
+-width: int
+-height: int
+-blocks: Block[][]
++generateFruit()
++calculateScore()
+
+class Snake
+-map: Map
+-head: Node
+-tail: Node
++move(int[] direction) //{1, 0}, {-1, 0}, {0, 1}, {0 -1}
++eatFruit()
+
+class Node
+-pre: node
+-next: node

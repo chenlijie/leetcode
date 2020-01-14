@@ -1,0 +1,55 @@
+Useful Links:
+https://www.geeksforgeeks.org/design-scalable-system-like-instagram/
+
+Questions:
+Function requirement:
+1. what kind of functions does this image service provide, register, upload/share/comment/like pictures
+    - How about search function?
+
+2. Is there any restriction on image size, image type? 1M
+
+3. Can user access service through browser and mobile?
+
+4. When user shares image, does user share it with all the users or user can decide whom he wants to share with?
+   Image permission - only see by me, see by all, see by friends
+
+Non-Function requirement:
+Consistent, Availability, Partition Tolerance
+System have more reading request than writing request.
+
+
+How to persist data?
+File system to save image
+DB to save meta data like name, description, file path
+Keep two copies on two server
+
+Potential Issues:
+1.If there are 500 millions users, what potential issue can be?
+2.How to display user timeline, what is latency, how to resolve it?
+3.Ho to prevent a single failure point?
+
+Data sharding: shard based on user id or picture id.
+
+Content delivery network
+
+Table:
+User
+-userId
+-name
+-LastLoginTime
+
+UserFollow:
+-userId
+-followId
+
+Picture:
+-userId
+-pictureId
+-name
+-description
+-like
+-creationDate
+
+Comments
+-imageId
+-comments

@@ -11,6 +11,7 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.11'
+//    compile group: 'com.sysco.speed.architecture.service', name: 'java-sdk-consumer', version: '1.0.0-SNAPSHOT'
     testCompile group: 'org.spockframework', name: 'spock-core', version: '1.1-groovy-2.4-rc-3'
 
 }

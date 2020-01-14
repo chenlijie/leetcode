@@ -1,0 +1,47 @@
+1. which roles does it have, King, Queue, knight
+
+2. How do they move?
+
+3. Is there any attach rule, A can kill B, B cann't kill A, or anyone can other ones
+
+4. what the size is the board?
+
+5. how to decide win?
+
+6. Is there any time restriction to players, player has to move next step in 30 seconds?
+
+7. Is it a online game, do we need to think about how to match users?
+
+8. How to match user, does it depend on user level, e.g. user from level 0 to 5 is a group,
+level 6 - 10 is a group, user is only match in same group
+
+9. can user revert last move?
+
+abstract class Role
++block: Block
++name: string
++player: int
++isLive: boolean
+-moveTo(block): boolean// move range, it's occupied its own party
+-changeStatus(): void
+
+class King extends Role
+
+class Queue extends Role
+
+class Chess
++player1: int
++player2: int
++board: Block[][]
++isPlayer1: boolean
++stack<Move>: stack
+-initialize(): void
+-move(role, block)
+-checkWin(): boolean
+
+class Block
++x: int
++y: int
++role: Role
+-display(role): void
+

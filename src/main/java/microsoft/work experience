@@ -1,0 +1,25 @@
+1.How to deliver code using version control tools, how to work in a team
+My last project is using Git version control. There is one master branch that holds last production code.
+When we start a new sprint, we checkout a development branch. It will be the base branch we will work on.
+Each developer needs to pull latest code from this development branch, then checkout a new branch for his work.
+
+2. Tell me the project you are most proud of
+
+3. why MS，
+
+4. why do you think you are different from your peers?
+
+5. What advantages do you have? How did you get this interview opportunity?
+
+
+比如challenge you faced，然后你之后的打算，对业界的看法，怎么会对cloud感兴趣啥的。
+1. Quicker Development
+Purchasing new servers, configuring them, and integrating them into your existing environment tends to be both costly and time-consuming. With Azure, you can set up an application and start building it out in minutes.
+
+2. Autoscaling
+Demand for your applications may be variable throughout the year (think tax return filing software). Or you may expect a low number of users at first followed by huge growth as your application catches on. You may even expect usage to the decline, maybe because you’re launching another application. Scaling up with your own on-site servers means purchasing and provisioning them to accommodate growth. And once the servers are in place you still have to maintain them even if they’re not being used.
+
+3. Easier Maintenance and Backup
+On-site server farms require a lot of regular upkeep: climate control, electricity, disaster recovery, backups, security. Moving to the cloud means freeing up your IT staff so they can focus on new projects instead of routine maintenance.
+
+比如你之前遇到的最大的困难是什么，你最近有没有朋友让你觉得很为难，你的优点缺点，你之前最喜欢的一个项目是什么，之类的

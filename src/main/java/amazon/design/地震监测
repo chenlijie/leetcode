@@ -1,0 +1,5 @@
+http://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=402835&extra=page%3D1%26filter%3Dsortid%26sortid%3D311%26searchoption%5B3089%5D%5Bvalue%5D%5B3%5D%3D3%26searchoption%5B3089%5D%5Btype%5D%3Dcheckbox%26searchoption%5B3046%5D%5Bvalue%5D%3D5%26searchoption%5B3046%5D%5Btype%5D%3Dradio%26sortid%3D311
+
+设计一个地震监测系统,收集数据,判断,通知,故障分析
+有detectors，data preprocessor，analysis engine，result，notification，这些component，
+然后各个模块之间数据传输，数据存储，最后的结果怎么分发，分发给哪些group。每个地方出现问题怎么办等等

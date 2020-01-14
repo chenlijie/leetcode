@@ -48,6 +48,7 @@ public class Search_in_Rotated_Sorted_Array_33 {
     }
 
     public static void main(String[] args) {
+        System.out.println(getRotated(new int[]{1}));
         System.out.println(search(new int[]{5, 1, 3}, 5) );
 //        System.out.println(search(new int[]{1}, 1) == 0);
 //        System.out.println(search(new int[]{1}, 2) == -1);

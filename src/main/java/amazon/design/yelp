@@ -1,0 +1,74 @@
+Requirement:
+1. Does it support browser as well as mobile?
+2. Do we need care about home service like cleaning service, moving service
+3. What kind of functions does this application provides?
+search based on restaurant, food and location
+Post Restaurant with description, picture, video
+view Restaurant
+comments including text,pictures,score
+4. Is user required to register before post information/give comments?
+5. Do only restaurant owners claim their restaurant?
+
+
+class User
+-id: long
+-firstName: string
+-lastName: string
+-phone: string
+-email: string
+-totalFriend: int
+-totalReview: int
+-imageAndVideo: List<URL>
+-posts: List<Restaurant>
+-following: List<User>
+-followers: List<User>
+-reviews: List<Comment>
+
+class Restaurant
+-id: long
+-name: string
+-description: string
+-address: string
+-rating: double
+-phone: string
+-reviews: List<Review>
+-imageAndVideo: List<URL>
+
+class Review
+-id: long
+-publisher: string
+-dateTime: datetime
+-comment: string
+-rating: double
+-imageAndVideo: List<URL>
+
+Table:
+
+User
+-id
+-name
+
+Following
+-id
+-followingId
+
+Restaurant
+-id
+-name
+
+Review
+-id
+-restaurantId
+-comment
+
+Image
+-id
+-reviewId
+-url
+
+Video
+-id
+-reviewId
+-url
+
+

@@ -1,0 +1,143 @@
+如何设计数据结构来实现找到一个导演指导的所有电影。
+如果通过一个video，找到同一季的所有video
+
+1. What kinds of video does this store offer, Movie/Sport/Music?
+2. Do we have different version of same video, Like HD/3D/Blu-ray?
+3. How many videos for renting?
+4. Does customer need register before renting video?
+5. How to calculate renting price, 8 dollar/day?
+6. Do videos have different renting price?
+7. Is deposit required when renting video?
+8. If customer return video late, how to charge?
+9. If video is damaged, how to charge?
+10. Is there any scenario that put video on shelf and take it off intermediately?
+11. Does store sell video as well?
+12. Is it chain store, multiple store in different area?
+13. Is it coupon allowed?
+
+class Video
+-id: string (M-A-001, M-R-100, S-B-001...)
+-name: string
+-actors: string
+-director: string
+-description: string
+-publisherYear: string
+-quality: enum (HD, 3D, BLUERAY)
+-category: enum (MOVIE(ACTION, ROMANCE, CARTOON), SPORT(BASKETBALL), MUSIC(HIPHOP))
+-upc: string
+-status: enum (STORAGE, ONSHELF, RENTED, DEMANDED)
+-location: string
+-price: Price
+
+enum category
+-MOVIE
+    -ACTION
+    -ROMANCE
+    -CARTOON
+-SPORT
+    -BASKETBALL
+    -BASEBALL
+-MUSIC
+    -HIPHOP
+    -ROCK
+
+class RentVideo extends Video
+-rentStartDate: LocalDateTime
+-supposedReturnDate: LocalDateTime
+-actualReturnDate: LocalDateTime
++calculateBalance(): double
+
+abstract class Person
+-id: int
+-firstName: string
+-lastName: string
+-address: string
+-email: string
+-phone: string
+
+abstract class Employee extends Person
+-loginTime: LocalDateTime
+-logoutTime: LocalDateTime
+-type: enum
++login(): void
++logout(): void
++addVideo(video upc): void
++removeVideo(video upc): void
++search(videoName, actorName, directorName, yearFrom, yearTo): List<Video>
++getAllEmployee(): List<Employee>
++getEmployee(id): Employee
++checkSalesInformation(): void
+
+class Receptionist extends Employee
+
+
+class Manager extends Employee
++getAllEmployee(): List<Employee>
++getEmployee(id): Employee
++checkSalesInformation(): void
+
+class Customer extends Person
+-totalPrice: double
+-balance: double
+-rentList: List<RentVideo>
+-payMethod: enum (CASH, CREDIT, DEBIT)
++rent(List<video>): void
++return(List<video>): void
+
+
+class Store
+-openTime: LocalTime
+-closeTime: LocalTime
+-employees: List<Employee>
++login(employeeId)
++logout(employeeId)
+
+Table:
+employee
+-id: int
+-firstName: varchar
+-lastName: varchar
+-address: varchar
+-email: varchar
+-phone: varchar
+-type: varchar
+-loginTime: date
+-logoutTime: date
+
+customer
+-id: int
+-firstName: varchar
+-lastName: varchar
+-address: varchar
+-email: varchar
+-phone: varchar
+
+rentVideo
+-customerId: int
+-upc: string
+-rentStartDate: date
+-supposedReturnDate: date
+-actualReturnDate: date
+-totalPrice: decimal
+-balance: decimal
+
+video
+-id: varchar (M-A-001, M-R-100, S-B-001...)
+-name: varchar
+-actors: varchar
+-director: varchar
+-description: varchar
+-publisherYear: date
+-quality: varchar
+-majCategory: varchar
+-minCategory: varchar
+-upc: varchar
+-status: varchar
+-location: varchar
+-price: Price
+Primary key id,
+index name, director, upc
+
+participant
+-name: varchar
+-videoId: varchar

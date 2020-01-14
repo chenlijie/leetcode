@@ -53,9 +53,27 @@ public class Fibonacci {
         return dp[n % 3];
     }
 
+    static int get_4(int n) {
+        if (n <= 1) {
+            System.out.println(n);
+        }
+        int a = 0;
+        int b = 1;
+
+        for (int i = 2; i <= n; i++) {
+            int t = b;
+            b = a + b;
+            a = t;
+            System.out.print(b + " ");
+        }
+
+        return b;
+    }
+
     public static void main(String[] args) {
         get(15);
         get_2(15);
         get_3(15);
+        get_4(15);
     }
 }

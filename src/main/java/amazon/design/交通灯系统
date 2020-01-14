@@ -1,0 +1,19 @@
+1. Is it 4 way road?
+2. what's rule, each time only one party can drive?
+3. traffic light sign - red, green, yellow
+4. how long is each light on, red 15, green 12, yellow 3
+
+class Light
+-turnOn(color)
+-turnOff(color)
+
+enum Color
++RED
++GREEN
++YELLOW
+
+class controlSystem
++lights: Light[]
++curGreen: int
+-initialize(): void - set 0 on
+-change(): void

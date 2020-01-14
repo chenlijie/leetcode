@@ -1,0 +1,11 @@
+1. can I assume that there is a service providing URL?
+2. fetch information from title, subtitle, meta-tag.
+3. how to save data
+    word: ranking: links
+4. how do we retrieve data
+5. data type html, pdf, json, xml
+6. how often to crawl a website?
+7. follow the guideline of website, it tells what shouldn't be crawled
+8. distribute system to crawl - if same url
+9. encode/decode
+10. how to detect dead loops

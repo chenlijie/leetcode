@@ -1,0 +1,16 @@
+1. what are we going to monitor, server, service, database?
+
+2. what metrics need to monitor?
+CPU, Disk read/write, network in/out
+
+3. how to define a service is health? what's the threshold? It's not health if not able to pint it or
+it doesn't response with in 10 second.
+If system is reachable, system accept network traffic, hardware and software issue
+
+4. how frequently to check the status of a service?
+
+5. what action should be took if a service/server is down? Alert system owner?
+
+6. Are all server/service in same region?
+
+

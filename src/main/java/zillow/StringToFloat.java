@@ -13,6 +13,8 @@ public class StringToFloat {
         if (str.charAt(0) == '-') {
             str = str.substring(1);
             sign = -1;
+        } else if (str.charAt(0) == '+') {
+            str = str.substring(1);
         }
 
         float ans = 0.0F;
@@ -30,14 +32,29 @@ public class StringToFloat {
         else
             ans += Float.parseFloat(decimalPart[0]);
 
-        ans *= sign;
-        System.out.println(ans);
-        return ans;
+        if (ans == 0.0F) {
+            System.out.println(ans);
+            return ans;
+        } else {
+            ans *= sign;
+            System.out.println(ans);
+            return ans;
+        }
+
+
     }
 
     public static void main(String[] args) {
+        stringToFloat("0");
+        stringToFloat("-0");
+
+        stringToFloat("+5");
         stringToFloat("-5");
+
         stringToFloat("3/4");
+        stringToFloat("-3/4");
+
+        stringToFloat("+1 3/4");
         stringToFloat("-1 3/4");
     }
 }

@@ -22,6 +22,7 @@ public class ReverseInteger {
 
     public static void main(String[] args) {
         System.out.println(reverse(Integer.MIN_VALUE));
+        System.out.println(reverse(-928374764));
 
 //        System.out.println(Integer.MIN_VALUE);
 //        System.out.println(Math.abs(Integer.MIN_VALUE + 1));

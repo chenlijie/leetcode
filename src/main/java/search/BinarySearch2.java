@@ -1,5 +1,7 @@
 package search;
 
+import java.util.Stack;
+
 /**
  * Created by chenlijie on 8/14/17.
  */
@@ -46,6 +48,7 @@ public class BinarySearch2 {
 //        System.out.println(search(new int[] {1, 2, 3, 5, 6, 7, 8}, 9) == 4);
 
         System.out.println(findIndex(new int[]{1,3}, 10));
+
     }
 
     static int findIndex(int[] nums, int k) {

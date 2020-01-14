@@ -1,0 +1,7 @@
+https://stripe.com/blog/rate-l
+http://massivetechinterview.blogspot.com/2015/10/develop-api-rate-limit-throttling-client.html
+
+
+request rate limiter - N request per user
+concurrent request limiter - resource intensive
+critical api and non-critical api

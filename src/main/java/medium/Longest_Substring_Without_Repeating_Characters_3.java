@@ -91,6 +91,29 @@ public class Longest_Substring_Without_Repeating_Characters_3 {
 //        System.out.println(lengthOfLongestSubstring2("abcabcabcabcd") == 4);
 //        System.out.println(lengthOfLongestSubstring2("dvdf") == 3);
 //        System.out.println(lengthOfLongestSubstring2("fdvd") == 3);
-        System.out.println(lengthOfLongestSubstring("abba") == 2);
+        System.out.println(lengthOfLongestSubstring4("dvdf") == 3);
+    }
+
+    public static int lengthOfLongestSubstring4(String s) {
+        if (s == null) return 0;
+
+        int max = 0;
+        boolean[] used = new boolean[256];
+
+        for (int i = 0, j = 0; i < s.length() && j < s.length(); i++) {
+
+            while (j < s.length() && !used[s.charAt(j)]) {
+                used[s.charAt(j++)] = true;
+            }
+
+            max = Math.max(j - i, max);
+
+            while (j < s.length() && i < j && s.charAt(i) != s.charAt(j)) {
+                used[s.charAt(i++)] = false;
+            }
+            j++;
+        }
+
+        return max;
     }
 }

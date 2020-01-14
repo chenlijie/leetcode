@@ -1,0 +1,39 @@
+1. Is it in business building?
+
+2. Are all elevator same type?
+
+3. how many floors?
+
+4. how many elevator?
+
+5. elevator status, it's running, it's ready to use, it's in maintenance
+
+6. if user press button, a elevator should be assigned to user's floor.
+
+7. first come first serve
+
+class Elevator
++id: int
++status: Status (READY, STAY, RUNNING, MAINTENANCE)
++currentFloor: int
++buttons[]: Button
+-move(floor): void
+-openDoor(): void
+-closeDoor(): void
+-changeStatus(status): void
+
+interface ActionListener
+-performAction(): void
+
+class Button
++label: String
++isLightOn: boolean
++listener: ActionListener
+-addListener(): void 
+-pressButton(): void //trigger listener.performAction()
+
+
+class ControlCenter
++elevators: Elevator[]
++floorButtons: Button[]
+-serveRequest(): void

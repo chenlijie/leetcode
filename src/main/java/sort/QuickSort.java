@@ -38,9 +38,32 @@ public class QuickSort {
         nums[j] = t;
     }
 
+    public void quickSelectSort(int[] nums) {
+        sortUtils(nums, 0, nums.length - 1);
+    }
+
+    private void sortUtils(int[] nums, int start, int end) {
+        if (start < end) {
+            int pivot = nums[end];
+
+            int j = 0;
+            for (int i = 0; i < end; i++) {
+                if (nums[i] >= pivot) {
+                    swap(nums, i, j++);
+                }
+            }
+
+            swap(nums, j, end);
+            sortUtils(nums, start, j - 1);
+            sortUtils(nums, j + 1, end);
+        }
+
+    }
+
+
     public static void main(String[] args) {
-        int[] nums = new int[]{3,2,1,5,3,6,4,3};
-        new QuickSort().quickSort(nums);
+        int[] nums = new int[]{3,2,3,1,2,4,5,5,6};
+        new QuickSort().quickSelectSort(nums);
         for (int i : nums) {
             System.out.print(i + " ");
         }

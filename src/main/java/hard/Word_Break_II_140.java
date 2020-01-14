@@ -58,12 +58,52 @@ public class Word_Break_II_140 {
         return build.toString();
     }
 
+
+    public List<String> wordBreak2(String s, List<String> wordDict) {
+        List<String> ans = new ArrayList<>();
+        help(s, wordDict, 0, new StringBuilder(), ans);
+        return ans;
+    }
+
+    void help(String s, List<String> dict, int idx, StringBuilder words, List<String> ans) {
+        if (idx == s.length()) {
+            ans.add(words.toString());
+            return;
+        }
+
+        int len = words.length();
+
+        for (String w : dict) {
+            int end = idx + w.length();
+
+            if (end <= s.length()) {
+                String sub = s.substring(idx, end);
+                if (sub.equals(w)) {
+
+                    if (len == 0) {
+                        words.append(sub);
+                    } else {
+                        words.append(" ").append(sub);
+                    }
+
+                    help(s, dict, end, words, ans);
+                    words.setLength(len);
+                }
+            }
+        }
+
+    }
+
     public static void main(String[] args) {
         Word_Break_II_140 w = new Word_Break_II_140();
+
         List<String> list = new ArrayList<>();
-        list.add("a");
-        list.add("b");
-        System.out.println(w.wordBreak("ab", list));
+        list.add("cat");
+        list.add("cats");
+        list.add("and");
+        list.add("sand");
+        list.add("dog");
+        System.out.println(w.wordBreak2("catsanddog", list));
 
     }
 }

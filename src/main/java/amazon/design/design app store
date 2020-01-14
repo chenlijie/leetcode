@@ -1,0 +1,3 @@
+http://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=392244&extra=page%3D1%26filter%3Dsortid%26sortid%3D311%26searchoption%255B3089%255D%255Bvalue%255D%255B3%255D%3D3%26searchoption%255B3089%255D%255Btype%255D%3Dcheckbox%26searchoption%255B3046%255D%255Bvalue%255D%3D5%26searchoption%255B3046%255D%255Btype%255D%3Dradio&page=1
+
+可能的use case,比如上传，下载，user mananger, payment system, search apps etc.他说你说的这些都是use case，但是咱们design没时间都涉及，他说就挑具体一块做吧，你看download app这部分怎么样。于是就成了design app store的download功能。主要就是画图各个components都有谁，db schema，各种API 如何design.问的非常具体。 结果还没来得及题performance, scaling这些经典的SD问题

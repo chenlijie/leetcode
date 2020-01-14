@@ -50,13 +50,54 @@ public class Rotate_List_61 {
 
         node1.next = node2;
         node2.next = node3;
-//        node3.next = node4;
-//        node4.next = node5;
+        node3.next = node4;
+        node4.next = node5;
 
-        ListNode head = rotateRight(node1, 4);
+        ListNode head = rotateRight2(node1, 2);
         while (head != null) {
             System.out.print(head.val + "  ");
             head = head.next;
         }
+    }
+
+    public static ListNode rotateRight2(ListNode head, int k) {
+
+        ListNode slow = head;
+        ListNode fast = head;
+
+        int len = length(head);
+        k = k%len;
+
+        for (int i = 0; i <= k; i++) {
+            fast = fast.next;
+        }
+
+        while (fast != null) {
+            fast = fast.next;
+            slow = slow.next;
+        }
+
+        slow = slow.next;
+
+        fast = slow;
+
+        while (fast.next != null) {
+            fast = fast.next;
+        }
+
+        fast.next = head;
+
+        return slow;
+    }
+
+    static int length(ListNode node) {
+        int len = 0;
+
+        while (node != null) {
+            node = node.next;
+            len++;
+        }
+
+        return len;
     }
 }

@@ -1,0 +1,4 @@
+http://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=356563&extra=page%3D1%26filter%3Dsortid%26sortid%3D311%26searchoption%5B3089%5D%5Bvalue%5D%5B3%5D%3D3%26searchoption%5B3089%5D%5Btype%5D%3Dcheckbox%26searchoption%5B3046%5D%5Bvalue%5D%3D5%26searchoption%5B3046%5D%5Btype%5D%3Dradio%26sortid%3D311
+当你打开一个产品页面后，如何设计当前此产品的库存，其实这轮我被问懵逼了，
+因为没想过系统设计还能这么specific...而且他上来就让我画出大概的框架，
+讲讲workflow啥的，然后说仓库如果进了新货的use case又是怎么样的，

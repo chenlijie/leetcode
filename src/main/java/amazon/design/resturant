@@ -1,0 +1,97 @@
+1. 餐馆。这个很宽泛，尽快narrow down自己擅长的领域发挥呗。
+他不让我考虑分布式，也不考虑online order。没发挥好，觉得没什么好做的
+2. 设计饭店reserve系统 OOD
+
+
+Work flow:
+1. customers come to restaurant, assign a table which is associated with a waitress.
+2. customers place order
+3. customers finish food and pay bill.
+
+Questions:
+1. Does restaurant have different size of tables?
+2. Does restaurant accept coupon or give discount to customers?
+3. Does restaurant cater a large group of customers?
+4. Does restaurant provide different views, indoor and outdoor?
+5. How many floors does restaurant have?
+6. Is it a chain restaurant?
+
+class Food
+-category: enum (DESSERT, ENTREE, NON-ALCOHOL, ALCOHOL)
+-foodId: int
+-name: String
+-description: String
+-price: double
+-isVege: boolean
++display(): void
+
+class Combo
+-foods: List<Food>
+
+class Menu
+-desserts: List<Food>
+-entree: List<Food>
+-nonAlcohol: List<Food>
+-alcohol: List<Food>
+-combos: List<Combo>
++add(food): void
++delete(food): void
+
+class Table
+-tableId: int
+-size: enum (SMALL, MEDIUM, LARGE)
+-isAvailable: boolean
+-waitressId: int
+-order: Order
+
+class Order
+-orderId: int
+-orderTime: DateTime
+-items: List<OrderItem>
+-table: Table
+-bill: Bill
+
+class OrderItem extends Food
+-status: enum (ORDERED, PREPARING, READY, SERVED, CANCEL)
+
+class Bill
+-order: Order
+-totalPrice: double
+-paymentType: enum (CASH, CREDIT_CARD, DEBIT_CARD)
+-isSplit: boolean
+-bills: List<Bill>
++printBill(): void
++splitBill(): void
+
+abstract class Person
+-name: String
+
+class Customer extends Person
+-type: enum (TOGO, DINING)
+-order: Order
+
+abstract class Employee
+-id: int
+-isOnDuty: boolean
+-restaurant: Restaurant
++displayTable
+
+class Waitress extends Employee
+-tables: List<Table>
+
+class Manager extends Employee
+
+
+class Chef extends Employee
+
+
+class Restaurant
+-workingDays: List<WeekDay>
+-openTime: LocalTime
+-closeTime: LocalTime
+-employees: List<Employee>
+-smallTable: List<Table>
+-mediumTable: List<Table>
+-largeTable: List<Table>
++displayTable(): void
++displayEmployee(): void

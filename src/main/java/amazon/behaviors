@@ -1,0 +1,247 @@
+http://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=307462&extra=page%3D1%26filter%3Dsortid%26sortid%3D311%26searchoption%5B3089%5D%5Bvalue%5D%5B3%5D%3D3%26searchoption%5B3089%5D%5Btype%5D%3Dcheckbox%26searchoption%5B3046%5D%5Bvalue%5D%3D5%26searchoption%5B3046%5D%5Btype%5D%3Dradio%26sortid%3D311
+http://kraftshala.com/how-to-raise-the-bar-in-the-amazon-interview/
+
+1.what happened if you had negative feedback
+
+Introduce yourself
+
+
+1.Why choose this position?
+The position I applied is in AWS Kumo.
+First of all, Kumo development team build scalable applications in information retrieval,Data mining and machine learning.
+I'm really excited about learning new technologies to create new experience that obsess customers.
+Secondly Kumo team works across all AWS service including EC2, RDS and ELB. I have used those services a lot in
+my previous projects. I'm very curious about them and it's a good opportunity to dive deeper and get more understanding of them.
+Thirdly, There are great talented engineers and challenges here. I can learn a lot here.
+Also I'm sure that I can take challenge, and make things happen with team.
+
+2.The biggest mistake you made and what did you learn from it?  (earn trust, customer obsession)
+I was working on a new change related price for a shopping system. The day before deployment day, I found it doesn't work for
+one kind of user type. My team and I diagnosed system, there was one special scenario we missed.
+I apologized to client and explained the reason, asked if we could change the deployment date and Clients agreed.
+I called a meeting with my team and walk through the change step by step, evaluated all scenarios instead of that special case.
+Through this process, team members understood what happened, and brought great solutions. I earned their trust by sharing feedback
+and working out a solution together. We did all kinds of testing and delivered it. And the function works great, clients love it.
+
+
+3.Most challenging project?
+There was one project that upgrading legacy system by incorporating another system. Reuse all the UI part and modify the backend
+side to connect to legacy system. There were several challenges:
+first of all, the first version would be released in three month. It was very tight time and we only had three resource work on it.
+We split tasks and worked on what we were good at. One is for UI, two for backend focusing in different functions.
+Secondly, it was an offshore project. We only communicated the onsite contact once a day. If we don't communicated questions and concerns
+in time, that means we lose one day. We went through the exiting code and got more understanding, provided more precise feedback so
+reduced back and forth communication. In return, it saved us a lot of time.
+Thirdly, we didn't have dedicated a business analyzer work with us, and she couldn't totally support us. To overcome it, we spent
+time on comparing function the legacy system and the incorporating system, listed all the same and different function part.
+At last, we released the first version on time.  I payed a lot of attention to it andspent a lot time on it, the feeling
+of taking ownership and responsibilities is great.We earned trust from clients and management.
+
+4.Couldn't finish tasks before deadline?
+
+5.Walk us through a time when you helped a customer through a difficult process and what that looked like
+There was one new system created to replace old system. One most important function of the system is submit order.
+It's was implemented by using IBM webspere message queue and send order to ERP system. It would be implemented through REST API.
+Another team defined the API interface, and I had completed the feature. But one week of deployment, the team who is responsible for
+API interface told they could not finish it on time. The system becomes useless if customers cann't submit order.
+I went through the old system and new system, found one solution that new system can send request to old system to submit order.
+One order is acknowledged by ERP system, old system can send acknowledge back to new system to update status.
+This process doesn't require much effort as I can utilize existing interface. Old system and new system have different strategy
+to generate order number. So need another table to maintain the mapping, and also need a bit java code to update mapping once get
+response from old system. Customer agreed to take this approach. I completed code with solid test cases, and SQ certificated this
+feature. Eventually the new system was delivered on time, and submit order function worked good. Customer was happy with the quick
+workaround.
+
+
+BQ是讲述一个你对自己的想法和思路和自信，但最终输掉了和同事的争论的事例
+I was leading one offshore team that has 4 members and we were building one web service.
+When I review the code, I found all test cases including controller, service and dao were using JUnit and spring test framework.
+Each test case requires bring up whole application even we just want to test one method on service or dao. It's not necessary and
+also it slows down test in result it takes longer time when building project in pipeline.
+I suggested to use spock test framework. Spock has a clear test structure(given-when-then) and support English sentence so Spock tests are more readable.
+Spock is much helpful when test fails, it knows the context of fail and we can point out the problem much faster.
+Spock supports mock as well. We have to include mockito or other mock tool when using Junit.
+My offshore team insisted on using Junit with spring test framework. They never used spock framework and they have done Junit wiht
+spring test framework in many other project so they're much more productive. Another point was that we had strict timeline, it
+would more time if using spock which in result we may not able to finish project on time.
+At last, I agreed to use JUnit with spring instead of spock. Junit is still a very good test framework and it can satisfy our
+requirement. Spock may give a bit more benefits but we may fail customer expectation if we cann't delivery on time.
+
+
+最有挑战性的project/最自豪的工作/
+
+
+超出deadline的情况，怎么处理的
+I was building delivery tracking system which displays truck on the map and planned time, projected time and actual delivered time.
+It gets pull route plan information from another system. It pulls GPO information like position from GPO vendor.
+Two day before deployment, I found one issue that no more GPO information were sent from GPO vendor for a truck when it finished its half
+delivery task. Business team checked with customers and customers confirmed package were delivered. It turned out that the assigned
+truck had technical issue and it cannot continue to delivery. Another truck was assigned to take care of rest delivery task.
+I looked at the GOP information and route planed data, truck and route are associated by truck id. When a new truck assigned to
+the planned route, system can related each other. It cause system not able to display correct position.
+I reported this issue to client with root cause and provide one solution. Creating one function that allows user to assign a new
+truck to route. But it required one week to complete this function. Client agreed with this new timeline.
+I called a meeting with all team member and explained the issue, and work on a plan how to accomplish the new function.
+The new function was completed on time and system deployed to production. Around two weeks late, same scenario happened and user
+can correct truck information by using the new function so system could display correct truck location.
+Client was happy with the quick solution and like this function.
+
+得到bad review的经历，怎么处理的
+
+做过最艰难的决定/
+
+
+debug的经历
+
+
+
+复杂但长期效果好的代码和简单但短期见效快的代码的抉择
+If I was working on a small brochure site, then ‘Fast’ will trump ‘Good’, as long as the result met the client expectations
+
+
+2.平时和工作不相关的活动，怎么帮助工作。
+
+
+3.你最骄傲的工作、项目是什么
+
+
+4.有没有为了赶deadline而comprise了一些东西，如何做取舍的。
+There was a time I was building a product card. It had several features, showing production information, display product purchased
+history of last 8 weeks, showing production nutrition, print product card as PDF, customize product name and add product to order.
+Client wanted it so urgently and ask us to finished in 2 weeks. I analyzed the requirements and found it's impossible to finish
+so many feature in such short time. I had meeting with business team, tell them that it requires more to ship all features with good
+quality. But business team said they want ship those feature ASAP so they get feedback from customer early.
+I provided another approach is cutting down the feature and set minimal required feature, and keep doing added feature in
+quick circle. In this way, client could get feedback of core feature at early time and also customers get more feature in a quick
+iterator. Client is happy with this approach. The customer feedback is good with MVP, and happy to see new feature added in short
+circle.
+
+
+Fast is good as long as it met customer expectation.
+
+
+
+6.有没有和别人意见不同的时候，如何说服或者被说服的
+
+Why Amazon?
+Amazon is the biggest online retailing company with strong focus on customer experience and obsession.
+its mission is that to be earth's most centric customer company.
+In my past four year, I worked closely with clients to built bunch of products.
+I know the importance of building customer-like system and achieving customer expectation. In result, we get customer's trust
+and continue to build products for customer.
+Amazon's motto - "work hard, have fun, make history".
+I respect people who works hard. I believe we can achieve target only if we have passion and work hard for it.
+Furthermore, the growth of Amazon is pretty impressive. There are a lot of great product - amazon only, kindle, fire TV, echo,
+amazon streaming, amazon web service. it is continuing to build incredible product.
+Therefore, this is a place where I can learn a lot and make things happen.
+
+
+
+1.大的失败，怎么能做的更好
+There was one online shopping system developed for US users. Client wanted Canada users use it and add more features for them.
+After it's delivered, Canada users found it's too slow when open product list and get price display. To display product list didn't
+take much time. But to display price for each product took time, the reason is only Canada data center has the live price and system
+has to fetch price through message queue to Canada center. When user submit order, it sent order to Canada data center through
+message queue. It's also slow. Cache price once it's fetched and cache order instead of saving to database when adding product to order
+are already implemented in system improve performance. But production performance was not good and affect user experience.
+I shared performance analysis with client and provided one solution that having same server copy in Canada.
+They didn't take this approach due to the cost. Client needs hire more employee and buy more software..
+This system is running in IBM webspere servers, there is one team maintaining those server and related jobs and another team maintains
+the DB2 database.
+
+1. Should think more from user perspective, what is most important to user. 2. Should put more weight on core features and consider
+consequence of core features. 3. it worth to build a minimum viable product to get metric of system and feedback from users.
+
+
+没通知老板做的决定，协调组与组的合作，最强project
+
+
+1. Talk about most chanlengable project you have done.
+Client has a new system with new UI and backend is SAP which aims to replace the legacy system.
+But the backend data migration was far away to completed. Client wanted to bring the new UI to users in 6 month so they gave
+us a task to upgrade legacy system with new UI. The requirement was very high level and has no details. My manager and I went
+through the legacy system and listed all functions, and sent back to client to confirm.
+Initial plan is re-write backend code by using sprint MVC framework.When I looked at legacy code, and found the business logic is quiet complex.
+There are 3 developers in my team and we have 6 month.
+With limited time and limited resource, it's impossible to finish it in 6 month.
+I found that those legacy code can be reused as a service layer.
+In this way, many requirements could be done by adding mapper function.
+Some requirements could be done by combining different service result.
+And only new functions were developed from scratch.
+Client agreed with this approach. Finally we delivered this project in 6 month.
+it works very well, and client is happy with the upgraded legacy system.
+
+
+2. Talk about a expereice of one bad review feedback, and how you solve it.
+I developed one function about list. It used to help customers to maintain their favorite products or frequent bought products.
+I received feedback that many customers complained it took a long time to open list to view products, it made them frustrated when they
+were hurry to place order. I tried to reproduce in low environment and found it's fast for most users, but it's noticeable slow
+for a few customers. I found that it's slow if customer has large purchased product. When opening list, backed end needs fetch list and product information which is fast, but
+it also needs to fetch product purchase history information when opening list. Fetching product purchase history is slow due to
+it needs to check different tables and aggregate result. One solution is to cache the result once it's calculated. It's only slow
+at first time to view list, and it would be very fast when view list later. I discussed with client and found many users login
+system, go to list page to place order and logout. Even I cached data, it's never used in this scenario. I proposed another solution
+system could start calculation once user starts login. The total time of user login and user redirect to list page is enough for
+fetch product purchased history information. I don't see anyone complain this issue again. Client is happy with this solution.
+
+
+3. Major conflict with your lead and how to solve it.
+I was evolved in system and it had a search function that search products according to product name or product code. The backed
+logic is simple SQL query. Another team built one search system by using endeca. I was developing on integration with this search
+system, and found that the search result missed avadra information which provides vision on item with special price. Endeca search team
+confirmed it's on their list.
+I reported this issue to my leader. My leader asked me to do both search and integrate the search result so all information could
+be displayed on UI. My point was that first of all, the purpose of integration with endeca search is to improve search speeding,
+it would slow down search if do both search. Second, endeca search also provides full text search. Third, avandra information still
+display on all other pages, users still has a way to check it. Fouth, I have finished integration with endeca search. It took more
+effort to combine both search result. and those code are thrown away once endeca search includes those information.
+Finally, my leader agreed with me. I provided above analysis to clients and they agreed with this solution.
+After this function deployed to production, client is happy that search is much faster than before. and also client-owned brands
+are displayed on the top of search result which in result improve company sales.
+
+
+有没有超常规的救火经历，
+有没有项目成就超出预期的经历，
+有没有deep dive的经历，
+
+
+有没有跟全组人作对的经历，
+
+
+有没有老板意见不一致的经历/insist on high standard
+
+
+
+
+有没有和别的组撕逼没撕赢的经历
+
+Tell me about a project that went beyond your scope of work
+
+Tell me about a time you had to deal with ambiguity.
+
+Tell me about a time you had to overstep management to get your point of view across
+
+Describe a situation where you had to make a decision without data
+
+Name a time you messed up
+
+Why should we hire you
+
+How do you motivate people?
+
+How do you form positive relationships with developers and/or stakeholders?
+
+How would you manage a difficult business group
+
+How do you plan to ensure that your focus is always on improving the customer experience?
+
+Tell me about a time you used analysis to make a business-critical decision. Walk me through the analysis and outcome.
+
+What actions would you take if you found that you are actually carrying too much inventory?
+
+Tell me about a time you solved a complex situation with a simple solution
+
+How do you handle missing a deadline?
+
+Tell us about a time you were given feedback that made you change your strategy
+

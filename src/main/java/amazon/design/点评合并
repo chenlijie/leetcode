@@ -1,0 +1,10 @@
+ISBN - international standard book number
+Different versions(E-book, paperback, hardcover) of same book have different ISBN
+
+SKU = stock keeping unit
+It's defined by retailer
+
+Category-Short name-Version-type
+
+use Category-Short name-Version to get reviews from amazon, and ISBNs.
+Then use those ISBNs to get review from the review system

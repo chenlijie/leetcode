@@ -38,6 +38,15 @@ public class Utils {
         }
     }
 
+    public static void printArray(boolean arr[][]) {
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[0].length; j++) {
+                System.out.print(arr[i][j]+" ");
+            }
+            System.out.println();
+        }
+    }
+
     public static void printList(List<Integer> list) {
         for (int i : list) {
             System.out.print(i+" ");
@@ -97,6 +106,18 @@ public class Utils {
         node.right = buildTreeFromString(queue);
 
         return node;
+    }
+
+    public static TreeNode findTreeNode(TreeNode root, int val) {
+        if (root == null) return null;
+
+        if (root.val == val) return root;
+
+        TreeNode left = findTreeNode(root.left, val);
+        if (left == null)
+            return findTreeNode(root.right, val);
+
+        return left;
     }
 
     public static void printInOrderTreeNode(TreeNode node) {

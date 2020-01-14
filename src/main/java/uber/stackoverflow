@@ -1,0 +1,1 @@
+问如何设计stackoverflow。重点在于设计如何在后段存储answer，用什么metric对answer进行排序，如何处理最新添加的answer。

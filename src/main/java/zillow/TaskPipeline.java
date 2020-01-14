@@ -59,12 +59,12 @@ public class TaskPipeline {
         Task[] tasks = new Task[7];
 
         tasks[0] = new Task(0, new int[0], new int[] {4});
-        tasks[1] = new Task(0, new int[0], new int[] {2});
-        tasks[2] = new Task(0, new int[] {1,3}, new int[0]);
-        tasks[3] = new Task(0, new int[0], new int[] {2,4});
-        tasks[4] = new Task(0, new int[] {3}, new int[] {4});
-        tasks[5] = new Task(0, new int[] {4}, new int[0]);
-        tasks[6] = new Task(0, new int[0], new int[] {5});
+        tasks[1] = new Task(1, new int[0], new int[] {2});
+        tasks[2] = new Task(2, new int[] {1,3}, new int[0]);
+        tasks[3] = new Task(3, new int[0], new int[] {2,4});
+        tasks[4] = new Task(4, new int[] {3}, new int[] {4});
+        tasks[5] = new Task(5, new int[] {4}, new int[0]);
+        tasks[6] = new Task(6, new int[0], new int[] {5});
 
         getTaskSequence(tasks);
     }

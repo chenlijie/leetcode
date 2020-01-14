@@ -15,6 +15,7 @@ public class TinyUrl {
     Map<Long, String> db2 = new HashMap<>();
     long id = 1918283746;
 
+//    long id = 1;
     String getShortUrl(String longUrl) {
         char[] url = new char[6];
         int i = 5;
@@ -52,11 +53,11 @@ public class TinyUrl {
     }
 
     public static void main(String[] args) {
-//        TinyUrl tiny = new TinyUrl();
-//        String long1 = "jimmy";
-//        String short1 = tiny.getShortUrl(long1);
-//        System.out.println(short1);
-//        System.out.println(tiny.getLongUrl(short1));
+        TinyUrl tiny = new TinyUrl();
+        String long1 = "jimmy";
+        String short1 = tiny.getShortUrl(long1);
+        System.out.println(short1);
+        System.out.println(tiny.getLongUrl(short1));
 
 
         System.out.println((long)Math.pow(62, 6));

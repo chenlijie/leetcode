@@ -1,0 +1,18 @@
+1. what kind of search, search file name, file content
+
+2. how do we search file? I mean the search conditions
+path - from where we start search
+~: user folder, .: current folder, ./a/b/c
+file name - which file we want to search, is case sensitive or not,
+            can it be regular expression by using question mark and star mark
+file type - f: file, d:directory
+file size - +50M, -100M
+modify time - +50 -100
+permission - read, write, execute
+max depth - how deep does searching go
+
+3. what kind information we need to return?
+path that contains file name, modified date, owner, permission
+
+4. Should the data sorted in a certain order?
+

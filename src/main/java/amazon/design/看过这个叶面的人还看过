@@ -1,0 +1,9 @@
+系统设计，设计一个看过这个叶面的人还看过。。。。。。这些叶面系统
+
+1. Do we have history data in any place, or it doesn't exist anywhere.
+
+2. Is there any relationship between users? Do we check user's social circle and
+    show recommandation?
+
+3. We may find hundred thousand page are viewed other users. How many recommendation do we show,
+   how to rank those pages?

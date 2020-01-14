@@ -1,0 +1,3 @@
+http://www.1point3acres.com/bbs/forum.php?mod=viewthread&tid=407997&extra=page%3D1%26filter%3Dsortid%26sortid%3D311%26searchoption%5B3089%5D%5Bvalue%5D%5B3%5D%3D3%26searchoption%5B3089%5D%5Btype%5D%3Dcheckbox%26searchoption%5B3046%5D%5Bvalue%5D%3D5%26searchoption%5B3046%5D%5Btype%5D%3Dradio%26sortid%3D311
+就是游戏里买装备那种，注意装备是generic的，同时这个系统还包括各种不同的app
+讲了下qps，大概有哪几个service(userMgmt, BuyItem, ViewItem, Payment) 然后就集中在中间两个service讲，讲讲怎么存，不同app，不同item，画画存取。单机游戏还是网游，线上线下怎么操作
